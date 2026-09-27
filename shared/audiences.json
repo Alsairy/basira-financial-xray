@@ -1,0 +1,259 @@
+{
+  "version": "1.0.0",
+  "audiences": [
+    {
+      "id": "board",
+      "label_ar": "مجلس الإدارة",
+      "label_en": "Board of directors",
+      "short_ar": "المجلس",
+      "short_en": "Board",
+      "description_ar": "المخاطر الجوهرية، تخصيص رأس المال، والقرارات المطلوبة",
+      "description_en": "Material risk, capital allocation and requested decisions",
+      "reading_minutes": 5,
+      "sections": [
+        "decision_brief",
+        "material_risks",
+        "capital_allocation",
+        "execution_assurance",
+        "evidence_appendix"
+      ],
+      "metric_groups": ["funding", "returns", "cash", "profitability"],
+      "focus_ar": [
+        "ما القرار المطلوب من المجلس؟",
+        "هل تغيّر مستوى المخاطر؟",
+        "هل تحقق الأثر المعتمد؟"
+      ],
+      "focus_en": [
+        "What decision is needed from the board?",
+        "Has the risk profile changed?",
+        "Was the approved benefit achieved?"
+      ],
+      "data_needs_ar": ["التعهدات والالتزامات الجوهرية", "موازنة وموافقات رأس المال"],
+      "data_needs_en": ["Material covenants and commitments", "Capital budget and approvals"]
+    },
+    {
+      "id": "ceo",
+      "label_ar": "الرئيس التنفيذي",
+      "label_en": "Chief executive officer",
+      "short_ar": "الرئيس التنفيذي",
+      "short_en": "CEO",
+      "description_ar": "قصة الأداء، ما يستحق الانتباه، وأولويات التنفيذ",
+      "description_en": "The performance story, watchpoints and execution priorities",
+      "reading_minutes": 3,
+      "sections": [
+        "executive_reading",
+        "strengths",
+        "watchpoints",
+        "management_questions",
+        "next_90_days",
+        "evidence_appendix"
+      ],
+      "metric_groups": ["growth", "profitability", "cash", "working_capital"],
+      "focus_ar": [
+        "ما الذي تغيّر ولماذا؟",
+        "ما الأولويات الثلاث القادمة؟",
+        "من المسؤول ومتى يظهر الأثر؟"
+      ],
+      "focus_en": [
+        "What changed and why?",
+        "What are the next three priorities?",
+        "Who owns the outcome, and when?"
+      ],
+      "data_needs_ar": ["خطة الأعمال وأثر الاستحواذ", "جسور السعر والحجم والمزيج"],
+      "data_needs_en": ["Business plan and acquisition effects", "Price, volume and mix bridges"]
+    },
+    {
+      "id": "cfo",
+      "label_ar": "المدير المالي",
+      "label_en": "Chief financial officer",
+      "short_ar": "المدير المالي",
+      "short_en": "CFO",
+      "description_ar": "السيولة، المصالحة، الافتراضات، وإثبات الأثر",
+      "description_en": "Liquidity, reconciliation, assumptions and benefit verification",
+      "reading_minutes": 12,
+      "sections": [
+        "financial_control",
+        "reconciliation",
+        "cash_and_working_capital",
+        "scenario_assumptions",
+        "funding_and_covenants",
+        "benefit_ledger",
+        "evidence_appendix"
+      ],
+      "metric_groups": [
+        "liquidity",
+        "cash",
+        "working_capital",
+        "funding",
+        "profitability",
+        "returns",
+        "growth"
+      ],
+      "focus_ar": [
+        "هل الأرقام متصالحة وقابلة للاعتماد؟",
+        "أين يحتجز النقد؟",
+        "ما الأثر الممكن إثباته دون تداخل؟"
+      ],
+      "focus_en": [
+        "Are the figures reconciled and approval-ready?",
+        "Where is cash tied up?",
+        "Which benefits can be verified without overlap?"
+      ],
+      "data_needs_ar": ["تفصيل الذمم والنقد المقيد", "جدول التمويل والتعهدات"],
+      "data_needs_en": ["Receivables detail and restricted cash", "Debt schedule and covenants"]
+    },
+    {
+      "id": "sales",
+      "label_ar": "مدير المبيعات",
+      "label_en": "Sales leader",
+      "short_ar": "المبيعات",
+      "short_en": "Sales",
+      "description_ar": "جودة الإيراد، التحصيل، وربحية العملاء عند توافرها",
+      "description_en": "Revenue quality, collections and customer profitability when available",
+      "reading_minutes": 5,
+      "sections": [
+        "commercial_context",
+        "revenue_quality",
+        "collections_handoff",
+        "customer_economics",
+        "commercial_actions",
+        "missing_data",
+        "evidence_appendix"
+      ],
+      "metric_groups": ["growth", "working_capital", "profitability"],
+      "focus_ar": [
+        "هل النمو يتحول إلى هامش ونقد؟",
+        "ما العوائق بين البيع والفوترة والتحصيل؟",
+        "ما العملاء أو المنتجات التي تحتاج تدخلًا؟"
+      ],
+      "focus_en": [
+        "Does growth translate into margin and cash?",
+        "What blocks billing and collection?",
+        "Which customers or products need intervention?"
+      ],
+      "data_needs_ar": [
+        "مبيعات وهوامش حسب العميل والمنتج",
+        "عمر الفواتير وشروط الائتمان",
+        "المرتجعات والخصومات وCRM"
+      ],
+      "data_needs_en": [
+        "Revenue and margin by customer and product",
+        "Invoice aging and credit terms",
+        "Returns, discounts and CRM data"
+      ]
+    },
+    {
+      "id": "analyst",
+      "label_ar": "المحلل المالي",
+      "label_en": "Financial analyst",
+      "short_ar": "المحلل",
+      "short_en": "Analyst",
+      "description_ar": "التعريفات، المصادر، الحساسية، وبدائل التفسير",
+      "description_en": "Definitions, sources, sensitivities and alternative explanations",
+      "reading_minutes": 15,
+      "sections": [
+        "analytical_scope",
+        "metric_dictionary",
+        "source_lineage",
+        "comparability",
+        "sensitivity",
+        "limitations",
+        "evidence_appendix"
+      ],
+      "metric_groups": [
+        "growth",
+        "profitability",
+        "cash",
+        "liquidity",
+        "working_capital",
+        "funding",
+        "returns"
+      ],
+      "focus_ar": [
+        "ما تعريف كل مؤشر ومصدره؟",
+        "هل الفترات والنظراء متجانسون؟",
+        "كيف يتغير الاستنتاج بتغير الفرضية؟"
+      ],
+      "focus_en": [
+        "What defines and supports each metric?",
+        "Are periods and peers comparable?",
+        "How sensitive is the interpretation?"
+      ],
+      "data_needs_ar": ["الإيضاحات والقوائم المقارنة", "السياسات المحاسبية وإعادة العرض"],
+      "data_needs_en": ["Notes and comparative statements", "Accounting policies and restatements"]
+    },
+    {
+      "id": "sector",
+      "label_ar": "مدير القطاع",
+      "label_en": "Business unit leader",
+      "short_ar": "مدير القطاع",
+      "short_en": "Business unit",
+      "description_ar": "أداء القطاع، المساهمة، والقرارات ضمن نطاقه",
+      "description_en": "Unit performance, contribution and decisions within its scope",
+      "reading_minutes": 5,
+      "sections": [
+        "unit_scope",
+        "segment_performance",
+        "controllable_costs",
+        "unit_actions",
+        "missing_data",
+        "evidence_appendix"
+      ],
+      "metric_groups": ["growth", "profitability", "working_capital", "returns"],
+      "focus_ar": [
+        "كيف يؤدي القطاع مقابل خطته؟",
+        "ما التكاليف التي أستطيع التأثير فيها؟",
+        "ما الإجراء المطلوب داخل نطاقي؟"
+      ],
+      "focus_en": [
+        "How does the unit perform against its plan?",
+        "Which costs can I influence?",
+        "What action is required within my remit?"
+      ],
+      "data_needs_ar": [
+        "قائمة دخل وميزانية حسب القطاع",
+        "قواعد توزيع التكاليف المشتركة",
+        "خطة وأهداف القطاع"
+      ],
+      "data_needs_en": [
+        "Segment income statement and balance sheet",
+        "Shared cost allocation rules",
+        "Unit plans and targets"
+      ]
+    },
+    {
+      "id": "operations",
+      "label_ar": "مدير العمليات",
+      "label_en": "Operations leader",
+      "short_ar": "العمليات",
+      "short_en": "Operations",
+      "description_ar": "كفاءة التنفيذ، التكلفة، ودورة تحويل العمل إلى نقد",
+      "description_en": "Execution efficiency, cost and the work-to-cash cycle",
+      "reading_minutes": 5,
+      "sections": [
+        "operating_context",
+        "margin_drivers",
+        "work_to_cash",
+        "delivery_actions",
+        "missing_data",
+        "evidence_appendix"
+      ],
+      "metric_groups": ["profitability", "working_capital", "cash"],
+      "focus_ar": [
+        "أين يتأخر الإنجاز أو القبول أو الفوترة؟",
+        "ما تكلفة التشغيل القابلة للتحسين؟",
+        "هل تحسن التنفيذ ينعكس ماليًا؟"
+      ],
+      "focus_en": [
+        "Where do delivery, acceptance or billing stall?",
+        "Which operating costs can improve?",
+        "Do operational improvements reach the financials?"
+      ],
+      "data_needs_ar": ["مراحل العقود والإنجاز والقبول", "تكلفة الخدمة والطاقة التشغيلية"],
+      "data_needs_en": [
+        "Contract milestones, delivery and acceptance",
+        "Service costs and operational capacity"
+      ]
+    }
+  ]
+}

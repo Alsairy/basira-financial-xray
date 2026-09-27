@@ -1,0 +1,2354 @@
+{
+  "source_sha256": "43807b0db6769253097f29cb181368fa276e9cb0d56ab80f8811427266e36db1",
+  "unit_note": "Workbook financial figures SAR thousands, divided by1000 here to SAR million. Ratios unrounded unless presented. 365 days retained consistently incl leap year2024 for comparability.",
+  "metrics": [
+    {
+      "metric": "revenue",
+      "year": 2023,
+      "value": 5898.36284,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C8",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cogs",
+      "year": 2023,
+      "value": 3566.638564,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C9",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "gross_profit",
+      "year": 2023,
+      "value": 2331.724276,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C10",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "opex_ex_DA_impairment",
+      "year": 2023,
+      "value": 855.249012,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C15",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "depreciation_amortization",
+      "year": 2023,
+      "value": 119.9729,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C16",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "impairment",
+      "year": 2023,
+      "value": 5.918692,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C17",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "ebit",
+      "year": 2023,
+      "value": 1350.583672,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C18",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "finance_cost",
+      "year": 2023,
+      "value": 5.861229000000001,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C19",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_income",
+      "year": 2023,
+      "value": 127.85608500000001,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C20",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "zakat",
+      "year": 2023,
+      "value": 117.057649,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C26",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_income",
+      "year": 2023,
+      "value": 1356.1947539999999,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C27",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "cash_equivalents",
+      "year": 2023,
+      "value": 384.394607,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C35",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_deposits",
+      "year": 2023,
+      "value": 3056.113638,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C36",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_receivables",
+      "year": 2023,
+      "value": 2322.353701,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C37",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_contract_assets",
+      "year": 2023,
+      "value": 847.625684,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C38",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_assets",
+      "year": 2023,
+      "value": 7002.162096,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C44",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "total_assets",
+      "year": 2023,
+      "value": 8097.212638,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C55",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "payables_and_other_current_liabilities",
+      "year": 2023,
+      "value": 2805.055424,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C57",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_borrowing",
+      "year": 2023,
+      "value": 0.0,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C58",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "contract_liabilities",
+      "year": 2023,
+      "value": 503.70739000000003,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C59",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_lease",
+      "year": 2023,
+      "value": 11.988772,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C61",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_liabilities",
+      "year": 2023,
+      "value": 3529.7609680000005,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C64",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_borrowing",
+      "year": 2023,
+      "value": 0.0,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C65",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_lease",
+      "year": 2023,
+      "value": 212.09068900000003,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C66",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "total_liabilities",
+      "year": 2023,
+      "value": 4102.540784000001,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C70",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "total_equity",
+      "year": 2023,
+      "value": 3994.6718539999997,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C79",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "cfo",
+      "year": 2023,
+      "value": 1558.622748,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C86",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cfi",
+      "year": 2023,
+      "value": -1230.5673940000001,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C87",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cff",
+      "year": 2023,
+      "value": -532.340138,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!C88",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "gross_margin",
+      "year": 2023,
+      "value": 0.39531719889921185,
+      "unit": "ratio",
+      "formula": "gross_profit / revenue",
+      "inputs": "03_RAW_DATA!C10, 03_RAW_DATA!C8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ebit_margin",
+      "year": 2023,
+      "value": 0.22897602413350346,
+      "unit": "ratio",
+      "formula": "ebit / revenue",
+      "inputs": "03_RAW_DATA!C18, 03_RAW_DATA!C8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_margin",
+      "year": 2023,
+      "value": 0.22992731895076157,
+      "unit": "ratio",
+      "formula": "net_income / revenue",
+      "inputs": "03_RAW_DATA!C27, 03_RAW_DATA!C8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cfo_net_income",
+      "year": 2023,
+      "value": 1.1492617438630794,
+      "unit": "ratio",
+      "formula": "cfo / net_income",
+      "inputs": "03_RAW_DATA!C86, 03_RAW_DATA!C27",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_ratio",
+      "year": 2023,
+      "value": 1.9837496531578167,
+      "unit": "times",
+      "formula": "current_assets / current_liabilities",
+      "inputs": "03_RAW_DATA!C44, 03_RAW_DATA!C64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "quick_ratio_workbook",
+      "year": 2023,
+      "value": 1.7436128020553259,
+      "unit": "times",
+      "formula": "(CA - contract assets)/CL",
+      "inputs": "03_RAW_DATA!C44, 03_RAW_DATA!C38, 03_RAW_DATA!C64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_ratio_strict",
+      "year": 2023,
+      "value": 0.10890103054706336,
+      "unit": "times",
+      "formula": "cash equivalents / CL",
+      "inputs": "03_RAW_DATA!C35, 03_RAW_DATA!C64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_deposits_ratio",
+      "year": 2023,
+      "value": 0.9747142302809892,
+      "unit": "times",
+      "formula": "(cash equivalents + murabaha)/CL",
+      "inputs": "03_RAW_DATA!C35, 03_RAW_DATA!C36, 03_RAW_DATA!C64",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "bank_borrowing_equity",
+      "year": 2023,
+      "value": 0.0,
+      "unit": "times",
+      "formula": "borrowing / equity",
+      "inputs": "03_RAW_DATA!C58, 03_RAW_DATA!C65, 03_RAW_DATA!C79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "borrowing_lease_equity",
+      "year": 2023,
+      "value": 0.05609458528505207,
+      "unit": "times",
+      "formula": "(borrowing+lease)/equity",
+      "inputs": "03_RAW_DATA!C58, 03_RAW_DATA!C65, 03_RAW_DATA!C61, 03_RAW_DATA!C66, 03_RAW_DATA!C79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "liabilities_assets",
+      "year": 2023,
+      "value": 0.506660868055618,
+      "unit": "ratio",
+      "formula": "total liabilities / assets",
+      "inputs": "03_RAW_DATA!C70, 03_RAW_DATA!C55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "interest_cover",
+      "year": 2023,
+      "value": 230.42670265911804,
+      "unit": "times",
+      "formula": "EBIT / finance costs",
+      "inputs": "03_RAW_DATA!C18, 03_RAW_DATA!C19",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dso_closing_net_total_sales",
+      "year": 2023,
+      "value": 143.71091163069244,
+      "unit": "days",
+      "formula": "365 * closing net AR / annual total revenue",
+      "inputs": "03_RAW_DATA!C37, 03_RAW_DATA!C8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "contract_asset_days_closing",
+      "year": 2023,
+      "value": 52.4524148568656,
+      "unit": "days",
+      "formula": "365 * net contract assets / annual total revenue",
+      "inputs": "03_RAW_DATA!C38, 03_RAW_DATA!C8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ar_contract_days_closing",
+      "year": 2023,
+      "value": 196.16332648755807,
+      "unit": "days",
+      "formula": "365 * (net AR + net contract assets) / annual total revenue",
+      "inputs": "03_RAW_DATA!C37, 03_RAW_DATA!C38, 03_RAW_DATA!C8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dpo_broad_invalid",
+      "year": 2023,
+      "value": 287.0616720444343,
+      "unit": "days",
+      "formula": "365 * closing broad payables / COGS",
+      "inputs": "03_RAW_DATA!C57, 03_RAW_DATA!C9",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roe_closing",
+      "year": 2023,
+      "value": 0.3395009161120447,
+      "unit": "ratio",
+      "formula": "NI / closing equity",
+      "inputs": "03_RAW_DATA!C27, 03_RAW_DATA!C79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roa_closing",
+      "year": 2023,
+      "value": 0.16748908724903858,
+      "unit": "ratio",
+      "formula": "NI / closing assets",
+      "inputs": "03_RAW_DATA!C27, 03_RAW_DATA!C55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_deposits",
+      "year": 2023,
+      "value": 3440.508245,
+      "unit": "SAR million",
+      "formula": "cash+murabaha",
+      "inputs": "03_RAW_DATA!C35, 03_RAW_DATA!C36",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_cash_exleases",
+      "year": 2023,
+      "value": 3440.508245,
+      "unit": "SAR million",
+      "formula": "cash+murabaha-borrowing",
+      "inputs": "03_RAW_DATA!C35, 03_RAW_DATA!C36, 03_RAW_DATA!C58, 03_RAW_DATA!C65",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_cash_incleases",
+      "year": 2023,
+      "value": 3216.4287839999997,
+      "unit": "SAR million",
+      "formula": "cash+murabaha-borrowing-leases",
+      "inputs": "03_RAW_DATA!C35, 03_RAW_DATA!C36, 03_RAW_DATA!C58, 03_RAW_DATA!C65, 03_RAW_DATA!C61, 03_RAW_DATA!C66",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_working_capital",
+      "year": 2023,
+      "value": 3472.4011279999995,
+      "unit": "SAR million",
+      "formula": "CA-CL",
+      "inputs": "03_RAW_DATA!C44, 03_RAW_DATA!C64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "revenue_1day",
+      "year": 2023,
+      "value": 16.159898191780822,
+      "unit": "SAR million",
+      "formula": "revenue/365",
+      "inputs": "03_RAW_DATA!C8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "revenue",
+      "year": 2024,
+      "value": 7406.7944019999995,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D8",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cogs",
+      "year": 2024,
+      "value": 4375.702533,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D9",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "gross_profit",
+      "year": 2024,
+      "value": 3031.091869,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D10",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "opex_ex_DA_impairment",
+      "year": 2024,
+      "value": 1110.457387,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D15",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "depreciation_amortization",
+      "year": 2024,
+      "value": 198.838582,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D16",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "impairment",
+      "year": 2024,
+      "value": 21.343476,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D17",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "ebit",
+      "year": 2024,
+      "value": 1700.452424,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D18",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "finance_cost",
+      "year": 2024,
+      "value": 28.44726,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D19",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_income",
+      "year": 2024,
+      "value": 145.475642,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D20",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "zakat",
+      "year": 2024,
+      "value": 127.019914,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D26",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_income",
+      "year": 2024,
+      "value": 1826.8484680000001,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D27",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "cash_equivalents",
+      "year": 2024,
+      "value": 2250.797179,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D35",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_deposits",
+      "year": 2024,
+      "value": 1426.071,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D36",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_receivables",
+      "year": 2024,
+      "value": 2895.222777,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D37",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_contract_assets",
+      "year": 2024,
+      "value": 641.667693,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D38",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_assets",
+      "year": 2024,
+      "value": 8026.503329,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D44",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "total_assets",
+      "year": 2024,
+      "value": 9554.055011,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D55",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "payables_and_other_current_liabilities",
+      "year": 2024,
+      "value": 2479.580023,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D57",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_borrowing",
+      "year": 2024,
+      "value": 0.0,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D58",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "contract_liabilities",
+      "year": 2024,
+      "value": 609.8063149999999,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D59",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_lease",
+      "year": 2024,
+      "value": 85.001803,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D61",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_liabilities",
+      "year": 2024,
+      "value": 3392.5606660000003,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D64",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_borrowing",
+      "year": 2024,
+      "value": 0.0,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D65",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_lease",
+      "year": 2024,
+      "value": 481.01308,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D66",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "total_liabilities",
+      "year": 2024,
+      "value": 4260.809435,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D70",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "total_equity",
+      "year": 2024,
+      "value": 5293.245576,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D79",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "cfo",
+      "year": 2024,
+      "value": 1659.338913,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D86",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cfi",
+      "year": 2024,
+      "value": 904.084074,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D87",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cff",
+      "year": 2024,
+      "value": -697.0195500000001,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!D88",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "gross_margin",
+      "year": 2024,
+      "value": 0.40923126854736747,
+      "unit": "ratio",
+      "formula": "gross_profit / revenue",
+      "inputs": "03_RAW_DATA!D10, 03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ebit_margin",
+      "year": 2024,
+      "value": 0.22958007630680824,
+      "unit": "ratio",
+      "formula": "ebit / revenue",
+      "inputs": "03_RAW_DATA!D18, 03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_margin",
+      "year": 2024,
+      "value": 0.24664495446325746,
+      "unit": "ratio",
+      "formula": "net_income / revenue",
+      "inputs": "03_RAW_DATA!D27, 03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cfo_net_income",
+      "year": 2024,
+      "value": 0.9083068147500014,
+      "unit": "ratio",
+      "formula": "cfo / net_income",
+      "inputs": "03_RAW_DATA!D86, 03_RAW_DATA!D27",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_ratio",
+      "year": 2024,
+      "value": 2.365912984089287,
+      "unit": "times",
+      "formula": "current_assets / current_liabilities",
+      "inputs": "03_RAW_DATA!D44, 03_RAW_DATA!D64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "quick_ratio_workbook",
+      "year": 2024,
+      "value": 2.1767733470502955,
+      "unit": "times",
+      "formula": "(CA - contract assets)/CL",
+      "inputs": "03_RAW_DATA!D44, 03_RAW_DATA!D38, 03_RAW_DATA!D64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_ratio_strict",
+      "year": 2024,
+      "value": 0.6634508268510356,
+      "unit": "times",
+      "formula": "cash equivalents / CL",
+      "inputs": "03_RAW_DATA!D35, 03_RAW_DATA!D64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_deposits_ratio",
+      "year": 2024,
+      "value": 1.083803221516216,
+      "unit": "times",
+      "formula": "(cash equivalents + murabaha)/CL",
+      "inputs": "03_RAW_DATA!D35, 03_RAW_DATA!D36, 03_RAW_DATA!D64",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "bank_borrowing_equity",
+      "year": 2024,
+      "value": 0.0,
+      "unit": "times",
+      "formula": "borrowing / equity",
+      "inputs": "03_RAW_DATA!D58, 03_RAW_DATA!D65, 03_RAW_DATA!D79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "borrowing_lease_equity",
+      "year": 2024,
+      "value": 0.10693153659190817,
+      "unit": "times",
+      "formula": "(borrowing+lease)/equity",
+      "inputs": "03_RAW_DATA!D58, 03_RAW_DATA!D65, 03_RAW_DATA!D61, 03_RAW_DATA!D66, 03_RAW_DATA!D79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "liabilities_assets",
+      "year": 2024,
+      "value": 0.44596869393093763,
+      "unit": "ratio",
+      "formula": "total liabilities / assets",
+      "inputs": "03_RAW_DATA!D70, 03_RAW_DATA!D55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "interest_cover",
+      "year": 2024,
+      "value": 59.775613679489695,
+      "unit": "times",
+      "formula": "EBIT / finance costs",
+      "inputs": "03_RAW_DATA!D18, 03_RAW_DATA!D19",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dso_closing_net_total_sales",
+      "year": 2024,
+      "value": 142.67390942020103,
+      "unit": "days",
+      "formula": "365 * closing net AR / annual total revenue",
+      "inputs": "03_RAW_DATA!D37, 03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "contract_asset_days_closing",
+      "year": 2024,
+      "value": 31.620792374331117,
+      "unit": "days",
+      "formula": "365 * net contract assets / annual total revenue",
+      "inputs": "03_RAW_DATA!D38, 03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ar_contract_days_closing",
+      "year": 2024,
+      "value": 174.29470179453213,
+      "unit": "days",
+      "formula": "365 * (net AR + net contract assets) / annual total revenue",
+      "inputs": "03_RAW_DATA!D37, 03_RAW_DATA!D38, 03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dpo_broad_invalid",
+      "year": 2024,
+      "value": 206.83460577346335,
+      "unit": "days",
+      "formula": "365 * closing broad payables / COGS",
+      "inputs": "03_RAW_DATA!D57, 03_RAW_DATA!D9",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roe_closing",
+      "year": 2024,
+      "value": 0.34512822837524815,
+      "unit": "ratio",
+      "formula": "NI / closing equity",
+      "inputs": "03_RAW_DATA!D27, 03_RAW_DATA!D79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roa_closing",
+      "year": 2024,
+      "value": 0.19121184312804038,
+      "unit": "ratio",
+      "formula": "NI / closing assets",
+      "inputs": "03_RAW_DATA!D27, 03_RAW_DATA!D55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_deposits",
+      "year": 2024,
+      "value": 3676.868179,
+      "unit": "SAR million",
+      "formula": "cash+murabaha",
+      "inputs": "03_RAW_DATA!D35, 03_RAW_DATA!D36",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_cash_exleases",
+      "year": 2024,
+      "value": 3676.868179,
+      "unit": "SAR million",
+      "formula": "cash+murabaha-borrowing",
+      "inputs": "03_RAW_DATA!D35, 03_RAW_DATA!D36, 03_RAW_DATA!D58, 03_RAW_DATA!D65",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_cash_incleases",
+      "year": 2024,
+      "value": 3110.853296,
+      "unit": "SAR million",
+      "formula": "cash+murabaha-borrowing-leases",
+      "inputs": "03_RAW_DATA!D35, 03_RAW_DATA!D36, 03_RAW_DATA!D58, 03_RAW_DATA!D65, 03_RAW_DATA!D61, 03_RAW_DATA!D66",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_working_capital",
+      "year": 2024,
+      "value": 4633.942663,
+      "unit": "SAR million",
+      "formula": "CA-CL",
+      "inputs": "03_RAW_DATA!D44, 03_RAW_DATA!D64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "revenue_1day",
+      "year": 2024,
+      "value": 20.292587402739724,
+      "unit": "SAR million",
+      "formula": "revenue/365",
+      "inputs": "03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "revenue_growth",
+      "year": 2024,
+      "value": 0.2557373296485774,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C8, 03_RAW_DATA!D8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cogs_growth",
+      "year": 2024,
+      "value": 0.22684215248674677,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C9, 03_RAW_DATA!D9",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "gross_profit_growth",
+      "year": 2024,
+      "value": 0.2999358029585484,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C10, 03_RAW_DATA!D10",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "opex_ex_DA_impairment_growth",
+      "year": 2024,
+      "value": 0.298402420136324,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C15, 03_RAW_DATA!D15",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "depreciation_amortization_growth",
+      "year": 2024,
+      "value": 0.6573624710247066,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C16, 03_RAW_DATA!D16",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "impairment_growth",
+      "year": 2024,
+      "value": 2.606113648083056,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C17, 03_RAW_DATA!D17",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ebit_growth",
+      "year": 2024,
+      "value": 0.25905003833039086,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C18, 03_RAW_DATA!D18",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "finance_cost_growth",
+      "year": 2024,
+      "value": 3.8534633265480664,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C19, 03_RAW_DATA!D19",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_income_growth",
+      "year": 2024,
+      "value": 0.13780773124720636,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C20, 03_RAW_DATA!D20",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "zakat_growth",
+      "year": 2024,
+      "value": 0.08510563030357798,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C26, 03_RAW_DATA!D26",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_income_growth",
+      "year": 2024,
+      "value": 0.34703991636292697,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C27, 03_RAW_DATA!D27",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_equivalents_growth",
+      "year": 2024,
+      "value": 4.855433812056578,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C35, 03_RAW_DATA!D35",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_deposits_growth",
+      "year": 2024,
+      "value": -0.5333710820605291,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C36, 03_RAW_DATA!D36",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_receivables_growth",
+      "year": 2024,
+      "value": 0.24667606650671847,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C37, 03_RAW_DATA!D37",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_contract_assets_growth",
+      "year": 2024,
+      "value": -0.24298224427092752,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C38, 03_RAW_DATA!D38",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_assets_growth",
+      "year": 2024,
+      "value": 0.14628927736265296,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C44, 03_RAW_DATA!D44",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "total_assets_growth",
+      "year": 2024,
+      "value": 0.1799189965894039,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C55, 03_RAW_DATA!D55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "payables_and_other_current_liabilities_growth",
+      "year": 2024,
+      "value": -0.1160317183807631,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C57, 03_RAW_DATA!D57",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "contract_liabilities_growth",
+      "year": 2024,
+      "value": 0.21063603017617005,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C59, 03_RAW_DATA!D59",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_lease_growth",
+      "year": 2024,
+      "value": 6.090117570006335,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C61, 03_RAW_DATA!D61",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_liabilities_growth",
+      "year": 2024,
+      "value": -0.03886957310815842,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C64, 03_RAW_DATA!D64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_lease_growth",
+      "year": 2024,
+      "value": 1.2679594388040294,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C66, 03_RAW_DATA!D66",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "total_liabilities_growth",
+      "year": 2024,
+      "value": 0.038578202955897645,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C70, 03_RAW_DATA!D70",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "total_equity_growth",
+      "year": 2024,
+      "value": 0.32507644418895,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C79, 03_RAW_DATA!D79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cfo_growth",
+      "year": 2024,
+      "value": 0.06461869309249946,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C86, 03_RAW_DATA!D86",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cfi_growth",
+      "year": 2024,
+      "value": -1.7346887934851294,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C87, 03_RAW_DATA!D87",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cff_growth",
+      "year": 2024,
+      "value": 0.30934998179678885,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!C88, 03_RAW_DATA!D88",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roe_average",
+      "year": 2024,
+      "value": 0.3933817202334884,
+      "unit": "ratio",
+      "formula": "NI / mean(opening,closing equity)",
+      "inputs": "03_RAW_DATA!D27, 03_RAW_DATA!D79, 03_RAW_DATA!C79",
+      "kind": "calculated",
+      "limits": "Acquisition timing and equity distributions distort simple annual mean"
+    },
+    {
+      "metric": "roa_average",
+      "year": 2024,
+      "value": 0.2069934584107331,
+      "unit": "ratio",
+      "formula": "NI / mean(opening,closing assets)",
+      "inputs": "03_RAW_DATA!D27, 03_RAW_DATA!D55, 03_RAW_DATA!C55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dso_average_net_total_sales",
+      "year": 2024,
+      "value": 128.55867944409025,
+      "unit": "days",
+      "formula": "365 * mean(opening,closing net AR) / revenue",
+      "inputs": "03_RAW_DATA!D37, 03_RAW_DATA!D8, 03_RAW_DATA!C37",
+      "kind": "calculated",
+      "limits": "total not credit revenue; net not gross AR; FY25 acquired AR not timing-adjusted"
+    },
+    {
+      "metric": "revenue",
+      "year": 2025,
+      "value": 9464.884988,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E8",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cogs",
+      "year": 2025,
+      "value": 5787.33279,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E9",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "gross_profit",
+      "year": 2025,
+      "value": 3677.552198,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E10",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "opex_ex_DA_impairment",
+      "year": 2025,
+      "value": 1362.970258,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E15",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "depreciation_amortization",
+      "year": 2025,
+      "value": 254.424318,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E16",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "impairment",
+      "year": 2025,
+      "value": 30.210394,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E17",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "ebit",
+      "year": 2025,
+      "value": 2029.9472279999993,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E18",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "finance_cost",
+      "year": 2025,
+      "value": 105.799381,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E19",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_income",
+      "year": 2025,
+      "value": 134.684755,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E20",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "zakat",
+      "year": 2025,
+      "value": 45.710979,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E26",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_income",
+      "year": 2025,
+      "value": 2090.3248929999995,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E27",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "cash_equivalents",
+      "year": 2025,
+      "value": 1836.371678,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E35",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_deposits",
+      "year": 2025,
+      "value": 2306.0,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E36",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_receivables",
+      "year": 2025,
+      "value": 3606.5037829999997,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E37",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "net_contract_assets",
+      "year": 2025,
+      "value": 1173.1973249999999,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E38",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_assets",
+      "year": 2025,
+      "value": 9801.540530999999,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E44",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "total_assets",
+      "year": 2025,
+      "value": 11886.988871,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E55",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "payables_and_other_current_liabilities",
+      "year": 2025,
+      "value": 3481.748449,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E57",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_borrowing",
+      "year": 2025,
+      "value": 453.408021,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E58",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "contract_liabilities",
+      "year": 2025,
+      "value": 1407.441418,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E59",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_lease",
+      "year": 2025,
+      "value": 109.730213,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E61",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "current_liabilities",
+      "year": 2025,
+      "value": 5605.589021,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E64",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_borrowing",
+      "year": 2025,
+      "value": 1520.0,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E65",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_lease",
+      "year": 2025,
+      "value": 543.749068,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E66",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "total_liabilities",
+      "year": 2025,
+      "value": 8265.680021,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E70",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "total_equity",
+      "year": 2025,
+      "value": 3621.30885,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E79",
+      "kind": "workbook formula",
+      "limits": ""
+    },
+    {
+      "metric": "cfo",
+      "year": 2025,
+      "value": 2662.7432059999996,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E86",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cfi",
+      "year": 2025,
+      "value": -4231.913025000001,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E87",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "cff",
+      "year": 2025,
+      "value": 1154.742212,
+      "unit": "SAR million",
+      "formula": "raw value / 1000",
+      "inputs": "03_RAW_DATA!E88",
+      "kind": "workbook source",
+      "limits": ""
+    },
+    {
+      "metric": "gross_margin",
+      "year": 2025,
+      "value": 0.3885469504027321,
+      "unit": "ratio",
+      "formula": "gross_profit / revenue",
+      "inputs": "03_RAW_DATA!E10, 03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ebit_margin",
+      "year": 2025,
+      "value": 0.21447140990869476,
+      "unit": "ratio",
+      "formula": "ebit / revenue",
+      "inputs": "03_RAW_DATA!E18, 03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_margin",
+      "year": 2025,
+      "value": 0.22085053285382822,
+      "unit": "ratio",
+      "formula": "net_income / revenue",
+      "inputs": "03_RAW_DATA!E27, 03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cfo_net_income",
+      "year": 2025,
+      "value": 1.2738417912530693,
+      "unit": "ratio",
+      "formula": "cfo / net_income",
+      "inputs": "03_RAW_DATA!E86, 03_RAW_DATA!E27",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_ratio",
+      "year": 2025,
+      "value": 1.748529992884043,
+      "unit": "times",
+      "formula": "current_assets / current_liabilities",
+      "inputs": "03_RAW_DATA!E44, 03_RAW_DATA!E64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "quick_ratio_workbook",
+      "year": 2025,
+      "value": 1.5392393508828375,
+      "unit": "times",
+      "formula": "(CA - contract assets)/CL",
+      "inputs": "03_RAW_DATA!E44, 03_RAW_DATA!E38, 03_RAW_DATA!E64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_ratio_strict",
+      "year": 2025,
+      "value": 0.3275965596336928,
+      "unit": "times",
+      "formula": "cash equivalents / CL",
+      "inputs": "03_RAW_DATA!E35, 03_RAW_DATA!E64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_deposits_ratio",
+      "year": 2025,
+      "value": 0.7389717052894164,
+      "unit": "times",
+      "formula": "(cash equivalents + murabaha)/CL",
+      "inputs": "03_RAW_DATA!E35, 03_RAW_DATA!E36, 03_RAW_DATA!E64",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "bank_borrowing_equity",
+      "year": 2025,
+      "value": 0.5449433071691745,
+      "unit": "times",
+      "formula": "borrowing / equity",
+      "inputs": "03_RAW_DATA!E58, 03_RAW_DATA!E65, 03_RAW_DATA!E79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "borrowing_lease_equity",
+      "year": 2025,
+      "value": 0.7253972005177078,
+      "unit": "times",
+      "formula": "(borrowing+lease)/equity",
+      "inputs": "03_RAW_DATA!E58, 03_RAW_DATA!E65, 03_RAW_DATA!E61, 03_RAW_DATA!E66, 03_RAW_DATA!E79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "liabilities_assets",
+      "year": 2025,
+      "value": 0.6953552418279202,
+      "unit": "ratio",
+      "formula": "total liabilities / assets",
+      "inputs": "03_RAW_DATA!E70, 03_RAW_DATA!E55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "interest_cover",
+      "year": 2025,
+      "value": 19.18675902272055,
+      "unit": "times",
+      "formula": "EBIT / finance costs",
+      "inputs": "03_RAW_DATA!E18, 03_RAW_DATA!E19",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dso_closing_net_total_sales",
+      "year": 2025,
+      "value": 139.07975453098024,
+      "unit": "days",
+      "formula": "365 * closing net AR / annual total revenue",
+      "inputs": "03_RAW_DATA!E37, 03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "contract_asset_days_closing",
+      "year": 2025,
+      "value": 45.24270756252321,
+      "unit": "days",
+      "formula": "365 * net contract assets / annual total revenue",
+      "inputs": "03_RAW_DATA!E38, 03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ar_contract_days_closing",
+      "year": 2025,
+      "value": 184.32246209350345,
+      "unit": "days",
+      "formula": "365 * (net AR + net contract assets) / annual total revenue",
+      "inputs": "03_RAW_DATA!E37, 03_RAW_DATA!E38, 03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dpo_broad_invalid",
+      "year": 2025,
+      "value": 219.58961580382868,
+      "unit": "days",
+      "formula": "365 * closing broad payables / COGS",
+      "inputs": "03_RAW_DATA!E57, 03_RAW_DATA!E9",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roe_closing",
+      "year": 2025,
+      "value": 0.5772291123415225,
+      "unit": "ratio",
+      "formula": "NI / closing equity",
+      "inputs": "03_RAW_DATA!E27, 03_RAW_DATA!E79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roa_closing",
+      "year": 2025,
+      "value": 0.17584982333916746,
+      "unit": "ratio",
+      "formula": "NI / closing assets",
+      "inputs": "03_RAW_DATA!E27, 03_RAW_DATA!E55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_deposits",
+      "year": 2025,
+      "value": 4142.3716779999995,
+      "unit": "SAR million",
+      "formula": "cash+murabaha",
+      "inputs": "03_RAW_DATA!E35, 03_RAW_DATA!E36",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_cash_exleases",
+      "year": 2025,
+      "value": 2168.9636569999993,
+      "unit": "SAR million",
+      "formula": "cash+murabaha-borrowing",
+      "inputs": "03_RAW_DATA!E35, 03_RAW_DATA!E36, 03_RAW_DATA!E58, 03_RAW_DATA!E65",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_cash_incleases",
+      "year": 2025,
+      "value": 1515.4843759999994,
+      "unit": "SAR million",
+      "formula": "cash+murabaha-borrowing-leases",
+      "inputs": "03_RAW_DATA!E35, 03_RAW_DATA!E36, 03_RAW_DATA!E58, 03_RAW_DATA!E65, 03_RAW_DATA!E61, 03_RAW_DATA!E66",
+      "kind": "calculated",
+      "limits": "Includes full balance-sheet murabaha deposits. Analytical definition only, not confirmed immediately available funds, distributable surplus, or a covenant measure. Deposit maturities/restrictions and operating cash needs not fully reviewed."
+    },
+    {
+      "metric": "net_working_capital",
+      "year": 2025,
+      "value": 4195.951509999999,
+      "unit": "SAR million",
+      "formula": "CA-CL",
+      "inputs": "03_RAW_DATA!E44, 03_RAW_DATA!E64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "revenue_1day",
+      "year": 2025,
+      "value": 25.931191747945206,
+      "unit": "SAR million",
+      "formula": "revenue/365",
+      "inputs": "03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "revenue_growth",
+      "year": 2025,
+      "value": 0.2778652240494579,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D8, 03_RAW_DATA!E8",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cogs_growth",
+      "year": 2025,
+      "value": 0.3226065406306724,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D9, 03_RAW_DATA!E9",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "gross_profit_growth",
+      "year": 2025,
+      "value": 0.2132763891492595,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D10, 03_RAW_DATA!E10",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "opex_ex_DA_impairment_growth",
+      "year": 2025,
+      "value": 0.22739537235389662,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D15, 03_RAW_DATA!E15",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "depreciation_amortization_growth",
+      "year": 2025,
+      "value": 0.2795520639953064,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D16, 03_RAW_DATA!E16",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "impairment_growth",
+      "year": 2025,
+      "value": 0.41543926584404534,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D17, 03_RAW_DATA!E17",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "ebit_growth",
+      "year": 2025,
+      "value": 0.19376890488057508,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D18, 03_RAW_DATA!E18",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "finance_cost_growth",
+      "year": 2025,
+      "value": 2.719141351399045,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D19, 03_RAW_DATA!E19",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_income_growth",
+      "year": 2025,
+      "value": -0.07417658964515861,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D20, 03_RAW_DATA!E20",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "zakat_growth",
+      "year": 2025,
+      "value": -0.6401274606436909,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D26, 03_RAW_DATA!E26",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_income_growth",
+      "year": 2025,
+      "value": 0.1442245646615936,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D27, 03_RAW_DATA!E27",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cash_equivalents_growth",
+      "year": 2025,
+      "value": -0.18412387613890824,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D35, 03_RAW_DATA!E35",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "murabaha_deposits_growth",
+      "year": 2025,
+      "value": 0.6170302881132848,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D36, 03_RAW_DATA!E36",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_receivables_growth",
+      "year": 2025,
+      "value": 0.2456740157097761,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D37, 03_RAW_DATA!E37",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "net_contract_assets_growth",
+      "year": 2025,
+      "value": 0.8283565431117941,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D38, 03_RAW_DATA!E38",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_assets_growth",
+      "year": 2025,
+      "value": 0.22114700875868776,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D44, 03_RAW_DATA!E44",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "total_assets_growth",
+      "year": 2025,
+      "value": 0.2441825860657063,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D55, 03_RAW_DATA!E55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "payables_and_other_current_liabilities_growth",
+      "year": 2025,
+      "value": 0.4041686159366191,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D57, 03_RAW_DATA!E57",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "contract_liabilities_growth",
+      "year": 2025,
+      "value": 1.3080138453469448,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D59, 03_RAW_DATA!E59",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_lease_growth",
+      "year": 2025,
+      "value": 0.2909162997401362,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D61, 03_RAW_DATA!E61",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "current_liabilities_growth",
+      "year": 2025,
+      "value": 0.6523179901184408,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D64, 03_RAW_DATA!E64",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "noncurrent_lease_growth",
+      "year": 2025,
+      "value": 0.1304247027960237,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D66, 03_RAW_DATA!E66",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "total_liabilities_growth",
+      "year": 2025,
+      "value": 0.9399318714191685,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D70, 03_RAW_DATA!E70",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "total_equity_growth",
+      "year": 2025,
+      "value": -0.31586230073675314,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D79, 03_RAW_DATA!E79",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cfo_growth",
+      "year": 2025,
+      "value": 0.6047012368232212,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D86, 03_RAW_DATA!E86",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cfi_growth",
+      "year": 2025,
+      "value": -5.680884385316581,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D87, 03_RAW_DATA!E87",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "cff_growth",
+      "year": 2025,
+      "value": -2.6566855434686154,
+      "unit": "ratio",
+      "formula": "current / prior - 1",
+      "inputs": "03_RAW_DATA!D88, 03_RAW_DATA!E88",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "roe_average",
+      "year": 2025,
+      "value": 0.4689690124956559,
+      "unit": "ratio",
+      "formula": "NI / mean(opening,closing equity)",
+      "inputs": "03_RAW_DATA!E27, 03_RAW_DATA!E79, 03_RAW_DATA!D79",
+      "kind": "calculated",
+      "limits": "Acquisition timing and equity distributions distort simple annual mean"
+    },
+    {
+      "metric": "roa_average",
+      "year": 2025,
+      "value": 0.1949835002907532,
+      "unit": "ratio",
+      "formula": "NI / mean(opening,closing assets)",
+      "inputs": "03_RAW_DATA!E27, 03_RAW_DATA!E55, 03_RAW_DATA!D55",
+      "kind": "calculated",
+      "limits": ""
+    },
+    {
+      "metric": "dso_average_net_total_sales",
+      "year": 2025,
+      "value": 125.36497788450464,
+      "unit": "days",
+      "formula": "365 * mean(opening,closing net AR) / revenue",
+      "inputs": "03_RAW_DATA!E37, 03_RAW_DATA!E8, 03_RAW_DATA!D37",
+      "kind": "calculated",
+      "limits": "total not credit revenue; net not gross AR; FY25 acquired AR not timing-adjusted"
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": "collection_5_days",
+      "value": 129.65595873972603,
+      "unit": "SAR million",
+      "formula": "FY25 revenue / 365 * 5",
+      "inputs": "03_RAW_DATA!E8",
+      "assumption": "5 days earlier collection; revenue level and same-scope receivables held constant",
+      "effect": "one-time cash timing; no new revenue or guaranteed profit",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "collection_10_days",
+      "value": 259.31191747945206,
+      "unit": "SAR million",
+      "formula": "FY25 revenue / 365 * 10",
+      "inputs": "03_RAW_DATA!E8",
+      "assumption": "10 days earlier collection; revenue level and same-scope receivables held constant",
+      "effect": "one-time cash timing; no new revenue or guaranteed profit",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "collection_15_days",
+      "value": 388.9678762191781,
+      "unit": "SAR million",
+      "formula": "FY25 revenue / 365 * 15",
+      "inputs": "03_RAW_DATA!E8",
+      "assumption": "15 days earlier collection; revenue level and same-scope receivables held constant",
+      "effect": "one-time cash timing; no new revenue or guaranteed profit",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "closing_net_dso_target_120",
+      "value": 494.76077324657535,
+      "unit": "SAR million",
+      "formula": "FY25 net AR - FY25 revenue * 120/365",
+      "inputs": "03_RAW_DATA!E37,E8",
+      "assumption": "Closing net DSO proxy target 120, achievable scope not established",
+      "effect": "one-time conditional cash release",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "closing_net_dso_target_90",
+      "value": 1272.6965256849312,
+      "unit": "SAR million",
+      "formula": "FY25 net AR - FY25 revenue * 90/365",
+      "inputs": "03_RAW_DATA!E37,E8",
+      "assumption": "Closing net DSO proxy target 90, achievable scope not established",
+      "effect": "one-time conditional cash release",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "contract_asset_10pct",
+      "value": 117.31973249999999,
+      "unit": "SAR million",
+      "formula": "FY25 net contract assets * 10%",
+      "inputs": "03_RAW_DATA!E38",
+      "assumption": "10% accelerated billing followed by actual collection",
+      "effect": "one-time conditional cash release; may overlap DSO scenario",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "gross_margin_plus_0.5pp",
+      "value": 47.32442494,
+      "unit": "SAR million",
+      "formula": "FY25 revenue * margin improvement",
+      "inputs": "03_RAW_DATA!E8",
+      "assumption": "0.5 percentage-point margin increase with sales, opex and volume constant",
+      "effect": "annualized gross profit sensitivity, before implementation costs and zakat",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "gross_margin_plus_1pp",
+      "value": 94.64884988,
+      "unit": "SAR million",
+      "formula": "FY25 revenue * margin improvement",
+      "inputs": "03_RAW_DATA!E8",
+      "assumption": "1 percentage-point margin increase with sales, opex and volume constant",
+      "effect": "annualized gross profit sensitivity, before implementation costs and zakat",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "GA_3pct",
+      "value": 22.45558716,
+      "unit": "SAR million",
+      "formula": "FY25 G&A * 3%",
+      "inputs": "03_RAW_DATA!E14",
+      "assumption": "3% avoidable G&A, service capacity unchanged",
+      "effect": "annual cost sensitivity; not verified avoidable spend",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "borrowing_cost_50bp",
+      "value": 9.867040105,
+      "unit": "SAR million",
+      "formula": "closing borrowing * 0.5%",
+      "inputs": "03_RAW_DATA!E58,E65",
+      "assumption": "whole closing debt repriced for a year, fees/rate resets and deposits unchanged",
+      "effect": "annual finance-cost sensitivity; must net foregone deposit income if repaying",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "cash_conversion_back_to_2024",
+      "value": 764.0868606465326,
+      "unit": "SAR million",
+      "formula": "FY25 CFO - FY25 NI * FY24 CFO/NI",
+      "inputs": "03_RAW_DATA!D86,D27,E86,E27",
+      "assumption": "FY25 cash conversion falls to FY24 ratio with NI unchanged",
+      "effect": "downside liquidity stress, not forecast or loss",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    },
+    {
+      "scenario": "zakat_reversal_removed",
+      "value": 2021.3248929999995,
+      "unit": "SAR million",
+      "formula": "FY25 NI - 69",
+      "inputs": "03_RAW_DATA!E27; 09_EXEC_RECOMMENDATION!A10",
+      "assumption": "Workbook narrative approximate SAR69m reversal, subject to exact note33 confirmation",
+      "effect": "illustrative normalized income, no cash savings",
+      "classification": "hypothetical sensitivity, not established saving/loss"
+    }
+  ],
+  "external_evidence": {
+    "official_annual_report": "https://www.elm.sa/en/investor-relations/financial-information/AnnualReports/elm%202025%20Annual%20Report%20-%20English.pdf",
+    "official_signed_fs": "https://www.elm.sa/en/investor-relations/financial-information/FinancialStatements/ELM%20YE25%20FS-EN%20Version%20-%20Signed.pdf",
+    "official_results": "https://www.elm.sa/en/investor-relations/financial-information/FinancialStatements/Results%20presentation%20%20-FY2025-EN.pdf",
+    "verified_note18_SAR": {
+      "gross_AR_2025": 4354837350,
+      "AR_allowance_2025": 748333567,
+      "AR_allowance_2024": 588703691,
+      "AR_allowance_acquired": 96216584,
+      "AR_allowance_charge": 63413292,
+      "government_age_over365": 759933884,
+      "private_age_over365": 597216002,
+      "over365_total": 1357149886,
+      "workbook_claim_government_approx": 710000000,
+      "workbook_claim_total_approx": 1307000000
+    },
+    "verified_note19_SAR": {
+      "gross_contract_assets": 1343248416,
+      "net_contract_assets": 1173197325,
+      "contract_allowance": 170051091,
+      "contract_allowance_acquired": 807474,
+      "contract_allowance_charge": 42297036
+    },
+    "external_results_SAR_million_rounded": {
+      "thiqah_revenue_digital": 505,
+      "thiqah_revenue_bpo": 583,
+      "thiqah_operating_loss": 69.7,
+      "thiqah_net_loss": 63
+    },
+    "cashflow_detail_SAR": {
+      "AR_change_operating": -481019256,
+      "contract_assets_change_operating": -177156910,
+      "payables_change_operating": 465636618,
+      "contract_liabilities_change_operating": 231991172,
+      "murabaha_income_received": 142867423,
+      "PPE_intangibles_purchases": 144205897,
+      "CWIP_purchases": 185845000,
+      "acquisition_net_cash_out": 3141074348,
+      "loan_drawdown": 1900000000,
+      "dividends_paid": 661212437
+    },
+    "reclassification_note39_SAR": {
+      "FY2024_cost_of_revenue_reduction": 5371520,
+      "FY2024_GA_increase": 5371520
+    },
+    "verification_limit": "Retrieved indexed official tables using web search; direct PDF download/open failed. No independent access to all acquisition/cash/debt note pages.",
+    "derived": {
+      "gross_AR_days": 167.93818781371968,
+      "age_over365_gross_AR_pct": 0.3116419229756078,
+      "AR_allowance_coverage": 0.17183961348177562,
+      "AR_allowance_growth_acquired_share": 0.6027479718144992,
+      "thiqah_contribution_revenue_rounded": 1088,
+      "growth_ex_thiqah_approx": 0.13097306788184304,
+      "thiqah_share_total_revenue_growth_approx": 0.528645341172558,
+      "CFO_after_PPE_CWIP": 2332.692309,
+      "operating_AR_contract_outflow": 658.176166,
+      "operating_payables_contract_inflow": 697.62779,
+      "contract_assets_increase_not_in_operating_cashflow": 354.37272199999984,
+      "cash_deposits_year_increase": 465.50349899999947
+    }
+  },
+  "formula_verification": {
+    "formulas": 160,
+    "matched": 160,
+    "errors": []
+  }
+}

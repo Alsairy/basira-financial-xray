@@ -1,0 +1,527 @@
+{
+  "base": "http://127.0.0.1:4317",
+  "run_id": "mujvs2kg",
+  "started_at": "2026-09-27T13:55:15.328Z",
+  "fixture": "balanced.xlsx",
+  "synthetic": true,
+  "finished_at": "2026-09-27T13:55:19.459Z",
+  "summary": {
+    "passed": 36,
+    "failed": 0,
+    "blocked": 0
+  },
+  "results": [
+    {
+      "id": "AUTH-01",
+      "features": [
+        "F01"
+      ],
+      "name": "Health and anonymous session boundary",
+      "status": "passed",
+      "duration_ms": 44,
+      "evidence": null
+    },
+    {
+      "id": "AUTH-02",
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "name": "Register actual tenant, provision independent roles, log in",
+      "status": "passed",
+      "duration_ms": 417,
+      "evidence": {
+        "roles": [
+          "cfo",
+          "analyst",
+          "operator",
+          "board",
+          "reviewer"
+        ],
+        "tenant_id": "5a086a1b-40b3-4eb7-8414-d112bdbffe2d",
+        "entity_id": "9e83d88b-4357-4000-bad6-7ef96bd74526"
+      }
+    },
+    {
+      "id": "AUTH-03",
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "name": "CSRF and member provisioning restrictions",
+      "status": "passed",
+      "duration_ms": 15,
+      "evidence": null
+    },
+    {
+      "id": "DATA-01",
+      "features": [
+        "F03",
+        "F06",
+        "F08",
+        "F09"
+      ],
+      "name": "Upload XLSX, async extraction, units and source provenance",
+      "status": "passed",
+      "duration_ms": 840,
+      "evidence": {
+        "facts": 90,
+        "dataset_id": "541aaaba-9cbc-439b-9832-f303f9784232",
+        "document_id": "2ed4ba5b-d2a1-4877-910a-b37bedc71761"
+      }
+    },
+    {
+      "id": "DATA-02",
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "name": "Tenant and board source boundaries",
+      "status": "passed",
+      "duration_ms": 15,
+      "evidence": null
+    },
+    {
+      "id": "DATA-03",
+      "features": [
+        "F02",
+        "F08",
+        "F11"
+      ],
+      "name": "Approval refuses uploader and unreviewed facts",
+      "status": "passed",
+      "duration_ms": 6,
+      "evidence": null
+    },
+    {
+      "id": "DATA-04",
+      "features": [
+        "F09",
+        "F12"
+      ],
+      "name": "Review all facts with revision conflict protection",
+      "status": "passed",
+      "duration_ms": 18,
+      "evidence": null
+    },
+    {
+      "id": "CALC-01",
+      "features": [
+        "F10",
+        "F14",
+        "F15",
+        "F22"
+      ],
+      "name": "Real calculated analysis with source-backed metrics/findings",
+      "status": "passed",
+      "duration_ms": 92,
+      "evidence": {
+        "analysis_id": "7e518c75-96b9-4783-919e-ff5d72f91d50",
+        "metric_count": 105
+      }
+    },
+    {
+      "id": "REPORT-01",
+      "features": [
+        "F02",
+        "F11",
+        "F26"
+      ],
+      "name": "Dataset approval gate and independent report approval",
+      "status": "passed",
+      "duration_ms": 201,
+      "evidence": {
+        "report_id": "c5cab1ad-9696-48fd-a010-01cda03c3358"
+      }
+    },
+    {
+      "id": "SCENARIO-01",
+      "features": [
+        "F20",
+        "F21"
+      ],
+      "name": "Collection scenario cash timing calculated from actual credit sales",
+      "status": "passed",
+      "duration_ms": 58,
+      "evidence": null
+    },
+    {
+      "id": "SCENARIO-02",
+      "features": [
+        "F20",
+        "F21"
+      ],
+      "name": "Reject invalid type, order, bounds, nulls and numeric strings",
+      "status": "passed",
+      "duration_ms": 33,
+      "evidence": null
+    },
+    {
+      "id": "PEER-01",
+      "features": [
+        "F17",
+        "F18",
+        "F19"
+      ],
+      "name": "Peer metadata and metric validation rejects arbitrary benchmarks",
+      "status": "passed",
+      "duration_ms": 13,
+      "evidence": null
+    },
+    {
+      "id": "PEER-02",
+      "features": [
+        "F17",
+        "F18",
+        "F19"
+      ],
+      "name": "Benchmark cohort eligibility and minimum sample size",
+      "status": "passed",
+      "duration_ms": 28,
+      "evidence": {
+        "eligible_sample": 5,
+        "excluded": 1
+      }
+    },
+    {
+      "id": "ACTION-01",
+      "features": [
+        "F01",
+        "F27"
+      ],
+      "name": "Action required values and tenant owner validation",
+      "status": "passed",
+      "duration_ms": 22,
+      "evidence": null
+    },
+    {
+      "id": "ACTION-02",
+      "features": [
+        "F27",
+        "F28",
+        "F29"
+      ],
+      "name": "Evidence-gated closure by an independent reviewer",
+      "status": "passed",
+      "duration_ms": 20,
+      "evidence": {
+        "action_id": "e27ba826-3b1e-4ae3-aa42-286069933c95"
+      }
+    },
+    {
+      "id": "ACTION-03",
+      "features": [
+        "F29",
+        "F32",
+        "F33"
+      ],
+      "name": "Benefit requires independent reviewer and measurement metadata",
+      "status": "passed",
+      "duration_ms": 14,
+      "evidence": null
+    },
+    {
+      "id": "ACTION-04",
+      "features": [
+        "F28",
+        "F29",
+        "F33"
+      ],
+      "name": "Second action cannot double-count overlapping benefit; evidence access scoped",
+      "status": "passed",
+      "duration_ms": 27,
+      "evidence": null
+    },
+    {
+      "id": "AUDIENCE-01",
+      "features": [
+        "F22",
+        "F24",
+        "F25",
+        "F26",
+        "F34"
+      ],
+      "name": "Audience changes structured content while preserving financial facts",
+      "status": "passed",
+      "duration_ms": 274,
+      "evidence": {
+        "audiences": [
+          "board",
+          "ceo",
+          "cfo",
+          "sales",
+          "analyst",
+          "sector",
+          "operations"
+        ],
+        "sections": {
+          "board": [
+            "purpose_focus",
+            "decision_brief",
+            "material_risks",
+            "capital_allocation",
+            "execution_assurance",
+            "evidence_appendix"
+          ],
+          "ceo": [
+            "purpose_focus",
+            "executive_reading",
+            "strengths",
+            "watchpoints",
+            "management_questions",
+            "next_90_days",
+            "evidence_appendix"
+          ],
+          "cfo": [
+            "purpose_focus",
+            "financial_control",
+            "reconciliation",
+            "cash_and_working_capital",
+            "scenario_assumptions",
+            "funding_and_covenants",
+            "benefit_ledger",
+            "evidence_appendix"
+          ],
+          "sales": [
+            "purpose_focus",
+            "commercial_context",
+            "revenue_quality",
+            "collections_handoff",
+            "customer_economics",
+            "commercial_actions",
+            "missing_data",
+            "evidence_appendix"
+          ],
+          "analyst": [
+            "purpose_focus",
+            "analytical_scope",
+            "metric_dictionary",
+            "source_lineage",
+            "comparability",
+            "sensitivity",
+            "limitations",
+            "evidence_appendix"
+          ],
+          "sector": [
+            "purpose_focus",
+            "unit_scope",
+            "segment_performance",
+            "controllable_costs",
+            "unit_actions",
+            "missing_data",
+            "evidence_appendix"
+          ],
+          "operations": [
+            "purpose_focus",
+            "operating_context",
+            "margin_drivers",
+            "work_to_cash",
+            "delivery_actions",
+            "missing_data",
+            "evidence_appendix"
+          ]
+        }
+      }
+    },
+    {
+      "id": "AUDIENCE-02",
+      "features": [
+        "F01",
+        "F02",
+        "F34"
+      ],
+      "name": "Audience selection cannot elevate board role or raw-source access",
+      "status": "passed",
+      "duration_ms": 11,
+      "evidence": null
+    },
+    {
+      "id": "AUDIENCE-03",
+      "features": [
+        "F22",
+        "F24"
+      ],
+      "name": "Purpose and depth change actual report content",
+      "status": "passed",
+      "duration_ms": 77,
+      "evidence": null
+    },
+    {
+      "id": "LANGUAGE-01",
+      "features": [
+        "F25"
+      ],
+      "name": "Arabic and English report sections preserve identical financial definitions",
+      "status": "passed",
+      "duration_ms": 61,
+      "evidence": null
+    },
+    {
+      "id": "FINDING-01",
+      "features": [
+        "F23",
+        "F26"
+      ],
+      "name": "CFO rejection after draft preparation blocks stale publication",
+      "status": "passed",
+      "duration_ms": 56,
+      "evidence": null
+    },
+    {
+      "id": "FINDING-02",
+      "features": [
+        "F23"
+      ],
+      "name": "New report omits rejected findings from decision/watchpoint sections",
+      "status": "passed",
+      "duration_ms": 41,
+      "evidence": null
+    },
+    {
+      "id": "REPORT-02",
+      "features": [
+        "F12",
+        "F13",
+        "F16",
+        "F19",
+        "F26"
+      ],
+      "name": "Fact edit invalidates approval and stale analyses; frozen report unchanged",
+      "status": "passed",
+      "duration_ms": 341,
+      "evidence": null
+    },
+    {
+      "id": "DATA-05",
+      "features": [
+        "F11"
+      ],
+      "name": "Material imbalance blocks dataset approval after human review",
+      "status": "passed",
+      "duration_ms": 893,
+      "evidence": null
+    },
+    {
+      "id": "DATA-06",
+      "features": [
+        "F04"
+      ],
+      "name": "Duplicate source ingestion is prevented or explicitly identified",
+      "status": "passed",
+      "duration_ms": 8,
+      "evidence": null
+    },
+    {
+      "id": "DATA-07",
+      "features": [
+        "F03"
+      ],
+      "name": "Unsupported type and missing upload rights fail safely",
+      "status": "passed",
+      "duration_ms": 6,
+      "evidence": null
+    },
+    {
+      "id": "ASSISTANT-01",
+      "features": [
+        "F22",
+        "F34"
+      ],
+      "name": "Board assistant restricted to approved report with evidence",
+      "status": "passed",
+      "duration_ms": 9,
+      "evidence": null
+    },
+    {
+      "id": "CONTROL-01",
+      "features": [
+        "F02",
+        "F16",
+        "F35"
+      ],
+      "name": "Settings authority and audit attribution",
+      "status": "passed",
+      "duration_ms": 8,
+      "evidence": null
+    },
+    {
+      "id": "CONTROL-02",
+      "features": [
+        "F16",
+        "F26",
+        "F35"
+      ],
+      "name": "Settings versions invalidate drafts and downloads are audited",
+      "status": "passed",
+      "duration_ms": 170,
+      "evidence": null
+    },
+    {
+      "id": "DATA-08",
+      "features": [
+        "F03",
+        "F27"
+      ],
+      "name": "Malformed short XLSX and impossible dates return controlled errors",
+      "status": "passed",
+      "duration_ms": 14,
+      "evidence": null
+    },
+    {
+      "id": "DATA-09",
+      "features": [
+        "F03",
+        "F08"
+      ],
+      "name": "Validated CSV upload uses real extraction and currency units",
+      "status": "passed",
+      "duration_ms": 213,
+      "evidence": null
+    },
+    {
+      "id": "VERSION-01",
+      "features": [
+        "F01",
+        "F12",
+        "F13"
+      ],
+      "name": "Historical dataset versions retain original fact values and attribution",
+      "status": "passed",
+      "duration_ms": 17,
+      "evidence": null
+    },
+    {
+      "id": "NOTIFY-01",
+      "features": [
+        "F01",
+        "F30"
+      ],
+      "name": "Overdue reminders reach owner and CFO once per business date",
+      "status": "passed",
+      "duration_ms": 46,
+      "evidence": null
+    },
+    {
+      "id": "USAGE-01",
+      "features": [
+        "F01",
+        "F37"
+      ],
+      "name": "Actual engine usage is distinct from declared review cost and inactive providers",
+      "status": "passed",
+      "duration_ms": 13,
+      "evidence": null
+    },
+    {
+      "id": "AUTH-04",
+      "features": [
+        "F01",
+        "F02"
+      ],
+      "name": "Logout revokes server session",
+      "status": "passed",
+      "duration_ms": 3,
+      "evidence": null
+    }
+  ]
+}

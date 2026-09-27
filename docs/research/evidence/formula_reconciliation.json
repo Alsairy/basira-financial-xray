@@ -1,0 +1,1122 @@
+[
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C10",
+    "computed": 2331724.276,
+    "cached": 2331724.276,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D10",
+    "computed": 3031091.869,
+    "cached": 3031091.869,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E10",
+    "computed": 3677552.198,
+    "cached": 3677552.198,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C15",
+    "computed": 855249.012,
+    "cached": 855249.0120000001,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D15",
+    "computed": 1110457.3869999999,
+    "cached": 1110457.387,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E15",
+    "computed": 1362970.2580000001,
+    "cached": 1362970.258,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C18",
+    "computed": 1350583.672,
+    "cached": 1350583.672,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D18",
+    "computed": 1700452.424,
+    "cached": 1700452.4239999999,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E18",
+    "computed": 2029947.2279999994,
+    "cached": 2029947.228,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C24",
+    "computed": 128529.96,
+    "cached": 128529.95999999999,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D24",
+    "computed": 281863.218,
+    "cached": 281863.218,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E24",
+    "computed": 211888.025,
+    "cached": 211888.02500000002,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C25",
+    "computed": 1473252.403,
+    "cached": 1473252.403,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D25",
+    "computed": 1953868.3820000002,
+    "cached": 1953868.3819999998,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E25",
+    "computed": 2136035.8719999995,
+    "cached": 2136035.872,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C27",
+    "computed": 1356194.754,
+    "cached": 1356194.754,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D27",
+    "computed": 1826848.468,
+    "cached": 1826848.4679999996,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E27",
+    "computed": 2090324.8929999995,
+    "cached": 2090324.893,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C30",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D30",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E30",
+    "computed": -0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C43",
+    "computed": 391674.466,
+    "cached": 391674.466,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D43",
+    "computed": 812744.68,
+    "cached": 812744.6799999999,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E43",
+    "computed": 879467.745,
+    "cached": 879467.7450000001,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C44",
+    "computed": 7002162.096,
+    "cached": 7002162.096,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D44",
+    "computed": 8026503.329,
+    "cached": 8026503.329,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E44",
+    "computed": 9801540.531,
+    "cached": 9801540.531,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C53",
+    "computed": 262076.92299999998,
+    "cached": 262076.92299999998,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D53",
+    "computed": 330046.091,
+    "cached": 330046.09099999996,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E53",
+    "computed": 352804.309,
+    "cached": 352804.309,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C54",
+    "computed": 1095050.542,
+    "cached": 1095050.542,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D54",
+    "computed": 1527551.6820000003,
+    "cached": 1527551.6820000003,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E54",
+    "computed": 2085448.3399999999,
+    "cached": 2085448.3399999999,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C55",
+    "computed": 8097212.638,
+    "cached": 8097212.638,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D55",
+    "computed": 9554055.011,
+    "cached": 9554055.011,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E55",
+    "computed": 11886988.871,
+    "cached": 11886988.871,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C63",
+    "computed": 724705.544,
+    "cached": 724705.544,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D63",
+    "computed": 912980.6429999999,
+    "cached": 912980.6429999999,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E63",
+    "computed": 1670432.551,
+    "cached": 1670432.551,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C64",
+    "computed": 3529760.9680000003,
+    "cached": 3529760.9680000003,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D64",
+    "computed": 3392560.666,
+    "cached": 3392560.666,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E64",
+    "computed": 5605589.021,
+    "cached": 5605589.021,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C68",
+    "computed": 572779.816,
+    "cached": 572779.816,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D68",
+    "computed": 868248.7690000001,
+    "cached": 868248.7690000001,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E68",
+    "computed": 1140091.0,
+    "cached": 1140091,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C69",
+    "computed": 572779.816,
+    "cached": 572779.816,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D69",
+    "computed": 868248.7690000001,
+    "cached": 868248.7690000001,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E69",
+    "computed": 2660091.0,
+    "cached": 2660091,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C70",
+    "computed": 4102540.7840000005,
+    "cached": 4102540.7840000005,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D70",
+    "computed": 4260809.4350000005,
+    "cached": 4260809.4350000005,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E70",
+    "computed": 8265680.021,
+    "cached": 8265680.021,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C77",
+    "computed": 3994507.854,
+    "cached": 3994507.854,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D77",
+    "computed": 5293104.694,
+    "cached": 5293104.694,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E77",
+    "computed": 3621196.079,
+    "cached": 3621196.079,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C79",
+    "computed": 3994671.854,
+    "cached": 3994671.854,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D79",
+    "computed": 5293245.576,
+    "cached": 5293245.576,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E79",
+    "computed": 3621308.85,
+    "cached": 3621308.85,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C80",
+    "computed": 8097212.638,
+    "cached": 8097212.638,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D80",
+    "computed": 9554055.011,
+    "cached": 9554055.011,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E80",
+    "computed": 11886988.871,
+    "cached": 11886988.871,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C81",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D81",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E81",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C89",
+    "computed": -204284.78400000022,
+    "cached": -204284.78400000022,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D89",
+    "computed": 1866403.4369999997,
+    "cached": 1866403.4369999997,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E89",
+    "computed": -414427.60700000054,
+    "cached": -414427.60700000054,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C92",
+    "computed": 384394.6069999997,
+    "cached": 384394.6069999997,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D92",
+    "computed": 2250797.1789999995,
+    "cached": 2250797.1789999995,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E92",
+    "computed": 1836371.6779999994,
+    "cached": 1836371.6779999994,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "C93",
+    "computed": -0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "D93",
+    "computed": -0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "03_RAW_DATA",
+    "cell": "E93",
+    "computed": -0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C6",
+    "computed": 0.39531719889921185,
+    "cached": 0.39531719889921185,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D6",
+    "computed": 0.40923126854736747,
+    "cached": 0.40923126854736747,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E6",
+    "computed": 0.3885469504027321,
+    "cached": 0.3885469504027321,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "F6",
+    "computed": "30–33% → above range throughout, worsening",
+    "cached": "30–33% → above range throughout, worsening",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C7",
+    "computed": 0.22897602413350346,
+    "cached": 0.22897602413350346,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D7",
+    "computed": 0.22958007630680824,
+    "cached": 0.2295800763068082,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E7",
+    "computed": 0.21447140990869476,
+    "cached": 0.21447140990869482,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "F7",
+    "computed": "9–11% → above range throughout, worsening",
+    "cached": "9–11% → above range throughout, worsening",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C8",
+    "computed": 0.2299273189507616,
+    "cached": 0.2299273189507616,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D8",
+    "computed": 0.24664495446325746,
+    "cached": 0.24664495446325738,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E8",
+    "computed": 0.22085053285382822,
+    "cached": 0.22085053285382827,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "F8",
+    "computed": "6–8% → above range throughout, worsening",
+    "cached": "6–8% → above range throughout, worsening",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C9",
+    "computed": 0.16748908724903858,
+    "cached": 0.16748908724903858,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D9",
+    "computed": 0.19121184312804038,
+    "cached": 0.19121184312804032,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E9",
+    "computed": 0.17584982333916746,
+    "cached": 0.1758498233391675,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C10",
+    "computed": 0.3395009161120447,
+    "cached": 0.3395009161120447,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D10",
+    "computed": 0.34512822837524815,
+    "cached": 0.3451282283752481,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E10",
+    "computed": 0.5772291123415224,
+    "cached": 0.5772291123415225,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C15",
+    "computed": 1.9837496531578167,
+    "cached": 1.9837496531578167,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D15",
+    "computed": 2.365912984089287,
+    "cached": 2.365912984089287,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E15",
+    "computed": 1.748529992884043,
+    "cached": 1.748529992884043,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "F15",
+    "computed": "1.3–1.6x → above range throughout, worsening",
+    "cached": "1.3–1.6x → above range throughout, worsening",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C16",
+    "computed": 1.7436128020553257,
+    "cached": 1.7436128020553257,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D16",
+    "computed": 2.1767733470502955,
+    "cached": 2.1767733470502955,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E16",
+    "computed": 1.5392393508828375,
+    "cached": 1.5392393508828375,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C17",
+    "computed": 0.9747142302809891,
+    "cached": 0.9747142302809891,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D17",
+    "computed": 1.083803221516216,
+    "cached": 1.083803221516216,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E17",
+    "computed": 0.7389717052894165,
+    "cached": 0.7389717052894165,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C22",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D22",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E22",
+    "computed": 0.5449433071691745,
+    "cached": 0.5449433071691745,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "F22",
+    "computed": "1.0–1.3x → below range throughout, rising",
+    "cached": "1.0–1.3x → below range throughout, rising",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C23",
+    "computed": 0.5066608680556179,
+    "cached": 0.5066608680556179,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D23",
+    "computed": 0.4459686939309377,
+    "cached": 0.4459686939309377,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E23",
+    "computed": 0.6953552418279201,
+    "cached": 0.6953552418279201,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C24",
+    "computed": 230.42670265911806,
+    "cached": 230.42670265911806,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D24",
+    "computed": 59.7756136794897,
+    "cached": 59.775613679489695,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E24",
+    "computed": 19.186759022720555,
+    "cached": 19.186759022720558,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C29",
+    "computed": 0.7284436143271257,
+    "cached": 0.7284436143271257,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D29",
+    "computed": 0.7752513873399551,
+    "cached": 0.7752513873399551,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E29",
+    "computed": 0.7962390720404335,
+    "cached": 0.7962390720404335,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C30",
+    "computed": "n/a",
+    "cached": "n/a",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D30",
+    "computed": "n/a",
+    "cached": "n/a",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E30",
+    "computed": "n/a",
+    "cached": "n/a",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "F30",
+    "computed": "8.0–9.0x → n/a (no inventory reported)",
+    "cached": "8.0–9.0x → n/a (no inventory reported)",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C31",
+    "computed": 2.539821060616296,
+    "cached": 2.539821060616296,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D31",
+    "computed": 2.5582813387765775,
+    "cached": 2.5582813387765775,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E31",
+    "computed": 2.624393472873837,
+    "cached": 2.624393472873837,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C32",
+    "computed": 143.71091163069244,
+    "cached": 143.71091163069244,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D32",
+    "computed": 142.67390942020103,
+    "cached": 142.67390942020103,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E32",
+    "computed": 139.07975453098024,
+    "cached": 139.07975453098024,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "F32",
+    "computed": "50–55 days → above range throughout, improving",
+    "cached": "50–55 days → above range throughout, improving",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C33",
+    "computed": "n/a",
+    "cached": "n/a",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D33",
+    "computed": "n/a",
+    "cached": "n/a",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E33",
+    "computed": "n/a",
+    "cached": "n/a",
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "C34",
+    "computed": 287.0616720444343,
+    "cached": 287.0616720444343,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "D34",
+    "computed": 206.83460577346335,
+    "cached": 206.83460577346335,
+    "match": true
+  },
+  {
+    "sheet": "05_ANALYSIS",
+    "cell": "E34",
+    "computed": 219.5896158038287,
+    "cached": 219.5896158038287,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B6",
+    "computed": 0.2299273189507616,
+    "cached": 0.2299273189507616,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C6",
+    "computed": 0.24664495446325746,
+    "cached": 0.24664495446325738,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D6",
+    "computed": 0.22085053285382822,
+    "cached": 0.22085053285382827,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B7",
+    "computed": 0.7284436143271257,
+    "cached": 0.7284436143271257,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C7",
+    "computed": 0.7752513873399551,
+    "cached": 0.7752513873399551,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D7",
+    "computed": 0.7962390720404335,
+    "cached": 0.7962390720404335,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B8",
+    "computed": 2.0270032017503485,
+    "cached": 2.0270032017503485,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C8",
+    "computed": 1.8049521553125838,
+    "cached": 1.8049521553125838,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D8",
+    "computed": 3.282511755659835,
+    "cached": 3.282511755659835,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B9",
+    "computed": 0.33950091611204475,
+    "cached": 0.33950091611204475,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C9",
+    "computed": 0.3451282283752482,
+    "cached": 0.3451282283752481,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D9",
+    "computed": 0.5772291123415224,
+    "cached": 0.5772291123415226,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B10",
+    "computed": 0.3395009161120447,
+    "cached": 0.3395009161120447,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C10",
+    "computed": 0.34512822837524815,
+    "cached": 0.3451282283752481,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D10",
+    "computed": 0.5772291123415224,
+    "cached": 0.5772291123415225,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B11",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C11",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D11",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B16",
+    "computed": 143.71091163069244,
+    "cached": 143.71091163069244,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C16",
+    "computed": 142.67390942020103,
+    "cached": 142.67390942020103,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D16",
+    "computed": 139.07975453098024,
+    "cached": 139.07975453098024,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B17",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C17",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D17",
+    "computed": 0.0,
+    "cached": 0,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B18",
+    "computed": 287.0616720444343,
+    "cached": 287.0616720444343,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C18",
+    "computed": 206.83460577346335,
+    "cached": 206.83460577346335,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D18",
+    "computed": 219.5896158038287,
+    "cached": 219.5896158038287,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "B19",
+    "computed": -143.35076041374188,
+    "cached": -143.35076041374188,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "C19",
+    "computed": -64.16069635326232,
+    "cached": -64.16069635326232,
+    "match": true
+  },
+  {
+    "sheet": "06_MODEL",
+    "cell": "D19",
+    "computed": -80.50986127284847,
+    "cached": -80.50986127284847,
+    "match": true
+  }
+]

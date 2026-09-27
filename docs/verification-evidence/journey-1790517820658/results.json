@@ -1,0 +1,41 @@
+{
+  "base": "http://127.0.0.1:4317",
+  "steps": [
+    {
+      "name": "Visible welcome and demo entry",
+      "status": "passed",
+      "at": "2026-09-27T14:03:42.928Z"
+    },
+    {
+      "name": "Analyst opens real upload flow",
+      "status": "passed",
+      "at": "2026-09-27T14:03:44.168Z"
+    },
+    {
+      "name": "Source inspector and real fact review",
+      "status": "passed",
+      "at": "2026-09-27T14:03:44.933Z"
+    },
+    {
+      "name": "Separate CFO approves data in UI",
+      "status": "passed",
+      "at": "2026-09-27T14:03:45.340Z"
+    },
+    {
+      "name": "Analyst creates audience-specific report",
+      "status": "passed",
+      "at": "2026-09-27T14:03:46.665Z"
+    },
+    {
+      "name": "Independent CFO approves report and preview renders",
+      "status": "passed",
+      "at": "2026-09-27T14:03:47.473Z"
+    },
+    {
+      "name": "Board reads only approved report",
+      "status": "passed",
+      "at": "2026-09-27T14:03:48.305Z"
+    }
+  ],
+  "errors": []
+}

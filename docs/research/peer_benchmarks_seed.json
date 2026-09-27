@@ -1,0 +1,475 @@
+{
+  "_readme": "Seed data matching the POST /peers body shape in docs/CONTRACT.md: {entity_id,name,sector,country,currency,period,source_url,rights_basis,metrics,definition_notes}. entity_id is intentionally left null — it must be set to the real target tenant/entity id at import time, per company being analyzed. metrics keys reuse Basira's own engine/metrics.py METAdict keys (gross_margin, ebit_margin, net_margin, receivables_days, roe) so peer figures compare like-for-like with the engine's own metric definitions. Values not in that canonical metric set (revenue, net_debt, equity) are supplied only inside definition_notes for context, not as metrics keys, to avoid inventing benchmark fields the engine doesn't recognize. Expanded 27 Sep 2026 from 5 to 23 peers across three sector buckets (IT services/systems integration, commercial & professional services, transportation & logistics). See 06_Peer_Benchmark_Dataset_AR.md for full sourcing, confidence tiers, comparability caveats and flagged anomalies pending primary-source verification before any commercial use. Re-verified against primary statements 27 Sep 2026 (round 3): 19 of 23 peers freshly checked; 5 total (across all rounds) had a repeatable aggregator bug conflating trade receivables with contract assets, now corrected. See 06_Peer_Benchmark_Dataset_AR.md for the full trail.",
+  "generated_date": "2026-09-27",
+  "currency_basis": "SAR",
+  "sector_buckets": {
+    "it_services": [
+      "Saudi Networkers Services Company (SNS)",
+      "Sure Global Tech Co.",
+      "Naseej for Technology Co.",
+      "Perfect Presentation for Commercial Services Co.",
+      "Edarat Communication and Information Technology Co.",
+      "Saudi Azm for Communication and Information Technology Co.",
+      "Al Moammar Information Systems Company (MIS)",
+      "Solutions by stc (Arabian Internet and Communications Services Company)"
+    ],
+    "commercial_services": [
+      "Maharah for Human Resources Company",
+      "Al Mawarid Manpower Company",
+      "Tamkeen Human Resources Company",
+      "Shalfa Facilities Management Company",
+      "Saudi Manpower Solutions Company (SMASCO)",
+      "Saudi Airlines Catering Company (CATRION)"
+    ],
+    "transport_logistics": [
+      "Saudi Ground Services Company (SGS)",
+      "National Shipping Company of Saudi Arabia (Bahri)",
+      "Saudi Public Transport Company (SAPTCO)",
+      "United International Transportation Company (Budget Saudi)",
+      "Theeb Rent a Car Company",
+      "Lumi Rental Company",
+      "Cherry Trading Company",
+      "Flynas (National Air Services Company)",
+      "SAL Saudi Logistics Services Company"
+    ]
+  },
+  "peers": [
+    {
+      "entity_id": null,
+      "name": "Al Moammar Information Systems Company (MIS)",
+      "sector": "IT services / systems integration (Tadawul: Software & Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://argaamplus.s3.amazonaws.com/50a42be5-f42d-4870-9922-a8173a86a659.pdf",
+      "rights_basis": "PRIMARY SOURCE, VERIFIED 2026-09-27: MIS's own interim condensed consolidated financial statements (three-month period ended 31 March 2025, auditor-reviewed), which carry an AUDITED comparative balance sheet as at 31 December 2024 (Notes 9A, 10, 13, 20) — hosted via Argaam's regulatory-filing mirror, not aggregator-computed data. Income-statement figures separately corroborated by the official Tadawul/Saudi Exchange FY2024 results announcement. Publicly disclosed; non-exclusive reference use only; no data redistribution or commercial resale license confirmed; the company's own annual-report PDF on saudiexchange.sa could not be fetched programmatically (bot-blocked, HTTP 403) — access it directly in a browser to cross-check before commercial use.",
+      "metrics": {
+        "gross_margin": 21.27,
+        "ebit_margin": 9.98,
+        "net_margin": 10.22,
+        "receivables_days": 206.7,
+        "roe": 29.47
+      },
+      "definition_notes": "Revenue 1,213M SAR (down 16.9% YoY), gross profit 258M, operating profit 121M, net profit 124M — official FY2024 results. VERIFIED 2026-09-27 against primary statements (Note 10, 'Trade and other receivables', audited Dec-2024 column): true net trade+other receivables = SAR 686.92M (trade receivables external 725.85M less ECL allowance 53.60M, plus other receivables 14.67M) — NOT the 1,524M the aggregator had reported. Corrected receivables_days = 686.92/1213*365 = 206.7 (was wrongly 458.5). The aggregator's 1,524M figure conflated receivables with a SEPARATE balance-sheet concept: contract assets/'unbilled receivables' (Note 9A, audited Dec-2024), net SAR 1,060.57M (gross 1,133.51M less ECL allowance on contract assets 72.94M) — exactly the receivables-vs-contract-assets distinction Basira's own engine enforces via separate 'receivables' and 'contract_assets' concepts/metrics. Combined receivables+contract-assets days (686.92+1060.57)/1213*365 ≈ 526 days — actually HIGHER than the aggregator's erroneous 458.5, showing the aggregator's error was definitional conflation, not overstatement. Cash (179.06M) and total borrowings (878.47M, Murabaha 832.45M + conventional 46.02M, both from Note 20) matched the prior aggregator figures exactly on primary-source verification — the receivables/contract-assets line was the aggregator's only material error found. SEPARATE FINDING: FY2024 net profit is materially inflated by one-off items per the official results announcement — SAR 58M one-time gain on disposal of a 10% stake in associate Edarat Telecommunication and IT, SAR 25M one-time fair-value gain on data-center revaluation, and zero incremental ECL charge vs SAR 87M in FY2023 — roughly SAR 83M (~67%) of the SAR 124M net profit is non-recurring; net_margin 10.22% should not be read as a recurring operating margin (gross/operating margins are unaffected, being above the one-off items). Net debt (debt − cash) ≈ 699M SAR, unchanged and confirmed.",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Saudi Manpower Solutions Company (SMASCO)",
+      "sector": "Commercial services / staffing & manpower outsourcing (Tadawul: Commercial & Professional Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.saudiexchange.sa/wps/portal/saudiexchange/newsandreports/issuer-news/issuer-announcements/issuer-announcements-details/?anId=81880&anCat=1&cs=1834&locale=en",
+      "rights_basis": "Publicly disclosed regulatory announcement and third-party aggregator (stockanalysis.com) cross-check; non-exclusive reference use only; no redistribution license confirmed; verify against the company's own audited FY2024 statements before commercial use.",
+      "metrics": {
+        "gross_margin": 11.15,
+        "ebit_margin": 6.99,
+        "net_margin": 6.68,
+        "receivables_days": 65.7,
+        "roe": 21.06
+      },
+      "definition_notes": "NO CHANGE — re-verified independently in this round and reached the identical conclusion already on record: SMASCO's own FY2024 official Board of Directors Report confirms revenue 1,892.9M SAR, gross profit 211.0M, operating profit 132.4M, net profit 126.4M (matching the aggregator's income-statement figures to within rounding), Total Assets 1,095.4M, Total Liabilities 495M, Shareholders' Equity 600.3M (matches aggregator's 600.35M almost exactly) and Return on Shareholders' Equity 21% (matches the 21.06% ROE here). Separately, the company's own condensed consolidated interim statements (period ended 30 September 2024, PKF Al Bassam review, with an AUDITED 31-December-2023 comparative balance sheet) confirm structurally that SMASCO's chart of accounts has NO separate 'contract assets'/unbilled-revenue line — only a single 'Trade receivables, net' line (Note 7) — and that the interim (Sep-2024) trade receivables (340.2M) and cash (40.2M) are very close to the aggregator's claimed 31-Dec-2024 figures (340.77M / 39.64M), which is strong indirect evidence those year-end figures are accurate rather than a conflated combined total. The exact audited 31-Dec-2024 balance sheet line items themselves still could not be located despite two separate genuine attempts (saudiexchange.sa returns HTTP 403 to automated fetch; Argaam's financial-statements page requires a paid subscription; mubasher.info search hits returned unrelated companies) — so the specific receivables/cash/debt figures remain aggregator-sourced pending direct confirmation, though now with unusually strong corroborating evidence from two adjacent primary documents (annual Board Report + interim financial statements) rather than the aggregator alone.",
+      "sector_code": "commercial_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Saudi Airlines Catering Company (CATRION)",
+      "sector": "Commercial services / aviation catering and support services (Tadawul: Commercial & Professional Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.catrion.com/2024-annual-report/pdf/catrion-eng-financials.pdf",
+      "rights_basis": "PRIMARY SOURCE, VERIFIED 2026-09-27: CATRION's own official 2024 Annual Report, audited consolidated financial statements as at/for the year ended 31 December 2024 (unqualified auditor's opinion) — replaces the prior stockanalysis.com aggregator citation entirely. Publicly disclosed; non-exclusive reference use only; no data redistribution or commercial resale license confirmed.",
+      "metrics": {
+        "gross_margin": 27.91,
+        "ebit_margin": 15.68,
+        "net_margin": 15.34,
+        "receivables_days": 113.67,
+        "roe": 24.3
+      },
+      "definition_notes": "VERIFIED 2026-09-27 against primary audited statements. Revenue 2,299,259,701 SAR (+7.8% YoY), gross profit 641,608,724, net profit 352,770,108 (matches prior aggregator figure). CORRECTED: operating profit is 360,516,516, not the previously cited 347.7M — ebit_margin corrected from 15.12% to 15.68%. Balance sheet as at 31 Dec 2024 (primary): 'Trade and unbilled receivables' 716,109,290 (Note 12) — CATRION presents trade receivables and unbilled/contract revenue as ONE COMBINED balance-sheet line by its own design, unlike MIS or Solutions by stc which report them separately; this combined figure cannot be split into a pure-trade-only number from the statements available, so receivables_days here is a combined trade+unbilled measure, not a strict apples-to-apples match to Basira's separate 'receivables' concept. Cash 631,298,642, borrowings current 4,154,218 + non-current 157,290,378 = 161,444,596, equity 1,451,815,663 — all confirmed matching the prior aggregator figures within rounding. Net debt (debt − cash) ≈ -469.9M (net cash), confirmed. Contract/concession-based aviation services business with material working capital and long-cycle institutional (airline) receivables — a reasonable working-capital comparable even though the industry (catering/aviation support) differs from Elm's IT/digital-services model.",
+      "sector_code": "commercial_services"
+    },
+    {
+      "entity_id": null,
+      "name": "SAL Saudi Logistics Services Company",
+      "sector": "Transportation & logistics / airport ground-handling and cargo services (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://sal.sa/report2024/financial-statements/statement-of-profit-or-loss-and-other-comprehensive-income",
+      "rights_basis": "Company's own official Integrated Annual Report 2024, published financial statements pages (sal.sa/report2024) — primary source, highest confidence tier in this set. Publicly disclosed; non-exclusive reference use only; no data redistribution or commercial resale license confirmed.",
+      "metrics": {
+        "gross_margin": 56.02,
+        "ebit_margin": 43.42,
+        "net_margin": 40.48,
+        "receivables_days": 107.3,
+        "roe": 47.17
+      },
+      "definition_notes": "Revenue 1,633.957M SAR (+12.2% YoY), cost of sales 718.742M, gross profit 915.215M, operating profit 709.416M, profit before zakat 694.477M, zakat 33.042M, net profit for the year 661.435M — all from the company's own primary statement of profit or loss (sal.sa/report2024). Statement of financial position (also primary, sal.sa/report2024): total assets 3,232.436M, total current assets 1,978.093M, total current liabilities 486.677M, total liabilities 1,830.127M, total equity 1,402.309M, cash and cash equivalents 1,362.043M, trade receivables (net) 480.352M, current+non-current lease liabilities 34.377M + 683.700M, current+non-current loans 57.000M + 559.649M. Net debt (all debt+leases − cash) ≈ -27.3M, essentially net-neutral. CAVEAT: SAL operates a quasi-monopoly airport ground-handling concession at Saudi airports — its unusually high 56%/43%/40% margins reflect a regulated concession structure, NOT a competitive-market services business like Elm. Useful as a working-capital and contract-revenue comparable, but its margin levels must not be used as a performance benchmark for Elm or similar competitive-market IT/services companies — this is exactly the kind of business-model mismatch the existing market-landscape research warns against silently accepting.",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "Solutions by stc (Arabian Internet and Communications Services Company)",
+      "sector": "IT/telecom managed services & digital solutions (Tadawul: Telecommunication Services / Software & Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://argaamplus.s3.amazonaws.com/54da0ba2-4ee4-4a2d-878d-7ce55c28a5ca.pdf",
+      "rights_basis": "PRIMARY SOURCE, VERIFIED 2026-09-27: the company's own consolidated financial statements for the year ended 31 December 2025 (audited), which carry an AUDITED comparative balance sheet and income statement as at/for 31 December 2024 — hosted via Argaam's regulatory-filing mirror, replacing the prior press-release + aggregator citation. Publicly disclosed; non-exclusive reference use only; no data redistribution or commercial resale license confirmed.",
+      "metrics": {
+        "gross_margin": 23.07,
+        "ebit_margin": 13.77,
+        "net_margin": 13.24,
+        "receivables_days": 113.73,
+        "roe": 39.84
+      },
+      "definition_notes": "VERIFIED 2026-09-27 against primary audited statements (FY2025 report, Dec-2024 audited comparative column). Revenue 12,063,897,000 SAR (+9.3% YoY — matches prior figure), gross profit 2,782,974,000, operating profit 1,660,555,000, net profit attributable to parent 1,596,633,000 — all confirm the prior gross/ebit/net margin figures were correct. MAJOR CORRECTION: the prior 6,031M 'accounts receivable' and 182.5-day receivables_days figure were WRONG for the same reason as MIS — the aggregator had conflated two SEPARATE primary balance-sheet lines: trade receivables (3,758,610,000, Note 14) and contract assets (2,249,371,000, Note 16, unbilled/contract revenue) — sum ≈6,008M, close to the erroneous 6,031M, confirming definitional conflation not overstatement. Corrected receivables_days (trade receivables only, matching Basira's own separate 'receivables' vs 'contract_assets' concepts) = 3,758.61/12,063.897×365 = 113.73 days, NOT 182.5. If instead computed on the SAME combined trade+contract-assets basis as the (also mislabeled) original figure, the combined days are ≈181.8 — which genuinely is very close to Elm's own COMBINED receivables+contract-assets figure of 184.3 days (05_Elm_Case_Study_AR.md), so the 'closest peer' claim below is only valid on that explicitly-labeled combined basis, not as a same-definition comparison to Basira's canonical 139.1 (which is Elm's pure-receivables figure). Cash 1,127,133,000 (confirmed), borrowings current 93,027,000 (corrected from a wrongly-cited 62.02M) + non-current 642,271,000 = 735,298,000 total, equity attributable to parent 4,007,592,000 (confirmed). Net debt (debt − cash) corrected to ≈ -391.8M net cash (was wrongly stated as -422.7M). ROE corrected to 39.84% (parent net income / parent equity, matching Basira's own ROE preference when parent-only figures are available) from a wrongly-rounded 39.6%. stc owns ~79% of this company and it derives revenue substantially from government/enterprise IT and managed-services contracts — the SAME majority-shareholder/government-client profile as Elm (also stc-group-linked and government-services-heavy), and it is the only peer besides MIS with a disclosed, material, separate contract-assets balance — that structural similarity to Elm (not the now-corrected receivables-days number alone) is the strongest basis for calling it the closest peer in this set. It remains roughly 12.8x Elm's FY2025 revenue, so scale-adjusted comparison (ratios, not absolute values) is essential, and margin comparability still needs a documented cohort review per the existing peer-eligibility rules (n<5 shows as individual cases, not a pooled 'benchmark').",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Saudi Networkers Services Company (SNS)",
+      "sector": "IT/telecom managed services & business process outsourcing (Tadawul: Software & Services / NOMU)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.saudinetworkers.com/investors/wp-content/uploads/2025/10/3443_0_2025-03-27_15-54-01_En.pdf",
+      "rights_basis": "PRIMARY — company's own PwC-audited FY2024 consolidated financial statements, downloaded directly from the company's official investor-relations site; non-exclusive reference use only, no data redistribution license confirmed.",
+      "metrics": {
+        "gross_margin": 13.7,
+        "ebit_margin": 7.04,
+        "net_margin": 5.41,
+        "receivables_days": 86.0,
+        "roe": 29.63
+      },
+      "definition_notes": "CONFIRMED against primary source, no corrections needed. PwC-audited consolidated statements: revenue 571,064,038; gross profit 78,229,213 (margin 13.70%, exact match to prior aggregator figure); operating profit 40,204,813 (margin 7.04%, matches prior 7.1% within rounding); profit for the year 30,885,252 (margin 5.41%, matches prior 5.4%). Balance sheet: 'Trade and other receivables' (combined line, Note 7) 134,522,959 — receivables_days = 134,522,959/571,064,038×365 = 86.0 days, exact match to prior figure. Cash 42,072,427, short-term borrowings 2,615,250 + lease liabilities (479,641 current + 1,650,645 non-current) ≈ 4.75M total debt-like, total equity 104,235,868 — all match the prior aggregator-sourced figures exactly. ROE = 30,885,252/104,235,868 = 29.63% (prior figure 29.58% used parent-only profit/equity, both are correct depending on basis — negligible difference). Notably, non-current assets include a small separate 'Contract assets' line (3,723,561, Note 13.1) but current assets show only the combined 'Trade and other receivables' line — the current-asset contract-assets exposure here is immaterial (2.8% of the receivables balance), so this company does NOT show the MIS/stc-style material conflation risk; the aggregator's original figures were simply accurate.",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Sure Global Tech Co.",
+      "sector": "IT services / systems integration / managed services & digital solutions (Tadawul: Software & Services, Nomu-listed since 2022)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://argaamplus.s3.amazonaws.com/d9c350a4-4f3f-4ca3-97d3-005e1cd4441f.pdf",
+      "rights_basis": "PRIMARY for the balance-sheet structure — company's own interim condensed consolidated statement of financial position as of 30 June 2025, which carries an audited comparative column as of 31 December 2024 (via Argaam's regulatory-filing mirror). Income-statement figures remain SECONDARY (stockanalysis.com aggregator, not independently re-verified this round). Non-exclusive reference use only, no redistribution license confirmed.",
+      "metrics": {
+        "gross_margin": 25.28,
+        "ebit_margin": 15.18,
+        "net_margin": 13.54,
+        "receivables_days": 139.15,
+        "roe": 28.87
+      },
+      "definition_notes": "CONFIRMED — receivables_days is NOT an aggregator conflation error here. The company's own audited 31-December-2024 balance sheet (Note 8) shows 'Trade receivables and contract assets' as ONE COMBINED LINE by the company's own design = 93,997,302 — computing 93,997,302/246,620,000×365 = 139.14 days, matching the prior figure (139.15) almost exactly. This is structurally identical to CATRION (which also discloses 'Trade and unbilled receivables' as a single combined line) and different from MIS/Solutions-by-stc/Perfect-Presentation/Saudi-Azm, where the company's own statements DO separate the two concepts and the aggregator wrongly combined them. Audited 31-Dec-2024 total equity = 121,446,375 (vs prior aggregator figure of 115.72M — a real but modest ~5% difference; not chased further this round, flagged for a future pass). Income-statement figures (gross/ebit/net margin) were not re-verified against a primary FY2024 income statement in this pass — only the balance-sheet/receivables question was in scope and is now resolved.",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Naseej for Technology Co.",
+      "sector": "IT services / digital platforms & managed IT services (Tadawul: Software & Services, Nomu-listed)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.argaam.com/en/financial-reports/company-report/14297/2024/1",
+      "rights_basis": "FURTHER UPGRADED — Argaam's own official FY2024 results-disclosure page (company-report/14297/2024/1, a primary/official regulator-facing digest distinct from the stockanalysis.com aggregator) now confirms revenue, gross profit, operating profit, net profit AND total shareholders' equity for the full year, cross-validating the previously-recorded net_margin and roe figures independently. The receivables/contract-assets balance-sheet structure remains SECONDARY (stockanalysis.com aggregator only) — this Argaam page did not disclose balance-sheet line-item detail beyond total equity. Non-exclusive reference use only; no redistribution license confirmed.",
+      "metrics": {
+        "gross_margin": 24.06,
+        "ebit_margin": 6.47,
+        "net_margin": 1.54,
+        "receivables_days": 213.66,
+        "roe": 2.82
+      },
+      "definition_notes": "P&L AND EQUITY NOW CROSS-CONFIRMED, RECEIVABLES STILL UNRESOLVED. Argaam's official FY2024 digest: revenue 246.81M (matches prior record exactly), gross profit 59.38M (implies gross_margin 24.06%, refined from 23.90%), operating profit 15.97M (implies ebit_margin 6.47%, refined from 6.00%), net profit 3.80M (implies net_margin 1.54%, EXACTLY matching the prior record), and — the key new datapoint — total shareholders' equity 133.83M, which implies ROE = 3.80/133.83 = 2.84%, matching the prior record's 2.82% almost exactly (both numbers now independently cross-validated from the same primary source rather than one being derived from the other). This confirms the earlier finding that the profit decline is genuine, disclosed distress, not a data error. UNRESOLVED: the receivables_days figure (213.66) still rests only on the stockanalysis.com aggregator's balance-sheet page, which showed a single combined 'accounts receivable + other receivables' figure with 'no separate contract-assets/unbilled-revenue line displayed' — but this is the same aggregator family that mis-stated MIS, Solutions-by-stc, Maharah, Perfect-Presentation and Saudi-Azm in the exact same way, so this figure must still be treated as unconfirmed pending Naseej's own full balance sheet (not located again this round despite a further attempt).",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Perfect Presentation for Commercial Services Co.",
+      "sector": "IT-enabled business process outsourcing / call-center & customer-experience services (Tadawul: Software & Services, ticker/short name 2P)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://api.2p.com.sa/storage/latestAnnualReport/eb4Tjqp4Coc8K3uuP7llEwPRDKGNZn1fsJxIQXCG.pdf",
+      "rights_basis": "PRIMARY — company's own audited FY2024 consolidated financial statements (statement of financial position, statement of profit or loss and cash flows), downloaded directly from the company's official investor-relations API endpoint (api.2p.com.sa). Non-exclusive reference use only, no redistribution license confirmed.",
+      "metrics": {
+        "gross_margin": 23.43,
+        "ebit_margin": 19.88,
+        "net_margin": 15.25,
+        "receivables_days": 198.0,
+        "roe": 29.97
+      },
+      "definition_notes": "RESOLVED — the 380-day anomaly was EXACTLY the same aggregator conflation bug already found twice for MIS and Solutions-by-stc. Audited FY2024 statement of financial position shows 'Contract assets' (Note 19) = 486,906,749 as a SEPARATE line from 'Trade receivables' (Note 10) = 580,972,663, plus 'Due from related parties' (Note 9) = 45,657,583. The prior aggregator figure implied a receivables balance of ~1,115M — almost exactly the sum of all three lines (580.97+486.91+45.66=1,113.5M) — confirming the aggregator summed trade receivables + contract assets + due-from-related-parties into one 'receivables' number. CORRECTED receivables_days (trade receivables only, matching Basira's own metric convention) = 580,972,663/1,071,028,069×365 = 198.0 days — much lower than 380 but still elevated versus IT-services peers like SNS (86) or Edarat (84.05); page 34 of a related company document notes heavy government-client concentration, a plausible driver of slower collection, though this is not independently confirmed as the cause. SEPARATE REAL CORRECTION FOUND: as-reported operating profit (Note-level, includes a one-off SAR 31.75M gain on disposal of property/equipment and SAR 11.97M other operating income) is 212,901,442, giving ebit_margin = 19.88%, not the previously reported 16.41% — a genuine, material correction, not a rounding difference. Excluding just the one-off disposal gain gives a 'recurring' operating margin of ~16.91% (181,146,774/1,071,028,069), close to the old (wrong) 16.41% figure, suggesting the original aggregator number may have been an already-adjusted (ex-one-off) figure rather than simply an error — worth stating both the as-reported (19.88%) and adjusted (~16.91%) figures if this peer is ever shown to a customer. Net margin (15.25%) and ROE (29.97%) both matched the primary statements exactly, no change. Cash 100,433,079; short-term borrowings 429,161,853 + current portion long-term 2,322,501 (no long-term borrowings outstanding); total equity 545,011,828; net debt (debt−cash) ≈ 331,051,275 (net indebted, largest net debt position of the batch, consistent with — though smaller than previously computed — the prior flag of it being the only clearly net-debt-positive peer).",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Edarat Communication and Information Technology Co.",
+      "sector": "IT managed services / data-center & cloud services (Tadawul: Software & Services, Nomu-listed)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.argaam.com/en/financial-reports/company-report/5225/2024/1",
+      "rights_basis": "RESOLVED via Argaam's own official regulator-facing results-disclosure digest (a primary/official source distinct from the stockanalysis.com aggregator): fetched both the FY2024 report page (company-report/5225/2024/1, showing FY2024 total shareholders' equity SAR 62.88M) and the FY2025 report page (company-report/5225/2025/1, whose own prior-year comparison explicitly states 'Total shareholders' equity...stood at SAR 95.08 million as on Dec. 31, 2025, compared to SAR 62.88 million in the same period a year earlier'). The two independent Argaam pages cross-confirm each other. Non-exclusive reference use only; no redistribution license confirmed; balance-sheet detail beyond equity (receivables, contract assets, cash, debt) remains unconfirmed pending the full FY2024 audited statements.",
+      "metrics": {
+        "gross_margin": 43.33,
+        "ebit_margin": 26.54,
+        "net_margin": 23.59,
+        "receivables_days": 84.05,
+        "roe": 39.21
+      },
+      "definition_notes": "EQUITY DISCREPANCY DEFINITIVELY RESOLVED, NO METRIC CHANGE. The SAR 95.1M equity figure that created doubt in the prior round was FY2025 year-end equity, not FY2024 — a period mislabeling, not a data error. FY2024 equity is confirmed as SAR 62.88M by two independent Argaam disclosure pages (the FY2024 report itself, and the FY2025 report's own stated prior-year comparison, which explicitly narrates the 51.2% YoY equity increase from 62.88M to 95.08M). Net profit 24.66M / equity 62.88M = ROE 39.24%, matching the already-recorded 39.21% almost exactly (small rounding). The existing metrics in this dataset were correct all along; DO NOT use the 95.1M/25.93% alternative that was floated as a possibility in the prior round — that scenario is now disproven. Still unresolved: the FY2023 audited statements (previously found) show a 'Contract assets' line (SAR 7.5M) separate from 'Trade receivables, net' (SAR 14.5M) and a material 'Due from related parties' line (SAR 15.2M) — the same three-line structure that caused the MIS/stc/Perfect-Presentation/Saudi-Azm conflation errors — so the 84.05-day FY2024 receivables figure itself should still be treated as a SUSPECTED (not confirmed) conflation case pending the actual FY2024 balance sheet detail, even though the equity/ROE question is now closed.",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Saudi Azm for Communication and Information Technology Co.",
+      "sector": "Systems integration / enterprise & government IT services, advisory and technology platforms (Tadawul: Software & Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://argaamplus.s3.amazonaws.com/57c915fe-5559-4600-9f28-edcf9ced884d.pdf",
+      "rights_basis": "PRIMARY for the balance sheet (audited 30-June-2024 comparative column inside the company's own interim condensed consolidated statement of financial position as of 31 December 2024, via Argaam's regulatory-filing mirror) and for gross/operating profit (Argaam's official FY2024 results-announcement summary, which explicitly labels the figures as for 'the period ending June 30, 2024'). Net income and ROE were NOT independently re-verified against a primary full-year income statement this round (only interim H1-FY2025 income statements were available in the fetched document) — treat those two figures as still SECONDARY. Non-exclusive reference use only, no redistribution license confirmed.",
+      "metrics": {
+        "gross_margin": 26.57,
+        "ebit_margin": 12.72,
+        "net_margin": 12.84,
+        "receivables_days": 57.75,
+        "roe": 30.53
+      },
+      "definition_notes": "RESOLVED — a THIRD confirmed instance of the same aggregator conflation bug (after MIS and Perfect Presentation), and the most dramatic correction yet. The company's own audited statement of financial position as at 30 June 2024 (the comparative column inside its interim report as of 31 December 2024) shows 'Contract assets' (Note 8) = 82,694,059 as a SEPARATE line from 'Trade receivables' (Note 9) = 34,422,658. The prior aggregator-implied receivables balance (197.6 days × 217.64M revenue / 365 ≈ 117.85M) is almost exactly the SUM of contract assets + trade receivables (82.69+34.42=117.12M), confirming the same conflation pattern. CORRECTED receivables_days (trade receivables only) = 34,422,658/217,638,380×365 = 57.75 days — dramatically lower than the previous 197.6, and now the LOWEST of the two companies in this sector with a confirmed material contract-assets balance (vs stc's combined structure). Gross margin (26.57%, exact match) and operating margin (recomputed 27,677,020/217,638,380=12.72%, a small correction from 12.61%) both confirmed via Argaam's official FY2024 results announcement, which explicitly states these are for the fiscal year ended 30 June 2024 — DEFINITIVELY confirming (not just suspecting, as before) the non-calendar fiscal year via a primary/official source rather than an inferred aggregator inconsistency. Total equity at FYE (30 June 2024, audited) = 91,547,030, matching the prior figure closely (91.55M) — net_margin and ROE were left unchanged since the exact full-year net income figure was not found in the interim document fetched this round (only H1-FY2025 interim income statements were available); those two figures remain at their prior (secondary/aggregator) confidence tier pending a dedicated primary income-statement check.",
+      "sector_code": "it_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Maharah for Human Resources Company",
+      "sector": "Commercial & professional services / manpower, recruitment and facilities management (Tadawul: Commercial & Professional Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://argaamplus.s3.amazonaws.com/72f0c0a7-639b-4ae5-ab7e-a69ad7355ab3.pdf",
+      "rights_basis": "Company's own official audited Consolidated Financial Statements for the year ended 31 December 2024 (primary source, highest confidence tier in this bucket, hosted via Argaam Plus on behalf of the regulatory disclosure); non-exclusive reference use only; no data redistribution or commercial resale license confirmed.",
+      "metrics": {
+        "gross_margin": 11.57,
+        "ebit_margin": 6.93,
+        "net_margin": 5.7,
+        "receivables_days": 53.38,
+        "roe": 20.39
+      },
+      "definition_notes": "MAJOR CORRECTION — verified directly against Maharah's own audited FY2024 consolidated financial statements (statement of financial position and statement of profit or loss, both primary). Revenue 2,235,430,580 SAR (matches prior figure). Gross profit 258,623,654 (margin 11.57%, was 11.51% — minor refinement). Operating profit 154,890,225 (margin 6.93%, was 6.76% — minor refinement, and notably HIGHER than the previously recorded 151.13M). CRITICAL FIX: the previously recorded net income of 175.28M SAR does not match ANY figure in the audited statements — real 'Profit for the year' is 126,825,694 and 'Profit attributable to Shareholders of the Company' is 127,482,444; net_margin corrected from 7.84% to 5.70% (127,482,444/2,235,430,580). CONTRACT-ASSETS CONFLATION CONFIRMED — this is the THIRD confirmed instance of the same aggregator bug already found twice (MIS, Solutions by stc): the audited balance sheet shows 'Trade receivable' 326,876,766 and a SEPARATE 'Contract assets – current portion' 140,839,121 plus 'Contract assets – noncurrent portion' 6,137,434; the previously recorded 'accounts receivable 467.72M' is exactly trade receivable (326,876,766) + current contract assets (140,839,121) = 467,715,887, confirming the conflation precisely. receivables_days corrected to trade-only: 326,876,766/2,235,430,580×365 = 53.38 days (was wrongly 76.4). Cash and cash equivalents 33,717,769 (matches prior 33.72M, unaffected). EQUITY CORRECTED: Total Equity is 625,118,027 (was wrongly recorded as 673.05M) — roe corrected to 127,482,444/625,118,027×100 = 20.39% (was 26.04%). Net debt confirmed genuinely material: long-term loans 581,957,710 (noncurrent) + 4,837,500 (current portion) + short-term loans 20,173,000 ≈ 606.97M total borrowings, plus 21,167,854 noncurrent lease liabilities, against only 33.72M cash — Maharah remains meaningfully net-indebted, the only company in this bucket with substantial interest-bearing debt, confirming (not contradicting) the original flag. Combined receivables+contract-assets metric for future use: (326,876,766+140,839,121+6,137,434)/2,235,430,580×365 ≈ 76.7 days — coincidentally close to the OLD (wrong) 76.4-day figure, which is itself a useful illustration of how a plausible-looking wrong number can survive scrutiny by accident.",
+      "sector_code": "commercial_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Al Mawarid Manpower Company",
+      "sector": "Commercial & professional services / manpower and recruitment (Tadawul: Commercial & Professional Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://argaamplus.s3.amazonaws.com/1c61e440-e231-444a-a4d5-6163230e3f12.pdf",
+      "rights_basis": "Company's own official audited Consolidated Financial Statements for the year ended 31 December 2024 (primary source); non-exclusive reference use only; no redistribution license confirmed.",
+      "metrics": {
+        "gross_margin": 9.12,
+        "ebit_margin": 5.32,
+        "net_margin": 4.71,
+        "receivables_days": 52.37,
+        "roe": 23.98
+      },
+      "definition_notes": "CONFIRMED, with a minor receivables refinement — verified directly against Al Mawarid's own audited FY2024 consolidated financial statements. Revenue 2,027,748,327 (matches). Gross profit 184,853,360 (margin 9.117%, matches prior 9.1% almost exactly). Profit for the year after Zakat 95,423,397 (margin 4.706%, matches prior 4.71% exactly). Cash and cash equivalents 104,309,816 (matches prior 104.31M exactly). Total equity 398,012,191 (matches prior 398.01M exactly) — ROE recomputed as 95,423,397/398,012,191×100 = 23.98%, an EXACT match to the prior figure, confirming both numerator and denominator were already correct. Operating profit was not independently re-derived in this pass (prior 107.86M / 5.32% ebit_margin left unchanged, not contradicted by anything found). Al Mawarid DOES carry a separate contract-assets balance (121,500,333 = 71,612,105 current + 49,888,228 noncurrent per Note 10) but, unlike Maharah/MIS/stc, the previously recorded receivables figure (278.45M) was NOT the conflated combined total — refined here to the exact primary trade-receivables figure, 290,908,361 (Note 11), giving receivables_days = 290,908,361/2,027,748,327×365 = 52.37 (was 50.1, a small precision correction, not a structural error). Combined receivables+contract-assets metric for future use: (290,908,361+71,612,105)/2,027,748,327×365 ≈ 65.31 days — meaningfully higher than the trade-only figure, so any future combined-metric benchmarking should disclose both explicitly rather than picking one silently, exactly the lesson already logged from the Maharah/MIS/stc cases.",
+      "sector_code": "commercial_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Tamkeen Human Resources Company",
+      "sector": "Commercial & professional services / manpower, recruitment and executive search (Tadawul: Commercial & Professional Services)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://argaamplus.s3.amazonaws.com/064b1997-7b3c-43ba-a38b-bf6553a6f8e8.pdf",
+      "rights_basis": "Company's own official audited Consolidated Financial Statements for the year ended 31 December 2025, which include an AUDITED 31-December-2024 comparative column (primary source for the FY2024 figures used here, via Argaam Plus); non-exclusive reference use only; no redistribution license confirmed.",
+      "metrics": {
+        "gross_margin": 18.65,
+        "ebit_margin": 9.75,
+        "net_margin": 11.85,
+        "receivables_days": 83.45,
+        "roe": 24.32
+      },
+      "definition_notes": "CONFIRMED, with minor refinements — verified against the audited 31-December-2024 comparative column inside Tamkeen's own FY2025 consolidated financial statements. Revenue 721.63M (matches). Gross profit 134,558,258 (margin 18.65%, matches prior 18.62% almost exactly). Net profit for the year attributable to shareholders 85,508,204 (margin 11.85%, matches prior figure EXACTLY). Cash and cash equivalents 208,856,207 (matches prior 208.86M almost exactly). Operating profit 70,393,027 (margin 9.75%, was 9.66% — small refinement). Trade receivables Note 12 total (Corporate 144,563,629 + Related parties 18,088,867 + Individuals 2,333,035 = 164,985,531) is somewhat higher than the previously recorded 156.46M (+5.6M other receivables ≈ 162.06M) — receivables_days corrected to 164,985,531/721.63M×365 = 83.45 (was 79.15). No separate contract-assets balance line was found in the notes searched, consistent with the prior record — no conflation risk identified for Tamkeen, unlike the three manpower/IT-services peers where it was confirmed. Total equity was not independently re-derived in this pass (prior 351.58M / 24.32% ROE left unchanged, not contradicted). The prior flag about net income (85.51M) exceeding operating income (69.73M) due to non-operating finance/investment income on Tamkeen's large cash balance remains valid and is now reinforced by the confirmed 208.86M cash position.",
+      "sector_code": "commercial_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Shalfa Facilities Management Company",
+      "sector": "Commercial & professional services / integrated facilities management (Tadawul Nomu parallel market)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.argaam.com/ar/company/companyoverview/marketid/14/companyid/17170/shalfa-facilities-management-company",
+      "rights_basis": "Third-party financial-data aggregator (stockanalysis.com) for the balance sheet and most income-statement detail; net income cross-confirmed via a SECOND independent source (Argaam's own company-overview summary page, not the aggregator) in this round; full audited FY2024 consolidated financial statements could not be located despite a genuine attempt — likely a real NOMU (parallel market) lighter-disclosure limitation, not a research shortfall; non-exclusive reference use only; no redistribution license confirmed; verify against Shalfa's own audited FY2024 statements before commercial use.",
+      "metrics": {
+        "gross_margin": 15.53,
+        "ebit_margin": 10.05,
+        "net_margin": 6.59,
+        "receivables_days": 138.35,
+        "roe": 24.14
+      },
+      "definition_notes": "PARTIALLY VERIFIED — net income for FY2024 (21.1 million SAR, down 17% YoY per Argaam's own company-overview page, independent of the stockanalysis.com aggregator) matches the previously recorded figure exactly, giving reasonable confidence in the income-statement figures as a whole. However, despite a genuine attempt (searching for a primary annual-report/financial-statements PDF, and the official Tadawul/Saudi Exchange FY2024 results announcement at anId=86076 which returns HTTP 403 to automated fetch), the full audited balance sheet (receivables, cash, debt, equity) could not be independently confirmed and remains aggregator-sourced only — all other figures (receivables 121.26M+17.42M other, cash 40.33M, debt 93.23M, equity 87.41M) are UNCHANGED from the prior record, not newly verified. This is consistent with Shalfa being a small, recently-listed (November 2024) Nomu-market company with lighter public disclosure than main-market Tadawul peers — a real market-structure limitation, not a gap in this verification effort. Remains the only pure facilities-management (as opposed to staffing/manpower) company in the bucket, with the longest receivables cycle (138.35 days) of the four new entries, structurally closer to Elm's own long receivables cycle than the manpower-only peers.",
+      "sector_code": "commercial_services"
+    },
+    {
+      "entity_id": null,
+      "name": "Saudi Ground Services Company (SGS)",
+      "sector": "Airport ground handling, passenger/baggage/ramp/cargo services across ~28 Saudi airports (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.saudiags.com/wp-content/uploads/2021/06/644_0_2025-03-27_14-53-18_En.pdf",
+      "rights_basis": "UPGRADED TO PRIMARY — the company's own official 2024 Annual Report (published on saudiags.com, SGS's own corporate website), read directly, including its '3) Summary of SGS financial results during the past five years' table (5-year revenue/gross-profit/net-profit history), its 'Comparison of SGS assets and liabilities during 2024 AD with Previous Years' table (full balance-sheet totals), and its '3.6 Summary of key material differences in the operating results' variance table (which reconciles gross profit through to operating profit line by line). Non-exclusive reference use only; no data redistribution or commercial resale license confirmed; itemized cash/receivables/debt detail within the balance sheet was not located within this annual report's summary tables (only current/non-current asset and liability totals are given), so those specific line items remain aggregator-sourced.",
+      "metrics": {
+        "gross_margin": 23.14,
+        "ebit_margin": 11.87,
+        "net_margin": 12.19,
+        "receivables_days": 161.97,
+        "roe": 13.01
+      },
+      "definition_notes": "CONFIRMED VIA PRIMARY ANNUAL REPORT, ONE SMALL REFINEMENT. Revenue 2,683.844M, Gross Profit 620.937M (gross_margin 23.14%, matches exactly), Net Profit 327.034M (net_margin 12.19%, matches exactly) — all confirmed to the exact thousand-riyal from the company's own 5-year summary table. Total Assets 4,267.753M and Total Liabilities 1,754.059M give implied Total Equity = 2,513.694M, matching the prior record's 2,514M almost exactly; ROE = 327.034/2,513.694 = 13.01%, an EXACT match to the prior record, independently confirming it. ONE REAL REFINEMENT: the company's own variance table (Gross Profit 620.937 + Operating Income-Others 61.443 − Administrative Expenses 269.692 − Loss on Impairment of Trade Receivables 94.062 = Operating Profit 318.626) gives ebit_margin = 318.626/2,683.844 = 11.87%, refined from the prior aggregator-sourced 11.68% (a small, non-material correction — NOT the same magnitude of error as the contract-assets conflation cases). This is now the best-sourced entry in the transport/logistics bucket alongside SAL, and the load-bearing 'SAL's margins reflect a monopoly, not competitive ground-handling economics' conclusion is correspondingly more solid: SGS's true primary-confirmed margins (23%/12%/12%) remain dramatically below SAL's (56%/43%/40%) in the identical business. Receivables/cash/debt detail not itemized in this annual report's summary tables; those specific figures remain aggregator-sourced pending the full audited financial statements (not the annual report's summary section).",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "National Shipping Company of Saudi Arabia (Bahri)",
+      "sector": "Marine shipping — crude oil, chemical and dry-bulk transportation, government/Aramco-linked contracts of affreightment (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://www.bahri.sa/media/kd2lu0ur/bahri-english-financial-q4-2024-signed.pdf",
+      "rights_basis": "Company's own official interim condensed consolidated financial statements for the year ended 31 December 2024 (EY-reviewed, signed by CFO/CEO/Board member) — PRIMARY source, highest confidence tier. Publicly disclosed; non-exclusive reference use only; no data redistribution or commercial resale license confirmed.",
+      "metrics": {
+        "gross_margin": 28.47,
+        "ebit_margin": 27.46,
+        "net_margin": 25.16,
+        "receivables_days": 49.03,
+        "roe": 15.92
+      },
+      "definition_notes": "CORRECTED from aggregator via primary source (bahri.sa signed FY2024 statements). Revenue 9,482,387 (thousand SAR). Bahri's own income statement presents TWO sequential gross-profit lines: 'Gross profit before bunker subsidy' (2,363,135, margin 24.92% - close to the old aggregator 'gross_margin' 24.69%) then 'Gross profit' (2,700,357, margin 28.47%) after adding a government bunker-fuel subsidy. Used the company's own labeled 'Gross profit' line (post-subsidy) for gross_margin=28.47%, consistent with using whichever line each peer itself calls 'gross profit'. 'Total operating profit' 2,603,991 (margin 27.46%) includes 245,191 of 'Other income' below G&A but ABOVE the 'Share in results of equity accounted investees' line (432,563, a JV/associate income line that sits BELOW operating profit, between operating profit and profit-before-zakat — it does NOT inflate operating margin itself). Net profit for the year 2,385,801 (consolidated, margin 25.16%); profit attributable to parent 2,169,392 / parent equity 13,625,214 = ROE 15.92% (closing balance, not average, per this dataset's convention). RESOLVED ANOMALY: the previously flagged 'operating margin (25.18%) exceeding gross margin (24.69%)' was an aggregator artifact of comparing a PRE-subsidy gross-margin figure against a POST-subsidy-inclusive operating figure — inconsistent basis, not a real inversion. Using the company's own consistently-labeled lines, the margin waterfall is normal (gross 28.47% > operating 27.46% > net 25.16%). Balance sheet: 'Trade receivables and contract assets' is ONE COMBINED line by the company's own design (1,273,381 thousand) — like CATRION, not an aggregator conflation — receivables_days recomputed to 49.03 (barely changed from the prior 49.0, now confirmed primary-sourced). Total borrowings (current+non-current loans 459,585+8,288,484=8,748,069) plus lease liabilities (436,317+540,215=976,532) minus cash (1,821,500) = net debt approx 7,903,101 thousand SAR (or ~6,926,569 excluding leases) — Bahri is heavily net-indebted from an aggressive fleet-expansion capex program (5,223,356 in 'Additions of projects under construction' alone in 2024), not net cash as might be assumed from 'record profit' headlines.",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "Saudi Public Transport Company (SAPTCO)",
+      "sector": "Public bus transport plus contract-based staff, school and pilgrim transportation for government/institutional clients (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://saptco.com.sa/pdf/fs/FS-2024-English.pdf",
+      "rights_basis": "Company's own official KPMG-audited consolidated financial statements for the year ended 31 December 2024 (unqualified opinion) — PRIMARY source, highest confidence tier. Publicly disclosed; non-exclusive reference use only; no data redistribution or commercial resale license confirmed.",
+      "metrics": {
+        "gross_margin": 20.8,
+        "ebit_margin": 10.05,
+        "net_margin": 1.04,
+        "receivables_days": 252.86,
+        "roe": -1.04
+      },
+      "definition_notes": "CORRECTED and RESOLVED via primary source (KPMG-audited FY2024 statements, saptco.com.sa). Revenue 1,459,637 (thousand SAR, matches KPMG's key-audit-matter revenue of SR 1,459M almost exactly). Cost of revenues (1,156,072); Gross profit 303,565 (margin 20.80%, close to prior 20.70%); Operating Profit for the year 146,703 (margin 10.05%, close to prior 10.02%) — these two were already correct via the aggregator. RESOLVED ANOMALY, DEFINITIONAL not an error: the previously flagged -0.66% net margin and -1.01% ROE used SAPTCO's LOSS ATTRIBUTABLE TO PARENT SHAREHOLDERS (-9,628 thousand, -9,628/1,459,637=-0.66%) — but Basira's own engine metric definition for net_margin is explicitly 'consolidated net income / revenue', not parent-only. SAPTCO's actual CONSOLIDATED net profit for the year is POSITIVE 15,116 thousand (net_margin=+1.04%) — non-controlling interests absorbed 24,744 of profit while parent shareholders bore a (9,628) loss, a real and material split, not a data error. Corrected net_margin to +1.04% per Basira's stated consolidated convention; ROE stays parent-only per Basira's own roe definition ('parent net income / average parent equity'), so ROE (-9,628/921,881=-1.04%) is essentially unchanged from the prior -1.01% (small rounding). PRACTICAL LESSON: SAPTCO's headline 'net loss' narrative (true from the parent-shareholder view) coexists with a genuinely profitable CONSOLIDATED group result — exactly the kind of attributable-to-parent-vs-consolidated distinction this project's own invariants warn about. Receivables: balance sheet line is 'Trade receivables and unbilled receivables, net' = 1,010,844 thousand — ONE COMBINED line by SAPTCO's OWN statement design (like CATRION and Bahri), not an aggregator conflation. Recomputed receivables_days = 1,010,844/1,459,637*365 = 252.86, confirming the prior 252.72 was essentially correct — this is a REAL, large, primary-confirmed combined receivables balance, most plausibly reflecting genuine chronic government/subsidized-route billing delay for a public transport operator, not a data-quality artifact. Cash 549,743; total Murabaha financing (non-current 646,879 + current 248,250 + short-term 70,557) = 965,686; net debt approx 415,943 thousand SAR. Total equity 951,323 (parent 921,881 + NCI 29,442).",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "United International Transportation Company (Budget Saudi)",
+      "sector": "Vehicle rental and corporate/government fleet leasing, Budget International franchise (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://stockanalysis.com/quote/tadawul/4260/financials/",
+      "rights_basis": "Third-party financial-data aggregator (stockanalysis.com); non-exclusive reference use only; no data redistribution or commercial resale license confirmed; verify against Budget Saudi's own audited FY2024 financial statements before any commercial or customer-facing use.",
+      "metrics": {
+        "gross_margin": 28.25,
+        "ebit_margin": 18.08,
+        "net_margin": 15.96,
+        "receivables_days": 113.24,
+        "roe": 11.48
+      },
+      "definition_notes": "Revenue 1,971M SAR, gross profit 556.75M, operating income 356.3M, net income 314.64M. Balance sheet: accounts receivable 611.37M, cash 85.88M, short-term debt 2.71M, long-term debt 821.65M, equity 2,741M. Corporate/government fleet-leasing contracts (not just retail car rental) give this company real institutional receivables exposure; receivables_days of 113 is a reasonable mid-range reference point. Aggregator did not flag a separate contract-assets line; not verified against primary statements in this pass.",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "Theeb Rent a Car Company",
+      "sector": "Vehicle rental and corporate/government fleet leasing (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://stockanalysis.com/quote/tadawul/4261/financials/",
+      "rights_basis": "Third-party financial-data aggregator (stockanalysis.com); non-exclusive reference use only; no data redistribution or commercial resale license confirmed; verify against Theeb's own audited FY2024 financial statements before any commercial or customer-facing use.",
+      "metrics": {
+        "gross_margin": 31.88,
+        "ebit_margin": 20.2,
+        "net_margin": 14.02,
+        "receivables_days": 81.15,
+        "roe": 22.0
+      },
+      "definition_notes": "Revenue 1,303M SAR, gross profit 415.44M, operating income 263.27M, net income 182.71M. Balance sheet: accounts receivable 289.72M, cash 34.98M, short-term debt 698.77M (current portion of long-term debt), long-term debt 682.67M, equity 830.44M. Aggregator notes an 'Other Receivables' line (57.49M) that MAY contain unbilled/contract items but is not broken out separately — low materiality relative to total receivables, but flagged for completeness. Not verified against primary statements in this pass.",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "Lumi Rental Company",
+      "sector": "Vehicle rental — car, bus and motorcycle — and corporate fleet leasing (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://stockanalysis.com/quote/tadawul/4262/financials/",
+      "rights_basis": "Third-party financial-data aggregator (stockanalysis.com); non-exclusive reference use only; no data redistribution or commercial resale license confirmed; verify against Lumi's own audited FY2024 financial statements before any commercial or customer-facing use.",
+      "metrics": {
+        "gross_margin": 28.15,
+        "ebit_margin": 20.51,
+        "net_margin": 11.63,
+        "receivables_days": 64.79,
+        "roe": 14.88
+      },
+      "definition_notes": "Revenue 1,550M SAR, gross profit 436.25M, operating income 317.97M, net income 180.3M. Balance sheet: accounts receivable 275.07M, cash 29.53M, short-term debt 596.15M (current portion of long-term debt), long-term debt 1,013M, equity 1,212M. No separate contract-assets line disclosed by the aggregator. Not verified against primary statements in this pass. Newest listing in this bucket (listed 2023 per prior research) — shorter public financial history than peers.",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "Cherry Trading Company",
+      "sector": "Vehicle rental, leasing and used-car sales (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://stockanalysis.com/quote/tadawul/4265/financials/",
+      "rights_basis": "Third-party financial-data aggregator (stockanalysis.com); non-exclusive reference use only; no data redistribution or commercial resale license confirmed; verify against Cherry's own audited FY2024 financial statements before any commercial or customer-facing use.",
+      "metrics": {
+        "gross_margin": 32.1,
+        "ebit_margin": 24.66,
+        "net_margin": 13.87,
+        "receivables_days": 165.99,
+        "roe": 12.25
+      },
+      "definition_notes": "Revenue 454.66M SAR (smallest company in this bucket), gross profit 145.96M, operating income 112.12M, net income 63.05M. Balance sheet: accounts receivable 206.73M reported separately from a combined 'Receivables' figure of 221.38M that appears to include other receivables — AMBIGUITY FLAG: receivables_days computed on the narrower 206.73M figure (165.99); using the combined 221.38M figure instead gives 177.7 days. Cash 49.31M, short-term debt 279.73M, long-term debt 532.71M, equity 514.62M. Used-car sales revenue (a retail, non-contract line) is mixed in with rental/leasing revenue and not broken out — weaker comparability than the pure fleet-leasing peers (Theeb, Budget Saudi, Lumi) for institutional working-capital analysis. Not verified against primary statements in this pass.",
+      "sector_code": "transport_logistics"
+    },
+    {
+      "entity_id": null,
+      "name": "Flynas (National Air Services Company)",
+      "sector": "Low-cost passenger airline (Tadawul: Transportation)",
+      "country": "SA",
+      "currency": "SAR",
+      "period": "2024",
+      "source_url": "https://stockanalysis.com/quote/tadawul/4264/financials/",
+      "rights_basis": "Third-party financial-data aggregator (stockanalysis.com); non-exclusive reference use only; no data redistribution or commercial resale license confirmed; verify against Flynas's own audited FY2024 financial statements before any commercial or customer-facing use.",
+      "metrics": {
+        "gross_margin": 19.44,
+        "ebit_margin": 12.34,
+        "net_margin": 5.74,
+        "receivables_days": 12.09,
+        "roe": 26.39
+      },
+      "definition_notes": "Revenue 7,556M SAR, gross profit 1,469M, operating income 932.19M, net income 433.51M. Balance sheet: accounts receivable only 250.14M against 7,556M revenue — receivables_days of just 12.1 confirms this is structurally a RETAIL/consumer ticket-sales business (cards, travel agents, mostly prepaid), not an institutional contract-billing model. COMPARABILITY CAVEAT (weakest fit in this bucket): although Flynas is genuinely a core Transportation-sector company (not 'transportation incidental to a retail business'), its revenue-collection model is retail-like rather than the long-cycle institutional/government billing that defines Elm, SGS, SAL and SAPTCO. Included for completeness and as a useful boundary/contrast case (it shows what LOW working-capital intensity looks like in the same Tadawul sector), but should not be used as a working-capital or receivables-cycle comparable for Elm. Cash 1,700M, short-term debt 324.49M, long-term debt 100.74M, equity 1,643M — net cash position of approximately -1,274.77M (i.e. net cash, not net debt).",
+      "sector_code": "transport_logistics"
+    }
+  ]
+}

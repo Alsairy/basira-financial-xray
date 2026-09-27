@@ -1,0 +1,27 @@
+{
+  "note": "This file is the ORIGINAL, historical OpenAI proposal reviewed and left unimplemented. As of 2026-09-27, an explicit authorization chose Anthropic instead, and a real (disabled-by-default) transport now exists — see docs/AI_INTEGRATION.md and server/ai-transport-anthropic.mjs, whose own tests (tests/ai-transport-anthropic.test.mjs) are the authoritative, current example of the actual request/response shapes and the toModelCatalog() field-stripping this file only described in prose. This file is kept for historical context only; it does not describe what is actually implemented.",
+  "historical_openai_proposal": {
+    "authorization_status": "superseded_2026-09-27_by_anthropic_implementation",
+    "proposed_destination": "https://api.openai.com/v1/responses",
+    "synthetic_payload_example": {
+      "question": "What does the gross margin indicator show?",
+      "authorized_evidence": [
+        {
+          "citation_id": "E000",
+          "key": "gross_margin",
+          "label_ar": "الهامش الإجمالي",
+          "label_en": "Gross margin",
+          "period": "2025",
+          "status": "ok",
+          "unit": "percent",
+          "explanation_key": "source_value"
+        }
+      ]
+    },
+    "excluded_fields": ["financial values", "raw files", "formula text", "source paths", "source cells", "company name", "tenant IDs", "user identity", "API credentials in prompt"],
+    "proposed_output_example": {
+      "answer_kind": "evidence",
+      "selections": [{"citation_id": "E000", "explanation_key": "source_value"}]
+    }
+  }
+}

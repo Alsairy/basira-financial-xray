@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-27",
+  "node_major": 24,
+  "pnpm": "10.30.3",
+  "typescript_check": "passed",
+  "vite_build": "passed",
+  "isolated_dependency_install": "passed_frozen_lockfile_ignore_scripts",
+  "main_asset": "index-D0Aspy2G.js",
+  "live_url": "http://127.0.0.1:4317",
+  "external_llm_transport": "not_implemented",
+  "certification": false
+}

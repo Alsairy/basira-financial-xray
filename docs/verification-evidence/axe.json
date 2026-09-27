@@ -1,0 +1,82 @@
+[
+  {
+    "route": "overview",
+    "violations": [],
+    "passes": 25,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "data",
+    "violations": [],
+    "passes": 27,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "analysis",
+    "violations": [],
+    "passes": 23,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "benchmarks",
+    "violations": [],
+    "passes": 19,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "scenarios",
+    "violations": [],
+    "passes": 19,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "forecast",
+    "violations": [],
+    "passes": 22,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "actions",
+    "violations": [],
+    "passes": 18,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "reports",
+    "violations": [],
+    "passes": 18,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "assistant",
+    "violations": [],
+    "passes": 19,
+    "incomplete": [
+      "color-contrast"
+    ]
+  },
+  {
+    "route": "settings",
+    "violations": [],
+    "passes": 24,
+    "incomplete": [
+      "color-contrast"
+    ]
+  }
+]

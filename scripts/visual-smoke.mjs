@@ -1,0 +1,15 @@
+import {chromium} from 'playwright';
+import {mkdir} from 'node:fs/promises';
+await mkdir('artifacts',{recursive:true});
+const browser=await chromium.launch({headless:true});
+const page=await browser.newPage({viewport:{width:1512,height:1150},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:4317');
+await page.screenshot({path:'artifacts/welcome.png',fullPage:true});
+await page.getByRole('button',{name:'استكشف تجربة علم'}).click();
+await page.getByRole('button',{name:'متابعة بهذا المنظور'}).waitFor({timeout:60000});
+await page.getByRole('button',{name:'متابعة بهذا المنظور'}).click();
+await page.getByRole('heading',{name:'الصورة المالية',exact:true}).waitFor({timeout:30000});
+await page.screenshot({path:'artifacts/overview-desktop.png',fullPage:true});
+console.log(JSON.stringify({errors,text:(await page.locator('main').innerText()).slice(0,4000)},null,2));
+await browser.close();

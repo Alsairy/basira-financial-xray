@@ -1,0 +1,6 @@
+{
+  "initialFocus": true,
+  "reverseTrap": true,
+  "forwardTrap": true,
+  "escapeReturn": true
+}

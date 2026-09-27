@@ -1,0 +1,11 @@
+{
+  "source_original_sha256": "43807b0db6769253097f29cb181368fa276e9cb0d56ab80f8811427266e36db1",
+  "source_unchanged": true,
+  "formulas_verified": 160,
+  "formula_matches": 160,
+  "docx_pages": 14,
+  "visual_review": "All 14 rendered pages inspected; RTL and split-row corrections verified.",
+  "html_review": "Desktop and mobile inspected; no document overflow; all local section anchors valid.",
+  "main_word_scope": "Business and product report; full detailed research in HTML and Markdown appendices",
+  "source_validation_limit": "Official Elm indexed tables checked; not all PDF notes directly opened."
+}

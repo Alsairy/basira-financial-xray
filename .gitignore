@@ -1,0 +1,10 @@
+node_modules/
+dist/
+data/
+.env
+artifacts/
+__pycache__/
+*.pyc
+.venv/
+tests/e2e/results/
+node_modules.preinstalled

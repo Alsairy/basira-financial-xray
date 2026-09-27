@@ -1,0 +1,112 @@
+[
+  {
+    "path": "00_README_AR.md",
+    "bytes": 4826,
+    "sha256": "783b5b8a733a0cc7dfa5544ab9ba8764276b2f6c4961e2b30615873fcd49b6c9"
+  },
+  {
+    "path": "01_Product_and_Business_AR.md",
+    "bytes": 65776,
+    "sha256": "37175e7979d3dd7251cac60cd45fa4b3fcbd0dcde3fceac9dae3891ef8514e87"
+  },
+  {
+    "path": "02_Implementation_Spec_AR.md",
+    "bytes": 33561,
+    "sha256": "997459349ca669b8e04a0c1dc24e50a50038bfbd43e9cfb1bd49c370871a5bc2"
+  },
+  {
+    "path": "03_Market_Landscape_AR.md",
+    "bytes": 50679,
+    "sha256": "0b043bdee5f743e3bf9319aa79ec6d9765c217a0a63d5d27e7c1981afc4310b2"
+  },
+  {
+    "path": "03_Market_Sources.json",
+    "bytes": 25341,
+    "sha256": "6d2f5833c7e03a63f1319ae8672b8dbec0c0e2d9e525f57c0501ffc12a732f54"
+  },
+  {
+    "path": "03_Market_Sources.md",
+    "bytes": 20664,
+    "sha256": "df8bda49cda24587d614d610d706774c88769b0d160d13fb2aa2f2787f7535fe"
+  },
+  {
+    "path": "04_OSS_Architecture_AR.md",
+    "bytes": 47491,
+    "sha256": "d6c37e678975da5a21777df0a245464cc2e0ab57124ad3346fc3bd5c9d481754"
+  },
+  {
+    "path": "04_OSS_Sources.md",
+    "bytes": 13424,
+    "sha256": "7f52a8c80212937f21bcb2ebef1f9172f578f312842dd85016bfcbab02c8b5ee"
+  },
+  {
+    "path": "05_Elm_Case_Study_AR.md",
+    "bytes": 27240,
+    "sha256": "b34e173559aee0bf41d85f98e6bdb8b6fe3ccb5a1e7e7221118ec523685e986a"
+  },
+  {
+    "path": "Business_Strategy_AR.docx",
+    "bytes": 70230,
+    "sha256": "cfcb695382b3024e8cbe38b82a5ddaa5e99ecef3760fc7a24af732f1abbda467"
+  },
+  {
+    "path": "Financial_Xray_Research_AR.html",
+    "bytes": 317035,
+    "sha256": "b969c0ab280916b6076373fcfc574ec9bc51be0952536871b8af22e383eedcd3"
+  },
+  {
+    "path": "evidence/README.md",
+    "bytes": 1717,
+    "sha256": "7b166f7a7ae925b63b6c67c21552a4987fbad74eee20fdbb233bc882dbb6c03b"
+  },
+  {
+    "path": "evidence/analyze.py",
+    "bytes": 15322,
+    "sha256": "b55fe51cd2370c7cbe017eafd650a3558fad94a1d904cc889d8a8c46224749b9"
+  },
+  {
+    "path": "evidence/calculations.csv",
+    "bytes": 27965,
+    "sha256": "1f0d66028a79abb5c28b3934818363b96900ffcc2cc7d69974401c640df6de5c"
+  },
+  {
+    "path": "evidence/calculations.json",
+    "bytes": 69380,
+    "sha256": "d019aded50de91086b79b81924459ba78f5bda8375d2ee94d7dc10fa34ed7f21"
+  },
+  {
+    "path": "evidence/delivery_checks.json",
+    "bytes": 426,
+    "sha256": "42edb30b45e9d830b513c988a36585c6cfe7073fd8756850d10f6682224b4084"
+  },
+  {
+    "path": "evidence/extract.py",
+    "bytes": 2135,
+    "sha256": "b3980cd3a5f6ef14df73d82b0d5d094316b496d22dfa16d504a8771ffc0462b9"
+  },
+  {
+    "path": "evidence/formula_reconciliation.json",
+    "bytes": 22047,
+    "sha256": "3f84fbac72fddd9600b78c5f0a9d25aec59cf424f8d7c63b48e742d0bebbb121"
+  },
+  {
+    "path": "evidence/full_cell_extraction.json",
+    "bytes": 199375,
+    "sha256": "b4419dd57bb0f14932dbf61a0396c3de96932359f2d7f61f7d095948391b94d1"
+  },
+  {
+    "path": "evidence/quality_summary.json",
+    "bytes": 612,
+    "sha256": "7e20113549a492c3dd3f1af08bc96eec6e8d763eb50cfff8c241c2855ef05185"
+  },
+  {
+    "path": "evidence/scenarios.csv",
+    "bytes": 3476,
+    "sha256": "77073c49b3e50174b81a08b8f802183158e9715dc6d20f7b1d35920604b31f45"
+  },
+  {
+    "path": "evidence/workbook_all_cells.txt",
+    "bytes": 37371,
+    "sha256": "c6fbdfdcaf6305d129b4a5f3f1fd553f07579a0e84d4ba000161e8c935d4d6e9"
+  }
+]

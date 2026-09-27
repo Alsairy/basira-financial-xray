@@ -1,0 +1,98 @@
+[
+  {
+    "text": "تجاوز إلى المحتوى",
+    "tag": "A",
+    "href": "#main",
+    "left": 20,
+    "right": 166.484375,
+    "top": 10,
+    "bottom": 60.390625,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  },
+  {
+    "text": "",
+    "tag": "BUTTON",
+    "href": null,
+    "left": 343,
+    "right": 378,
+    "top": 12.5,
+    "bottom": 47.5,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  },
+  {
+    "text": "ابحث عن مؤشر أو قرار⌘ K",
+    "tag": "BUTTON",
+    "href": null,
+    "left": 80.859375,
+    "right": 107.859375,
+    "top": 16.5,
+    "bottom": 43.5,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  },
+  {
+    "text": "EN",
+    "tag": "BUTTON",
+    "href": null,
+    "left": 52,
+    "right": 75.859375,
+    "top": 16.75,
+    "bottom": 43.25,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  },
+  {
+    "text": "",
+    "tag": "BUTTON",
+    "href": null,
+    "left": 12,
+    "right": 47,
+    "top": 12.5,
+    "bottom": 47.5,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  },
+  {
+    "text": "شركة علم · مرجعية",
+    "tag": "SELECT",
+    "href": null,
+    "left": 208,
+    "right": 346,
+    "top": 73,
+    "bottom": 103,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  },
+  {
+    "text": "",
+    "tag": "BUTTON",
+    "href": null,
+    "left": 178,
+    "right": 203,
+    "top": 75.5,
+    "bottom": 100.5,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  },
+  {
+    "text": "منظورالرئيس التنفيذي",
+    "tag": "BUTTON",
+    "href": null,
+    "left": 221.53125,
+    "right": 346,
+    "top": 108,
+    "bottom": 130.5,
+    "inViewport": true,
+    "visibility": "visible",
+    "outline": "3px"
+  }
+]

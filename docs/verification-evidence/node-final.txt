@@ -1,0 +1,34 @@
+✔ local contract selects evidence and renders exact stored amount only (5.176666ms)
+✔ strict schema prohibits generated prose and values (1.3655ms)
+✔ unknown citation cannot escape allowed evidence (0.32675ms)
+✔ wrong evidence status explanation is rejected (0.15875ms)
+✔ duplicate citation is rejected (0.17875ms)
+✔ freeform narrative and invented numeric fields are rejected (0.1515ms)
+✔ model refusal is not a successful result (0.117417ms)
+✔ incomplete responses and tools are rejected (0.150542ms)
+✔ malformed JSON and oversize output are rejected (0.182459ms)
+✔ only approved board metrics are available, never raw facts or sources (0.227167ms)
+✔ unknown or operator role gets no catalog (0.117292ms)
+✔ unreviewed and unmapped facts are excluded (0.100541ms)
+✔ conflicting duplicate concept period is excluded (0.089833ms)
+✔ identical duplicate concept period is not counted twice (1.236ms)
+✔ nonfinite amounts, invalid units and malformed periods are excluded (3.00375ms)
+✔ null and proxy are rendered with truthful qualifiers (0.216917ms)
+✔ negative source value remains negative (0.102ms)
+✔ source instruction text has no execution path and cannot create output claims (0.177667ms)
+✔ insufficient evidence abstains, with no selected claims (0.068792ms)
+✔ input catalog bounded and malformed arrays rejected (0.4185ms)
+✔ sessions, CSRF, tenant isolation, role checks and optimistic revisions (428.057042ms)
+✔ audience, purpose and depth change presentation without recalculating facts (3.890333ms)
+✔ overdue dedupe, source revisions, measured usage, declared review costs and approval race (597.873625ms)
+✔ all seven audiences and three depths retain exactly one destination per evidence link (19.395125ms)
+✔ board rendering retains authorized frozen evidence without restoring removed raw sources (2.006042ms)
+✔ unknown source references are declared unavailable and never emitted as broken links (0.764792ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 931.155042

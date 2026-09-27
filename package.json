@@ -1,0 +1,44 @@
+{
+  "name": "basira-financial-xray",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5178 --strictPort",
+    "server": "node server/index.mjs",
+    "build": "tsc --noEmit && vite build",
+    "start": "node server/index.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:engine": "python3 -m unittest discover -s tests/engine -v",
+    "test:e2e": "node tests/e2e/api-e2e.mjs",
+    "check": "tsc --noEmit",
+    "test:browser": "node tests/e2e/ui-journey.mjs && node tests/e2e/ui-functional.mjs",
+    "test:layout": "node tests/e2e/ui-audit.mjs"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "1.1.15",
+    "@tanstack/react-query": "5.90.20",
+    "express": "4.22.1",
+    "lucide-react": "0.563.0",
+    "pg": "8.18.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "2.15.4",
+    "sonner": "2.0.7",
+    "zod": "4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "24.11.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.1.4",
+    "playwright": "1.58.2",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "axe-core": "4.10.2"
+  },
+  "packageManager": "pnpm@10.30.3"
+}

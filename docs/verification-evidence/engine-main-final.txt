@@ -1,0 +1,33 @@
+test_blank_pdf_manual_fallback (test_engine.ExtractionTests.test_blank_pdf_manual_fallback) ... ok
+test_cli_single_json_and_nonfinite (test_engine.ExtractionTests.test_cli_single_json_and_nonfinite) ... ok
+test_csv_and_mapping (test_engine.ExtractionTests.test_csv_and_mapping) ... ok
+test_formula_cache_match_mismatch_and_unsupported (test_engine.ExtractionTests.test_formula_cache_match_mismatch_and_unsupported) ... ok
+test_text_pdf_provisional_source (test_engine.ExtractionTests.test_text_pdf_provisional_source) ... ok
+test_xlsx_formulas_sign_and_no_execution (test_engine.ExtractionTests.test_xlsx_formulas_sign_and_no_execution) ... ok
+test_all_35_metrics_numeric_reference_case (test_engine.FinancialTests.test_all_35_metrics_numeric_reference_case) ... ok
+test_all_ten_rules_justified (test_engine.FinancialTests.test_all_ten_rules_justified) ... ok
+test_broad_payables_not_supplier_days (test_engine.FinancialTests.test_broad_payables_not_supplier_days) ... ok
+test_complete_library_and_units (test_engine.FinancialTests.test_complete_library_and_units) ... ok
+test_conflicting_sources_block_instead_of_last_wins (test_engine.FinancialTests.test_conflicting_sources_block_instead_of_last_wins) ... ok
+test_currency_scope_and_units_block (test_engine.FinancialTests.test_currency_scope_and_units_block) ... ok
+test_duplicate_identical_allowed (test_engine.FinancialTests.test_duplicate_identical_allowed) ... ok
+test_eligible_cash_and_leases_policy (test_engine.FinancialTests.test_eligible_cash_and_leases_policy) ... ok
+test_empty_and_unknown_operation (test_engine.FinancialTests.test_empty_and_unknown_operation) ... ok
+test_missing_never_zero (test_engine.FinancialTests.test_missing_never_zero) ... ok
+test_no_nonadjacent_opening_balance (test_engine.FinancialTests.test_no_nonadjacent_opening_balance) ... ok
+test_nonfinite_and_invalid_fact_check (test_engine.FinancialTests.test_nonfinite_and_invalid_fact_check) ... ok
+test_reconciliation_detects_material_difference (test_engine.FinancialTests.test_reconciliation_detects_material_difference) ... ok
+test_rule_abstains_on_currency_or_scope_mismatch (test_engine.FinancialTests.test_rule_abstains_on_currency_or_scope_mismatch) ... ok
+test_unresolved_formula_blocks_review_only_and_accepts_documented_override (test_engine.FinancialTests.test_unresolved_formula_blocks_review_only_and_accepts_documented_override) ... ok
+test_zero_and_negative_denominators (test_engine.FinancialTests.test_zero_and_negative_denominators) ... ok
+test_cost_and_financing_effect_separate (test_engine.ScenarioTests.test_cost_and_financing_effect_separate) ... ok
+test_distinct_cases_exact_amounts (test_engine.ScenarioTests.test_distinct_cases_exact_amounts) ... ok
+test_double_counting_semantics (test_engine.ScenarioTests.test_double_counting_semantics) ... ok
+test_missing_borrowing_not_zero (test_engine.ScenarioTests.test_missing_borrowing_not_zero) ... ok
+test_percentage_points_not_relative_percent (test_engine.ScenarioTests.test_percentage_points_not_relative_percent) ... ok
+test_reject_bad_assumptions (test_engine.ScenarioTests.test_reject_bad_assumptions) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.489s
+
+OK

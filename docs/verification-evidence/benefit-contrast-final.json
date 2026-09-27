@@ -1,0 +1,17 @@
+{
+  "violations": [],
+  "colors": [
+    {
+      "tag": "STRONG",
+      "text": "100 ألف",
+      "color": "rgb(69, 99, 70)",
+      "background": "rgb(241, 246, 231)"
+    },
+    {
+      "tag": "SMALL",
+      "text": "2025-01-01 — 2025-12-31",
+      "color": "rgb(69, 99, 70)",
+      "background": "rgb(241, 246, 231)"
+    }
+  ]
+}

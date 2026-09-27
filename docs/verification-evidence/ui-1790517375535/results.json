@@ -1,0 +1,1698 @@
+{
+  "base": "http://127.0.0.1:4317",
+  "results": [
+    {
+      "viewport": "desktop",
+      "route": "#overview",
+      "label": "الصورة المالية",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 2055,
+      "heading": "الصورة المالية",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#data",
+      "label": "البيانات والمراجعة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 3466,
+      "heading": "مركز البيانات والمراجعة",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#analysis",
+      "label": "التشخيص والمؤشرات",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 1429,
+      "heading": "التشخيص والمؤشرات",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#benchmarks",
+      "label": "المقارنات المرجعية",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 1749,
+      "heading": "النظراء والمعايير المرجعية",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#scenarios",
+      "label": "مختبر الأثر",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 1401,
+      "heading": "مختبر الأثر",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#forecast",
+      "label": "توقعات السيولة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 1354,
+      "heading": "السيولة خلال 13 أسبوعًا",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#actions",
+      "label": "مساحة الإجراءات",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 963,
+      "heading": "مساحة الإجراءات",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#reports",
+      "label": "التقارير والمجلس",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 1026,
+      "heading": "التقارير ومساحة المجلس",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#assistant",
+      "label": "المساعد المالي",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 1134,
+      "heading": "المساعد المالي",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "desktop",
+      "route": "#settings",
+      "label": "الإعدادات والحوكمة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 1440,
+      "scroll": 1440,
+      "bodyScroll": 1440,
+      "bodyFont": "16px",
+      "textLength": 1349,
+      "heading": "الإعدادات والحوكمة",
+      "overflow": [],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#overview",
+      "label": "الصورة المالية",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 1568,
+      "heading": "الصورة المالية",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#data",
+      "label": "البيانات والمراجعة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 3107,
+      "heading": "مركز البيانات والمراجعة",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#analysis",
+      "label": "التشخيص والمؤشرات",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 1070,
+      "heading": "التشخيص والمؤشرات",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#benchmarks",
+      "label": "المقارنات المرجعية",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 1390,
+      "heading": "النظراء والمعايير المرجعية",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#scenarios",
+      "label": "مختبر الأثر",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 1042,
+      "heading": "مختبر الأثر",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#forecast",
+      "label": "توقعات السيولة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 992,
+      "heading": "السيولة خلال 13 أسبوعًا",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#actions",
+      "label": "مساحة الإجراءات",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 604,
+      "heading": "مساحة الإجراءات",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#reports",
+      "label": "التقارير والمجلس",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 667,
+      "heading": "التقارير ومساحة المجلس",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#assistant",
+      "label": "المساعد المالي",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 775,
+      "heading": "المساعد المالي",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "mobile",
+      "route": "#settings",
+      "label": "الإعدادات والحوكمة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "bodyFont": "16px",
+      "textLength": 990,
+      "heading": "الإعدادات والحوكمة",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#overview",
+      "label": "الصورة المالية",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 1580,
+      "heading": "الصورة المالية",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#data",
+      "label": "البيانات والمراجعة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 3119,
+      "heading": "مركز البيانات والمراجعة",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#analysis",
+      "label": "التشخيص والمؤشرات",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 1082,
+      "heading": "التشخيص والمؤشرات",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#benchmarks",
+      "label": "المقارنات المرجعية",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 1402,
+      "heading": "النظراء والمعايير المرجعية",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#scenarios",
+      "label": "مختبر الأثر",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 1054,
+      "heading": "مختبر الأثر",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#forecast",
+      "label": "توقعات السيولة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 1007,
+      "heading": "السيولة خلال 13 أسبوعًا",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#actions",
+      "label": "مساحة الإجراءات",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 616,
+      "heading": "مساحة الإجراءات",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#reports",
+      "label": "التقارير والمجلس",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 679,
+      "heading": "التقارير ومساحة المجلس",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#assistant",
+      "label": "المساعد المالي",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 787,
+      "heading": "المساعد المالي",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    },
+    {
+      "viewport": "narrow-reflow",
+      "route": "#settings",
+      "label": "الإعدادات والحوكمة",
+      "title": "بصيرة | Financial X-ray",
+      "dir": "rtl",
+      "inner": 720,
+      "scroll": 720,
+      "bodyScroll": 720,
+      "bodyFont": "16px",
+      "textLength": 1002,
+      "heading": "الإعدادات والحوكمة",
+      "overflow": [
+        {
+          "tag": "BUTTON",
+          "cls": "icon-button mobile-sidebar-close",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "A",
+          "cls": "brand",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "SPAN",
+          "cls": "brand-symbol",
+          "text": ""
+        },
+        {
+          "tag": "svg",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "path",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "circle",
+          "cls": "[object SVGAnimatedString]",
+          "text": ""
+        },
+        {
+          "tag": "SPAN",
+          "cls": "",
+          "text": "بصيرةBASIRA · FINANCIAL X-RAY"
+        },
+        {
+          "tag": "STRONG",
+          "cls": "",
+          "text": "بصيرة"
+        },
+        {
+          "tag": "SMALL",
+          "cls": "",
+          "text": "BASIRA · FINANCIAL X-RAY"
+        }
+      ],
+      "bodyOverflow": false
+    }
+  ],
+  "errors": [],
+  "focus": {
+    "tag": "A",
+    "text": "تجاوز إلى المحتوى",
+    "outlineStyle": "solid",
+    "outlineWidth": "3px",
+    "outlineColor": "rgb(230, 173, 83)",
+    "boxShadow": "none",
+    "rect": {
+      "x": 20,
+      "y": 10,
+      "width": 146.484375,
+      "height": 50.390625,
+      "top": 10,
+      "right": 166.484375,
+      "bottom": 60.390625,
+      "left": 20
+    }
+  },
+  "notes": [
+    "API-created demo is real persistent server state. This route audit is not a substitute for visible-form workflows.",
+    "Narrow viewport checks reflow; it is not a certified OS/browser 200% zoom accessibility audit."
+  ]
+}

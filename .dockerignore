@@ -1,0 +1,11 @@
+node_modules
+node_modules.preinstalled
+dist
+data
+.venv
+artifacts
+.git
+.env
+tests/e2e/results
+*.pyc
+__pycache__

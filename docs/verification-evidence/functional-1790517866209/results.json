@@ -1,0 +1,83 @@
+{
+  "steps": [
+    {
+      "name": "Metric to source inspector",
+      "status": "passed"
+    },
+    {
+      "name": "Scenario calculates, changes and persists",
+      "status": "passed"
+    },
+    {
+      "name": "Analyst creates owned monetary action",
+      "status": "passed"
+    },
+    {
+      "name": "CFO authorizes and owner starts execution",
+      "status": "passed"
+    },
+    {
+      "name": "Owner attaches evidence and submits verification",
+      "status": "passed"
+    },
+    {
+      "name": "Independent CFO closes and verifies measured benefit",
+      "status": "passed"
+    },
+    {
+      "name": "Benefit amount and attributed history visible",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "name": "Metric to source inspector",
+      "violations": []
+    },
+    {
+      "name": "Scenario calculates, changes and persists",
+      "violations": []
+    },
+    {
+      "name": "Analyst creates owned monetary action",
+      "violations": []
+    },
+    {
+      "name": "CFO authorizes and owner starts execution",
+      "violations": []
+    },
+    {
+      "name": "Owner attaches evidence and submits verification",
+      "violations": []
+    },
+    {
+      "name": "Independent CFO closes and verifies measured benefit",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            {
+              "target": [
+                ".approved-benefit > strong"
+              ],
+              "html": "<strong>100 ألف</strong>",
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.78 (foreground color: #859b5f, background color: #f1f6e7, font size: 19.5pt (26px), font weight: bold). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".approved-benefit > small"
+              ],
+              "html": "<small>2025-01-01 — 2025-12-31</small>",
+              "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #a4b981, background color: #f1f6e7, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Benefit amount and attributed history visible",
+      "violations": []
+    }
+  ]
+}

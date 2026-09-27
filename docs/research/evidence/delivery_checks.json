@@ -1,0 +1,18 @@
+{
+  "markdown_files": [
+    "01_Product_and_Business_AR.md",
+    "02_Implementation_Spec_AR.md",
+    "03_Market_Landscape_AR.md",
+    "04_OSS_Architecture_AR.md",
+    "05_Elm_Case_Study_AR.md",
+    "03_Market_Sources.md",
+    "04_OSS_Sources.md",
+    "00_README_AR.md"
+  ],
+  "distinct_source_urls": 112,
+  "html_articles": 8,
+  "created_outputs": [
+    "Financial_Xray_Research_AR.html",
+    "Business_Strategy_AR.docx"
+  ]
+}

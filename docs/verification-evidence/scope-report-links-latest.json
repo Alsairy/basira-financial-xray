@@ -1,0 +1,178 @@
+[
+  {
+    "audience": "board",
+    "detail": "brief",
+    "links": 80,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "board",
+    "detail": "standard",
+    "links": 105,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": [
+      "R10:2025"
+    ]
+  },
+  {
+    "audience": "board",
+    "detail": "detailed",
+    "links": 211,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": [
+      "R10:2025"
+    ]
+  },
+  {
+    "audience": "ceo",
+    "detail": "brief",
+    "links": 70,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "ceo",
+    "detail": "standard",
+    "links": 91,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": [
+      "R10:2025"
+    ]
+  },
+  {
+    "audience": "ceo",
+    "detail": "detailed",
+    "links": 194,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": [
+      "R10:2025"
+    ]
+  },
+  {
+    "audience": "cfo",
+    "detail": "brief",
+    "links": 54,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "cfo",
+    "detail": "standard",
+    "links": 67,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "cfo",
+    "detail": "detailed",
+    "links": 178,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "sales",
+    "detail": "brief",
+    "links": 54,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "sales",
+    "detail": "standard",
+    "links": 71,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "sales",
+    "detail": "detailed",
+    "links": 186,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "analyst",
+    "detail": "brief",
+    "links": 47,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "analyst",
+    "detail": "standard",
+    "links": 95,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "analyst",
+    "detail": "detailed",
+    "links": 273,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "sector",
+    "detail": "brief",
+    "links": 38,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "sector",
+    "detail": "standard",
+    "links": 44,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "sector",
+    "detail": "detailed",
+    "links": 151,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "operations",
+    "detail": "brief",
+    "links": 68,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "operations",
+    "detail": "standard",
+    "links": 77,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  },
+  {
+    "audience": "operations",
+    "detail": "detailed",
+    "links": 190,
+    "broken": [],
+    "duplicateIds": [],
+    "findingsWithoutMetricNavigation": []
+  }
+]

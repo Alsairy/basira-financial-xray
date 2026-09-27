@@ -1,0 +1,11 @@
+I am handing you an existing product called Basira (بصيرة), a financial X-ray and decision/action management platform for companies. Please inspect the attached project rather than starting from scratch.
+
+Read START_HERE.md, CLAUDE_HANDOFF.md, AGENTS.md, docs/CONTRACT.md, docs/IMPLEMENTATION_STATUS.md and docs/VERIFICATION.md first. The handoff explains my product vision, what has been built, the audience-specific reporting requirement and the verified limitations. The full business and market study is in docs/research/.
+
+The product takes financial statements, preserves source evidence, calculates diagnostics and scenarios, produces reports tailored to board/CEO/CFO/sales/analyst/sector/operations recipients, and follows actions through independent closure and measured benefit. Report audience, purpose and depth must change the reading while keeping financial facts consistent and authorization intact. This needs excellent Arabic RTL and English UX.
+
+First establish the current state from the code, install and run it in an isolated local environment, execute the relevant tests, and inspect the actual user journeys. Then identify the highest-priority gaps and continue development in small verified increments. Preserve the working system and evidence trail. Do not claim that future requirements in the research are already implemented. Document what you change and what remains.
+
+Important: the current assistant is local evidence retrieval. There is no external LLM transport implemented. A proposed OpenAI contract and synthetic payload are included, but sending questions or company metadata externally has not been authorized. This handoff is not that authorization. Ask me about the exact destination and payload before adding external transmission. Do not deploy, buy services, contact third parties or expose customer data based on this prompt.
+
+If you cannot execute this project in your interface, say so and perform a code-based review with explicit limits. Do not invent test results or simulate successful integrations.

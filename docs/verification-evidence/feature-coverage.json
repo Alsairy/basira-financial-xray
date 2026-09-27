@@ -1,0 +1,493 @@
+{
+  "run_id": "mujvs2kg",
+  "finished_at": "2026-09-27T13:55:19.459Z",
+  "summary": {
+    "passed": 36,
+    "failed": 0,
+    "blocked": 0
+  },
+  "features": {
+    "F01": [
+      {
+        "id": "AUTH-01",
+        "status": "passed",
+        "scope": "Health and anonymous session boundary"
+      },
+      {
+        "id": "AUTH-02",
+        "status": "passed",
+        "scope": "Register actual tenant, provision independent roles, log in"
+      },
+      {
+        "id": "AUTH-03",
+        "status": "passed",
+        "scope": "CSRF and member provisioning restrictions"
+      },
+      {
+        "id": "DATA-02",
+        "status": "passed",
+        "scope": "Tenant and board source boundaries"
+      },
+      {
+        "id": "ACTION-01",
+        "status": "passed",
+        "scope": "Action required values and tenant owner validation"
+      },
+      {
+        "id": "AUDIENCE-02",
+        "status": "passed",
+        "scope": "Audience selection cannot elevate board role or raw-source access"
+      },
+      {
+        "id": "VERSION-01",
+        "status": "passed",
+        "scope": "Historical dataset versions retain original fact values and attribution"
+      },
+      {
+        "id": "NOTIFY-01",
+        "status": "passed",
+        "scope": "Overdue reminders reach owner and CFO once per business date"
+      },
+      {
+        "id": "USAGE-01",
+        "status": "passed",
+        "scope": "Actual engine usage is distinct from declared review cost and inactive providers"
+      },
+      {
+        "id": "AUTH-04",
+        "status": "passed",
+        "scope": "Logout revokes server session"
+      }
+    ],
+    "F02": [
+      {
+        "id": "AUTH-02",
+        "status": "passed",
+        "scope": "Register actual tenant, provision independent roles, log in"
+      },
+      {
+        "id": "AUTH-03",
+        "status": "passed",
+        "scope": "CSRF and member provisioning restrictions"
+      },
+      {
+        "id": "DATA-02",
+        "status": "passed",
+        "scope": "Tenant and board source boundaries"
+      },
+      {
+        "id": "DATA-03",
+        "status": "passed",
+        "scope": "Approval refuses uploader and unreviewed facts"
+      },
+      {
+        "id": "REPORT-01",
+        "status": "passed",
+        "scope": "Dataset approval gate and independent report approval"
+      },
+      {
+        "id": "AUDIENCE-02",
+        "status": "passed",
+        "scope": "Audience selection cannot elevate board role or raw-source access"
+      },
+      {
+        "id": "CONTROL-01",
+        "status": "passed",
+        "scope": "Settings authority and audit attribution"
+      },
+      {
+        "id": "AUTH-04",
+        "status": "passed",
+        "scope": "Logout revokes server session"
+      }
+    ],
+    "F03": [
+      {
+        "id": "DATA-01",
+        "status": "passed",
+        "scope": "Upload XLSX, async extraction, units and source provenance"
+      },
+      {
+        "id": "DATA-07",
+        "status": "passed",
+        "scope": "Unsupported type and missing upload rights fail safely"
+      },
+      {
+        "id": "DATA-08",
+        "status": "passed",
+        "scope": "Malformed short XLSX and impossible dates return controlled errors"
+      },
+      {
+        "id": "DATA-09",
+        "status": "passed",
+        "scope": "Validated CSV upload uses real extraction and currency units"
+      }
+    ],
+    "F04": [
+      {
+        "id": "DATA-06",
+        "status": "passed",
+        "scope": "Duplicate source ingestion is prevented or explicitly identified"
+      }
+    ],
+    "F05": [],
+    "F06": [],
+    "F07": [],
+    "F08": [
+      {
+        "id": "DATA-01",
+        "status": "passed",
+        "scope": "Upload XLSX, async extraction, units and source provenance"
+      },
+      {
+        "id": "DATA-03",
+        "status": "passed",
+        "scope": "Approval refuses uploader and unreviewed facts"
+      },
+      {
+        "id": "DATA-09",
+        "status": "passed",
+        "scope": "Validated CSV upload uses real extraction and currency units"
+      }
+    ],
+    "F09": [
+      {
+        "id": "DATA-01",
+        "status": "passed",
+        "scope": "Upload XLSX, async extraction, units and source provenance"
+      },
+      {
+        "id": "DATA-04",
+        "status": "passed",
+        "scope": "Review all facts with revision conflict protection"
+      }
+    ],
+    "F10": [
+      {
+        "id": "CALC-01",
+        "status": "passed",
+        "scope": "Real calculated analysis with source-backed metrics/findings"
+      }
+    ],
+    "F11": [
+      {
+        "id": "DATA-03",
+        "status": "passed",
+        "scope": "Approval refuses uploader and unreviewed facts"
+      },
+      {
+        "id": "REPORT-01",
+        "status": "passed",
+        "scope": "Dataset approval gate and independent report approval"
+      },
+      {
+        "id": "DATA-05",
+        "status": "passed",
+        "scope": "Material imbalance blocks dataset approval after human review"
+      }
+    ],
+    "F12": [
+      {
+        "id": "DATA-04",
+        "status": "passed",
+        "scope": "Review all facts with revision conflict protection"
+      },
+      {
+        "id": "REPORT-02",
+        "status": "passed",
+        "scope": "Fact edit invalidates approval and stale analyses; frozen report unchanged"
+      },
+      {
+        "id": "VERSION-01",
+        "status": "passed",
+        "scope": "Historical dataset versions retain original fact values and attribution"
+      }
+    ],
+    "F13": [
+      {
+        "id": "REPORT-02",
+        "status": "passed",
+        "scope": "Fact edit invalidates approval and stale analyses; frozen report unchanged"
+      },
+      {
+        "id": "VERSION-01",
+        "status": "passed",
+        "scope": "Historical dataset versions retain original fact values and attribution"
+      }
+    ],
+    "F14": [
+      {
+        "id": "CALC-01",
+        "status": "passed",
+        "scope": "Real calculated analysis with source-backed metrics/findings"
+      }
+    ],
+    "F15": [
+      {
+        "id": "CALC-01",
+        "status": "passed",
+        "scope": "Real calculated analysis with source-backed metrics/findings"
+      }
+    ],
+    "F16": [
+      {
+        "id": "REPORT-02",
+        "status": "passed",
+        "scope": "Fact edit invalidates approval and stale analyses; frozen report unchanged"
+      },
+      {
+        "id": "CONTROL-01",
+        "status": "passed",
+        "scope": "Settings authority and audit attribution"
+      },
+      {
+        "id": "CONTROL-02",
+        "status": "passed",
+        "scope": "Settings versions invalidate drafts and downloads are audited"
+      }
+    ],
+    "F17": [
+      {
+        "id": "PEER-01",
+        "status": "passed",
+        "scope": "Peer metadata and metric validation rejects arbitrary benchmarks"
+      },
+      {
+        "id": "PEER-02",
+        "status": "passed",
+        "scope": "Benchmark cohort eligibility and minimum sample size"
+      }
+    ],
+    "F18": [
+      {
+        "id": "PEER-01",
+        "status": "passed",
+        "scope": "Peer metadata and metric validation rejects arbitrary benchmarks"
+      },
+      {
+        "id": "PEER-02",
+        "status": "passed",
+        "scope": "Benchmark cohort eligibility and minimum sample size"
+      }
+    ],
+    "F19": [],
+    "F20": [
+      {
+        "id": "SCENARIO-01",
+        "status": "passed",
+        "scope": "Collection scenario cash timing calculated from actual credit sales"
+      },
+      {
+        "id": "SCENARIO-02",
+        "status": "passed",
+        "scope": "Reject invalid type, order, bounds, nulls and numeric strings"
+      }
+    ],
+    "F21": [
+      {
+        "id": "SCENARIO-01",
+        "status": "passed",
+        "scope": "Collection scenario cash timing calculated from actual credit sales"
+      },
+      {
+        "id": "SCENARIO-02",
+        "status": "passed",
+        "scope": "Reject invalid type, order, bounds, nulls and numeric strings"
+      }
+    ],
+    "F22": [
+      {
+        "id": "CALC-01",
+        "status": "passed",
+        "scope": "Real calculated analysis with source-backed metrics/findings"
+      },
+      {
+        "id": "AUDIENCE-01",
+        "status": "passed",
+        "scope": "Audience changes structured content while preserving financial facts"
+      },
+      {
+        "id": "AUDIENCE-03",
+        "status": "passed",
+        "scope": "Purpose and depth change actual report content"
+      },
+      {
+        "id": "ASSISTANT-01",
+        "status": "passed",
+        "scope": "Board assistant restricted to approved report with evidence"
+      }
+    ],
+    "F23": [
+      {
+        "id": "FINDING-01",
+        "status": "passed",
+        "scope": "CFO rejection after draft preparation blocks stale publication"
+      },
+      {
+        "id": "FINDING-02",
+        "status": "passed",
+        "scope": "New report omits rejected findings from decision/watchpoint sections"
+      }
+    ],
+    "F24": [
+      {
+        "id": "AUDIENCE-01",
+        "status": "passed",
+        "scope": "Audience changes structured content while preserving financial facts"
+      },
+      {
+        "id": "AUDIENCE-03",
+        "status": "passed",
+        "scope": "Purpose and depth change actual report content"
+      }
+    ],
+    "F25": [
+      {
+        "id": "LANGUAGE-01",
+        "status": "passed",
+        "scope": "Arabic and English report sections preserve identical financial definitions"
+      }
+    ],
+    "F26": [
+      {
+        "id": "REPORT-01",
+        "status": "passed",
+        "scope": "Dataset approval gate and independent report approval"
+      },
+      {
+        "id": "AUDIENCE-01",
+        "status": "passed",
+        "scope": "Audience changes structured content while preserving financial facts"
+      },
+      {
+        "id": "FINDING-01",
+        "status": "passed",
+        "scope": "CFO rejection after draft preparation blocks stale publication"
+      },
+      {
+        "id": "REPORT-02",
+        "status": "passed",
+        "scope": "Fact edit invalidates approval and stale analyses; frozen report unchanged"
+      },
+      {
+        "id": "CONTROL-02",
+        "status": "passed",
+        "scope": "Settings versions invalidate drafts and downloads are audited"
+      }
+    ],
+    "F27": [
+      {
+        "id": "ACTION-01",
+        "status": "passed",
+        "scope": "Action required values and tenant owner validation"
+      },
+      {
+        "id": "ACTION-02",
+        "status": "passed",
+        "scope": "Evidence-gated closure by an independent reviewer"
+      },
+      {
+        "id": "DATA-08",
+        "status": "passed",
+        "scope": "Malformed short XLSX and impossible dates return controlled errors"
+      }
+    ],
+    "F28": [
+      {
+        "id": "ACTION-02",
+        "status": "passed",
+        "scope": "Evidence-gated closure by an independent reviewer"
+      },
+      {
+        "id": "ACTION-04",
+        "status": "passed",
+        "scope": "Second action cannot double-count overlapping benefit; evidence access scoped"
+      }
+    ],
+    "F29": [
+      {
+        "id": "ACTION-02",
+        "status": "passed",
+        "scope": "Evidence-gated closure by an independent reviewer"
+      },
+      {
+        "id": "ACTION-03",
+        "status": "passed",
+        "scope": "Benefit requires independent reviewer and measurement metadata"
+      },
+      {
+        "id": "ACTION-04",
+        "status": "passed",
+        "scope": "Second action cannot double-count overlapping benefit; evidence access scoped"
+      }
+    ],
+    "F30": [
+      {
+        "id": "NOTIFY-01",
+        "status": "passed",
+        "scope": "Overdue reminders reach owner and CFO once per business date"
+      }
+    ],
+    "F31": [],
+    "F32": [
+      {
+        "id": "ACTION-03",
+        "status": "passed",
+        "scope": "Benefit requires independent reviewer and measurement metadata"
+      }
+    ],
+    "F33": [
+      {
+        "id": "ACTION-03",
+        "status": "passed",
+        "scope": "Benefit requires independent reviewer and measurement metadata"
+      },
+      {
+        "id": "ACTION-04",
+        "status": "passed",
+        "scope": "Second action cannot double-count overlapping benefit; evidence access scoped"
+      }
+    ],
+    "F34": [
+      {
+        "id": "AUDIENCE-01",
+        "status": "passed",
+        "scope": "Audience changes structured content while preserving financial facts"
+      },
+      {
+        "id": "AUDIENCE-02",
+        "status": "passed",
+        "scope": "Audience selection cannot elevate board role or raw-source access"
+      },
+      {
+        "id": "ASSISTANT-01",
+        "status": "passed",
+        "scope": "Board assistant restricted to approved report with evidence"
+      }
+    ],
+    "F35": [
+      {
+        "id": "CONTROL-01",
+        "status": "passed",
+        "scope": "Settings authority and audit attribution"
+      },
+      {
+        "id": "CONTROL-02",
+        "status": "passed",
+        "scope": "Settings versions invalidate drafts and downloads are audited"
+      }
+    ],
+    "F36": [],
+    "F37": [
+      {
+        "id": "USAGE-01",
+        "status": "passed",
+        "scope": "Actual engine usage is distinct from declared review cost and inactive providers"
+      }
+    ],
+    "F38": [],
+    "F39": [],
+    "F40": []
+  },
+  "interpretation": "Limited API behavior only. Engine/browser/export evidence is separately described in requirements-matrix.md. No blanket F01-F40 acceptance claim."
+}
