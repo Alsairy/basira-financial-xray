@@ -202,7 +202,12 @@ test('getAiSelection falls back to null on http error, network throw, and malfor
         catalog: catalog(),
         question: 'q',
         language: 'en',
-        fetchImpl: async () => ({ ok: false, json: async () => ({}) }),
+        fetchImpl: async () => ({
+          ok: false,
+          status: 429,
+          json: async () => ({}),
+          text: async () => '{"type":"error","error":{"type":"rate_limit_error"}}',
+        }),
       });
       assert.equal(httpError.usage.status, 'http_error');
       assert.equal(httpError.selected, undefined);

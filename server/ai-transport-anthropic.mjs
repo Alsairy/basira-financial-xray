@@ -152,7 +152,23 @@ export async function getAiSelection({ catalog, question, language, fetchImpl = 
       ),
     });
     const elapsed_ms = Date.now() - started;
-    if (!res.ok) return { usage: { model: config.model, status: 'http_error', elapsed_ms } };
+    if (!res.ok) {
+      let errorBody = '';
+      try {
+        errorBody = await res.text();
+      } catch {
+        /* best-effort diagnostic only */
+      }
+      return {
+        usage: {
+          model: config.model,
+          status: 'http_error',
+          http_status: res.status,
+          error_body: errorBody.slice(0, 500),
+          elapsed_ms,
+        },
+      };
+    }
     const body = await res.json();
     const usage = {
       model: config.model,
