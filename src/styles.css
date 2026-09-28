@@ -2953,32 +2953,57 @@ details {
   font-size: 10px;
   color: var(--basira-line-strong);
 }
+/* A connected stepper — was four bare number/label text pairs with a floating divider line
+   with no visual relationship to what it separated. Now real nodes (icon in a circle) joined
+   by a line running through their centers, with the last node (the payoff/outcome) filled in
+   brand navy to draw the eye toward it, the same "always the strongest mark" role that token
+   plays everywhere else in the product. */
 .auth-journey {
   display: flex;
-  align-items: center;
-  gap: 17px;
-  margin-top: 70px;
-  max-width: 460px;
+  align-items: flex-start;
+  margin-top: 54px;
+  max-width: 480px;
 }
-.auth-journey > span {
-  font-family: Arial;
-  color: var(--basira-line-strong);
-  font-size: 11px;
+.auth-journey-step {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  min-width: 40px;
+  align-items: center;
+  gap: 9px;
+  min-width: 58px;
+}
+.auth-journey-node {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--white);
+  border: 1.5px solid var(--basira-line-strong);
+  color: var(--basira-navy);
+}
+.auth-journey-step-final .auth-journey-node {
+  background: var(--basira-navy);
+  border-color: var(--basira-navy);
+  color: var(--white);
+  box-shadow: 0 0 0 5px color-mix(in srgb, var(--basira-scan) 16%, transparent);
 }
 .auth-journey b {
   font-family: Tahoma, Arial, sans-serif;
   color: var(--basira-line-strong);
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.auth-journey-step-final b {
+  color: var(--basira-navy);
 }
 .auth-journey > i {
-  height: 1px;
-  background: var(--basira-sunken);
   flex: 1;
+  min-width: 16px;
+  height: 1.5px;
+  background: var(--basira-line);
+  margin-top: 17px;
 }
 .auth-visual {
   width: 100%;
@@ -4814,7 +4839,6 @@ th {
   color: var(--basira-line-strong);
 }
 .auth-story > .eyebrow,
-.auth-journey > span,
 .auth-divider,
 .auth-top .brand small {
   color: var(--basira-ink-muted);

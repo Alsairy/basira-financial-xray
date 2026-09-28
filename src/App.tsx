@@ -874,21 +874,33 @@ function Auth({
             </span>
           </div>
           <div className="auth-journey">
-            <span>
-              01<b>{tr('مصدر', 'Source')}</b>
-            </span>
+            <div className="auth-journey-step">
+              <span className="auth-journey-node">
+                <Files size={15} />
+              </span>
+              <b>{tr('مصدر', 'Source')}</b>
+            </div>
             <i />
-            <span>
-              02<b>{tr('بصيرة', 'Insight')}</b>
-            </span>
+            <div className="auth-journey-step">
+              <span className="auth-journey-node">
+                <ScanLine size={15} />
+              </span>
+              <b>{tr('بصيرة', 'Insight')}</b>
+            </div>
             <i />
-            <span>
-              03<b>{tr('قرار', 'Decision')}</b>
-            </span>
+            <div className="auth-journey-step">
+              <span className="auth-journey-node">
+                <Target size={15} />
+              </span>
+              <b>{tr('قرار', 'Decision')}</b>
+            </div>
             <i />
-            <span>
-              04<b>{tr('أثر', 'Impact')}</b>
-            </span>
+            <div className="auth-journey-step auth-journey-step-final">
+              <span className="auth-journey-node">
+                <Sparkles size={15} />
+              </span>
+              <b>{tr('أثر', 'Impact')}</b>
+            </div>
           </div>
         </div>
         <div className="auth-card">
