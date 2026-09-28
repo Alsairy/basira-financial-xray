@@ -201,7 +201,10 @@ export default function App() {
     qc.setQueryData(['session'], s);
     setEntityId('');
     await qc.invalidateQueries();
-    setChooseAudience(true);
+    // Only prompt for the reading audience when there's no remembered choice yet — a repeat
+    // presenter re-logging in for the same audience shouldn't have to dismiss this every time.
+    // Still reachable any time via the workspace-card or audience-trigger buttons.
+    if (!localStorage.getItem('basira-audience')) setChooseAudience(true);
     navigate('overview');
   };
   if (sessionQuery.isPending) return <Loading />;
@@ -299,58 +302,64 @@ export default function App() {
             >
               <X size={19} />
             </button>
-            <a className="brand" href="#overview" aria-label={tr('بصيرة الرئيسية', 'Basira home')}>
-              <span className="brand-symbol">
-                <img src="/brand/basira-mark-reversed.svg" alt="" width={41} height={41} />
-              </span>
-              <span>
-                <strong>بصيرة</strong>
-                <small>BASIRA · FINANCIAL X-RAY</small>
-              </span>
-            </a>
-            <button className="workspace-card" onClick={() => setChooseAudience(true)}>
-              <span className="workspace-avatar">
-                <BriefcaseBusiness size={20} />
-              </span>
-              <span>
-                <strong>
-                  {session.tenant.demo
-                    ? tr('مساحة علم المرجعية', 'Elm reference workspace')
-                    : session.tenant.name}
-                </strong>
-                <small>{tr(selectedAudience.short_ar, selectedAudience.short_en)}</small>
-              </span>
-              <ChevronDown size={15} />
-            </button>
-            <div className="nav-label">{tr('مساحة القرار', 'DECISION WORKSPACE')}</div>
-            <nav aria-label={tr('التنقل الرئيسي', 'Main navigation')}>
-              {allowedNav
-                .filter((n) => n.id !== 'settings')
-                .map((n) => (
-                  <a
-                    href={`#${n.id}`}
-                    key={n.id}
-                    onClick={() => setMobileMenu(false)}
-                    className={active.id === n.id ? 'active' : ''}
-                    aria-current={active.id === n.id ? 'page' : undefined}
-                  >
-                    <n.icon size={19} />
-                    <span>{tr(n.ar, n.en)}</span>
-                    {n.id === 'actions' &&
-                      !!dashboard?.actions.filter(
-                        (a) => !['closed', 'benefit_verified'].includes(a.status),
-                      ).length && (
-                        <span className="nav-count">
-                          {
-                            dashboard.actions.filter(
-                              (a) => !['closed', 'benefit_verified'].includes(a.status),
-                            ).length
-                          }
-                        </span>
-                      )}
-                  </a>
-                ))}
-            </nav>
+            <div className="sidebar-scroll">
+              <a
+                className="brand"
+                href="#overview"
+                aria-label={tr('بصيرة الرئيسية', 'Basira home')}
+              >
+                <span className="brand-symbol">
+                  <img src="/brand/basira-mark-reversed.svg" alt="" width={41} height={41} />
+                </span>
+                <span>
+                  <strong>بصيرة</strong>
+                  <small>BASIRA · FINANCIAL X-RAY</small>
+                </span>
+              </a>
+              <button className="workspace-card" onClick={() => setChooseAudience(true)}>
+                <span className="workspace-avatar">
+                  <BriefcaseBusiness size={20} />
+                </span>
+                <span>
+                  <strong>
+                    {session.tenant.demo
+                      ? tr('مساحة علم المرجعية', 'Elm reference workspace')
+                      : session.tenant.name}
+                  </strong>
+                  <small>{tr(selectedAudience.short_ar, selectedAudience.short_en)}</small>
+                </span>
+                <ChevronDown size={15} />
+              </button>
+              <div className="nav-label">{tr('مساحة القرار', 'DECISION WORKSPACE')}</div>
+              <nav aria-label={tr('التنقل الرئيسي', 'Main navigation')}>
+                {allowedNav
+                  .filter((n) => n.id !== 'settings')
+                  .map((n) => (
+                    <a
+                      href={`#${n.id}`}
+                      key={n.id}
+                      onClick={() => setMobileMenu(false)}
+                      className={active.id === n.id ? 'active' : ''}
+                      aria-current={active.id === n.id ? 'page' : undefined}
+                    >
+                      <n.icon size={19} />
+                      <span>{tr(n.ar, n.en)}</span>
+                      {n.id === 'actions' &&
+                        !!dashboard?.actions.filter(
+                          (a) => !['closed', 'benefit_verified'].includes(a.status),
+                        ).length && (
+                          <span className="nav-count">
+                            {
+                              dashboard.actions.filter(
+                                (a) => !['closed', 'benefit_verified'].includes(a.status),
+                              ).length
+                            }
+                          </span>
+                        )}
+                    </a>
+                  ))}
+              </nav>
+            </div>
             <div className="sidebar-bottom">
               <div className="trust-note">
                 <ShieldCheck size={19} />
@@ -573,6 +582,10 @@ export default function App() {
           <div className="modal-footer">
             <Button
               onClick={() => {
+                // The toast below claims the choice was saved — persist it even when the
+                // pre-selected default was accepted without touching a radio (AudienceSelector's
+                // onChange, which normally calls setAudience, never fires in that case).
+                setAudience(audience);
                 setChooseAudience(false);
                 notify(tr('حُفظ منظور القراءة', 'Reading perspective saved'));
               }}

@@ -372,6 +372,13 @@ details {
   flex-direction: column;
   padding: 29px 15px 16px;
   z-index: 40;
+}
+/* Only the brand/workspace/nav block scrolls; settings + sign-out below it (.sidebar-bottom)
+   stay pinned and visible without scrolling, however many nav items exist — previously the
+   whole sidebar scrolled as one unit, which could push sign-out below the fold entirely. */
+.sidebar-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
   overflow-y: auto;
 }
 .brand {
@@ -497,7 +504,7 @@ details {
   line-height: 20px;
 }
 .sidebar-bottom {
-  margin-top: auto;
+  flex-shrink: 0;
   padding-top: 24px;
 }
 .trust-note {
