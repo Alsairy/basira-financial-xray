@@ -16,6 +16,18 @@ page.on('console',m=>{if(m.type()==='error'&&!(m.text().includes('401')&&m.locat
 page.on('requestfailed',r=>{if(!/ERR_ABORTED/.test(r.failure()?.errorText||''))errors.push({type:'requestfailed',message:r.failure()?.errorText,url:r.url()});});
 try{
   await page.goto(base,{waitUntil:'networkidle'});await page.screenshot({path:join(output,'landing-desktop.png'),fullPage:true});
+  // The unauthenticated landing/auth page isn't in nav (it has no session yet), so the
+  // route-driven viewport loop below never sees it — check it explicitly at the same
+  // viewports so its layout gets the same overflow/reflow scrutiny as every other screen.
+  const landingResults=[];
+  for(const viewport of [{width:1440,height:1000,name:'desktop'},{width:390,height:844,name:'mobile'},{width:720,height:900,name:'narrow-reflow'}]){
+    await page.setViewportSize(viewport);
+    await page.reload({waitUntil:'networkidle'});
+    const state=await page.evaluate(()=>({inner:innerWidth,scroll:document.documentElement.scrollWidth,bodyScroll:document.body.scrollWidth,overflow:[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&(r.right>innerWidth+2||r.left< -2)&&getComputedStyle(e).position!=='fixed';}).slice(0,12).map(e=>({tag:e.tagName,cls:String(e.className),text:e.textContent.slice(0,60)}))}));
+    await page.screenshot({path:join(output,`landing-${viewport.name}.png`),fullPage:true});
+    landingResults.push({viewport:viewport.name,route:'/ (landing, unauthenticated)',...state,bodyOverflow:state.scroll>state.inner+1||state.bodyScroll>state.inner+1});
+  }
+  await page.setViewportSize({width:1440,height:1000});
   // The live server creates an isolated demo tenant; no fixture is injected into application state.
   const login=await context.request.post(base+'/api/auth/demo',{data:{role:'cfo'}});if(!login.ok())throw Error('Demo session failed '+login.status());const session=await login.json();
   const seed=await context.request.post(base+'/api/demo/seed',{data:{},headers:{'X-CSRF-Token':session.csrfToken}});if(!seed.ok())throw Error('Demo seed failed '+seed.status());const job=await seed.json();
@@ -34,6 +46,7 @@ try{
       results.push({viewport:viewport.name,route:route.href,label:route.label,...state,bodyOverflow:state.scroll>state.inner+1||state.bodyScroll>state.inner+1});
     }
   }
+  results.push(...landingResults);
   await page.setViewportSize({width:1440,height:1000});await page.goto(base,{waitUntil:'networkidle'});await page.keyboard.press('Tab');
   const focus=await page.evaluate(()=>{const e=document.activeElement,s=getComputedStyle(e);return {tag:e.tagName,text:e.textContent.slice(0,80),outlineStyle:s.outlineStyle,outlineWidth:s.outlineWidth,outlineColor:s.outlineColor,boxShadow:s.boxShadow,rect:e.getBoundingClientRect().toJSON()};});
   await page.screenshot({path:join(output,'keyboard-focus.png'),fullPage:true});

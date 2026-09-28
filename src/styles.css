@@ -2980,6 +2980,85 @@ details {
   background: var(--basira-sunken);
   flex: 1;
 }
+.auth-visual {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin-top: 30px;
+  overflow: visible;
+}
+.auth-visual-grid {
+  stroke: var(--basira-line);
+  stroke-width: 1;
+}
+.auth-visual-area {
+  fill: color-mix(in srgb, var(--basira-scan) 10%, transparent);
+}
+.auth-visual-line {
+  fill: none;
+  stroke: var(--basira-navy);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.auth-visual-dot {
+  fill: var(--basira-paper);
+  stroke: var(--basira-navy);
+  stroke-width: 2;
+}
+.auth-visual-scan line {
+  stroke: var(--basira-scan);
+  stroke-width: 2;
+  stroke-dasharray: 3 3;
+}
+.auth-visual-scan circle {
+  fill: var(--basira-scan);
+  fill-opacity: 0.18;
+  stroke: var(--basira-scan);
+  stroke-width: 2;
+}
+.auth-cta-group {
+  display: flex;
+  flex-direction: column;
+}
+.auth-cta-group .btn {
+  margin-bottom: 8px;
+}
+.auth-cta-hint {
+  display: block;
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--basira-line-strong);
+  margin-bottom: 4px;
+  padding-inline-start: 2px;
+}
+.password-field {
+  position: relative;
+  display: flex;
+}
+/* The password input is always dir="ltr" (like the email field) regardless of page locale, so
+   the toggle button's side must be physical (right), not logical (inline-end) — inline-end
+   would flip to the left under RTL and collide with the LTR input's own text start. */
+.password-field input {
+  width: 100%;
+  padding-right: 40px;
+}
+.password-toggle {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: var(--basira-line-strong);
+}
+.password-toggle:hover {
+  background: var(--basira-sunken);
+  color: var(--basira-ink);
+}
 .auth-card {
   background: var(--white);
   border: 1px solid var(--basira-line);
@@ -3354,7 +3433,34 @@ details {
   color: var(--basira-critical);
 }
 .auth-page {
-  background: radial-gradient(ellipse at 75% 20%, var(--basira-paper), transparent 55%), var(--basira-paper);
+  /* Previously a same-color-on-color gradient (paper-on-paper) — visually a no-op. Real brand
+     glow: a soft navy wash in the upper corner (inline-end, so it mirrors correctly in LTR)
+     easing into the plain paper background, echoing the sidebar's navy without competing with
+     the card's contrast. */
+  background: radial-gradient(
+      ellipse 60% 50% at 85% 0%,
+      color-mix(in srgb, var(--basira-navy) 7%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 40% at 8% 92%,
+      color-mix(in srgb, var(--basira-scan) 6%, transparent),
+      transparent 70%
+    ),
+    var(--basira-paper);
+}
+[dir='ltr'] .auth-page {
+  background: radial-gradient(
+      ellipse 60% 50% at 15% 0%,
+      color-mix(in srgb, var(--basira-navy) 7%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 40% at 92% 92%,
+      color-mix(in srgb, var(--basira-scan) 6%, transparent),
+      transparent 70%
+    ),
+    var(--basira-paper);
 }
 @media (min-width: 1700px) {
   .content {
@@ -3666,6 +3772,9 @@ details {
     margin-top: 15px;
   }
   .auth-journey {
+    display: none;
+  }
+  .auth-visual {
     display: none;
   }
   .auth-proof {

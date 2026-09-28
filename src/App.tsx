@@ -6,6 +6,7 @@ import {
   CalendarRange,
   ChevronDown,
   Eye,
+  EyeOff,
   Files,
   FileText,
   LayoutDashboard,
@@ -743,6 +744,50 @@ export default function App() {
     </AppContext.Provider>
   );
 }
+/**
+ * A static, hand-rolled illustration for the auth page's marketing side — a financial trend
+ * line with a scan line sweeping across it, literalizing the product name (بصيرة/X-ray) rather
+ * than using a generic stock illustration. Pure SVG (same rationale as BenchmarkDistribution
+ * and MetricTrend): a small static diagram doesn't need a charting library.
+ */
+function AuthScanVisual({ tr }: { tr: (ar: string, en: string) => string }) {
+  const points = [
+    [10, 132],
+    [55, 108],
+    [100, 118],
+    [145, 78],
+    [190, 92],
+    [235, 52],
+    [280, 64],
+    [325, 30],
+  ];
+  const line = points.map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x},${y}`).join(' ');
+  const area = `${line} L325,168 L10,168 Z`;
+  return (
+    <svg
+      className="auth-visual"
+      viewBox="0 0 336 180"
+      role="img"
+      aria-label={tr(
+        'رسم توضيحي لخط بياني مالي متصاعد يمر عبره خط مسح',
+        'Illustration of a rising financial trend line swept by a scan line',
+      )}
+    >
+      {[36, 72, 108, 144].map((y) => (
+        <line key={y} x1={0} y1={y} x2={336} y2={y} className="auth-visual-grid" />
+      ))}
+      <path d={area} className="auth-visual-area" />
+      <path d={line} className="auth-visual-line" />
+      {points.map(([x, y], i) => (
+        <circle key={i} cx={x} cy={y} r={i === points.length - 1 ? 4.5 : 3} className="auth-visual-dot" />
+      ))}
+      <g className="auth-visual-scan">
+        <line x1={235} y1={4} x2={235} y2={176} />
+        <circle cx={235} cy={52} r={7} />
+      </g>
+    </svg>
+  );
+}
 function Auth({
   locale,
   setLocale,
@@ -755,7 +800,8 @@ function Auth({
   const tr = (ar: string, en: string) => (locale === 'ar' ? ar : en);
   const [mode, setMode] = useState('welcome'),
     [busy, setBusy] = useState(''),
-    [error, setError] = useState('');
+    [error, setError] = useState(''),
+    [showPassword, setShowPassword] = useState(false);
   const submit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
@@ -812,6 +858,7 @@ function Auth({
               'A financial reading for each decision-maker, connecting every finding to its source and every initiative to its outcome.',
             )}
           </p>
+          <AuthScanVisual tr={tr} />
           <div className="auth-proof">
             <span>
               <ShieldCheck size={18} />
@@ -857,39 +904,49 @@ function Auth({
                   'Explore a real workflow using Elm’s statement workbook, or create a workspace for your company.',
                 )}
               </p>
-              <Button
-                busy={busy === 'demo'}
-                onClick={async () => {
-                  setBusy('demo');
-                  setError('');
-                  try {
-                    await onDone(await post<Session>('/auth/demo', {}), true);
-                  } catch (err) {
-                    setError(err instanceof ApiError ? err.messageAr : (err as Error).message);
-                  } finally {
-                    setBusy('');
-                  }
-                }}
-              >
-                <Eye size={18} />
-                {tr('استكشف تجربة علم', 'Explore the Elm workspace')}
-                <ArrowUpLeft size={17} />
-              </Button>
-              <Button variant="secondary" onClick={() => setMode('register')}>
-                {tr('إنشاء مساحة خاصة', 'Create a private workspace')}
-              </Button>
+              <div className="auth-cta-group">
+                <Button
+                  busy={busy === 'demo'}
+                  onClick={async () => {
+                    setBusy('demo');
+                    setError('');
+                    try {
+                      await onDone(await post<Session>('/auth/demo', {}), true);
+                    } catch (err) {
+                      setError(err instanceof ApiError ? err.messageAr : (err as Error).message);
+                    } finally {
+                      setBusy('');
+                    }
+                  }}
+                >
+                  <Eye size={18} />
+                  {tr('استكشف تجربة علم', 'Explore the Elm workspace')}
+                  <ArrowUpLeft size={17} />
+                </Button>
+                <small className="auth-cta-hint">
+                  {tr(
+                    'بدون تسجيل · بيانات تجريبية معزولة يمكن حذفها لاحقًا',
+                    'No sign-up needed · isolated demo data, disposable anytime',
+                  )}
+                </small>
+              </div>
               <div className="auth-divider">
-                <span>{tr('لديك حساب؟', 'Already have an account?')}</span>
+                <span>{tr('أو لبيانات شركتك الحقيقية', 'Or for your own company data')}</span>
+              </div>
+              <div className="auth-cta-group">
+                <Button variant="secondary" onClick={() => setMode('register')}>
+                  {tr('إنشاء مساحة خاصة', 'Create a private workspace')}
+                </Button>
+                <small className="auth-cta-hint">
+                  {tr(
+                    'صلاحيات مستخدمين ومراجعة مستقلة كاملة من اليوم الأول',
+                    'Full user roles and independent review from day one',
+                  )}
+                </small>
               </div>
               <Button variant="ghost" onClick={() => setMode('login')}>
-                {tr('تسجيل الدخول', 'Sign in')}
+                {tr('لديك حساب؟ تسجيل الدخول', 'Already have an account? Sign in')}
               </Button>
-              <small className="muted center">
-                {tr(
-                  'مساحة التجربة منفصلة؛ التغييرات محفوظة داخلها.',
-                  'The demo workspace is isolated; changes are saved within it.',
-                )}
-              </small>
             </>
           ) : (
             <>
@@ -923,14 +980,27 @@ function Auth({
                       : undefined
                   }
                 >
-                  <input
-                    name="password"
-                    type="password"
-                    autoComplete={mode === 'register' ? 'new-password' : 'current-password'}
-                    minLength={mode === 'register' ? 12 : 1}
-                    required
-                    dir="ltr"
-                  />
+                  <div className="password-field">
+                    <input
+                      name="password"
+                      type={showPassword ? 'text' : 'password'}
+                      autoComplete={mode === 'register' ? 'new-password' : 'current-password'}
+                      minLength={mode === 'register' ? 12 : 1}
+                      required
+                      dir="ltr"
+                    />
+                    <button
+                      type="button"
+                      className="password-toggle"
+                      onClick={() => setShowPassword((v) => !v)}
+                      aria-label={tr(
+                        showPassword ? 'إخفاء كلمة المرور' : 'إظهار كلمة المرور',
+                        showPassword ? 'Hide password' : 'Show password',
+                      )}
+                    >
+                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                    </button>
+                  </div>
                 </Field>
                 <Button busy={busy === 'auth'} type="submit">
                   {mode === 'register'
