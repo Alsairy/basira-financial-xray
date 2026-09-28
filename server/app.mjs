@@ -191,6 +191,13 @@ export function createApp(options = {}) {
   const store = openStore(dataDir),
     db = store.db,
     app = express();
+  // Real, primary-source-verified peer companies (docs/research/06_Peer_Benchmark_Dataset_AR.md)
+  // — used to auto-seed the demo tenant's peer cohort (see /api/auth/demo) so the demo
+  // benchmark chart shows real named peers, not an empty state. Loaded once per app instance,
+  // same pattern as globalSectorBenchmarks above; absent in the unlikely case the seed file
+  // is ever removed, in which case demo peer-seeding is silently skipped rather than failing.
+  const peerSeedPath = join(root, 'docs', 'research', 'peer_benchmarks_seed.json');
+  const peerSeed = existsSync(peerSeedPath) ? JSON.parse(readFileSync(peerSeedPath, 'utf8')) : null;
   const engine = async (request, context = {}) => {
     const started = performance.now(),
       started_at = now();
@@ -479,6 +486,28 @@ ${failed ? '<div class="err">كلمة المرور غير صحيحة / Incorrect
       version: 1,
       created_at: now(),
     });
+  // Server-side insert for a peer_benchmarks_seed.json entry, bypassing the /api/peers
+  // request-shaped validation (source_url/metrics etc. are already known-good in the seed
+  // file — see docs/research/06_Peer_Benchmark_Dataset_AR.md for verification trail) since
+  // this runs outside an HTTP request context (inside tenant-creation transactions).
+  const addPeer = (tenant, entityId, createdBy, peer) =>
+    store.put('peer', tenant, {
+      id: id(),
+      entity_id: entityId,
+      name: peer.name,
+      sector: peer.sector,
+      sector_code: peer.sector_code || '',
+      country: peer.country,
+      currency: peer.currency,
+      period: peer.period,
+      source_url: peer.source_url,
+      rights_basis: peer.rights_basis,
+      definition_notes: peer.definition_notes,
+      metrics: { ...peer.metrics },
+      created_by: createdBy,
+      created_at: now(),
+      version: 1,
+    });
   const notify = (req, userId, title, resourceId) =>
     put(req, 'notification', {
       id: id(),
@@ -697,7 +726,24 @@ ${failed ? '<div class="err">كلمة المرور غير صحيحة / Incorrect
               r,
               now(),
             );
-          addEntity(tenant, 'Elm reference - demonstration', 'technology', 'SAR', 'it_services');
+          const entity = addEntity(
+            tenant,
+            'Elm reference - demonstration',
+            'technology',
+            'SAR',
+            'it_services',
+          );
+          // Seed the demo tenant's real, primary-source-verified peer cohort (same
+          // sector_code as the demo entity only — mixing sectors would show incomparable
+          // companies as if they were peers) so the benchmark chart has real named peers
+          // out of the box instead of an empty state.
+          if (peerSeed) {
+            const cfoUser = db
+              .prepare("SELECT id FROM users WHERE tenant_id=? AND role='cfo'")
+              .get(tenant);
+            for (const peer of peerSeed.peers)
+              if (peer.sector_code === entity.sector_code) addPeer(tenant, entity.id, cfoUser.id, peer);
+          }
         });
       }
       const user = db.prepare('SELECT * FROM users WHERE tenant_id=? AND role=?').get(tenant, role);
