@@ -44,8 +44,12 @@ function envConfig() {
   const enabled = process.env.BASIRA_AI_ENABLED === 'true';
   const apiKey = process.env.ANTHROPIC_API_KEY;
   const model = process.env.ANTHROPIC_MODEL;
+  // Optional: only required when the API key is an organization key rather than one scoped
+  // to a single workspace — Anthropic then requires this header on every request (not a
+  // secret, just a routing identifier, safe to set alongside the key).
+  const workspaceId = process.env.ANTHROPIC_WORKSPACE_ID || null;
   if (!enabled || !apiKey || !model) return null;
-  return { apiKey, model };
+  return { apiKey, model, workspaceId };
 }
 
 /**
@@ -146,6 +150,7 @@ export async function getAiSelection({ catalog, question, language, fetchImpl = 
         'content-type': 'application/json',
         'x-api-key': config.apiKey,
         'anthropic-version': ANTHROPIC_VERSION,
+        ...(config.workspaceId ? { 'anthropic-workspace-id': config.workspaceId } : {}),
       },
       body: JSON.stringify(
         buildAnthropicRequest({ catalog, question, language, model: config.model }),

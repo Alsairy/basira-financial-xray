@@ -175,6 +175,68 @@ test('getAiSelection succeeds end to end with a mocked fetch, never a real netwo
   );
 });
 
+test('getAiSelection sends anthropic-workspace-id only when ANTHROPIC_WORKSPACE_ID is set', async () => {
+  await withEnv(
+    {
+      BASIRA_AI_ENABLED: 'true',
+      ANTHROPIC_API_KEY: 'test-key',
+      ANTHROPIC_MODEL: 'claude-haiku-4-5-20251001',
+      ANTHROPIC_WORKSPACE_ID: 'wrkspc-abc123',
+    },
+    async () => {
+      let requestSeen;
+      await getAiSelection({
+        catalog: catalog(),
+        question: 'What does gross margin show?',
+        language: 'en',
+        fetchImpl: async (url, init) => {
+          requestSeen = init;
+          return {
+            ok: true,
+            json: async () =>
+              toolUseResponse({
+                answer_kind: 'evidence',
+                selections: [{ citation_id: 'E000', explanation_key: 'source_value' }],
+              }),
+          };
+        },
+      });
+      assert.equal(requestSeen.headers['anthropic-workspace-id'], 'wrkspc-abc123');
+    },
+  );
+  await withEnv(
+    {
+      BASIRA_AI_ENABLED: 'true',
+      ANTHROPIC_API_KEY: 'test-key',
+      ANTHROPIC_MODEL: 'claude-haiku-4-5-20251001',
+    },
+    async () => {
+      // withEnv stores process.env values as strings and can't represent "unset" via
+      // `undefined` (Node coerces it to the string "undefined", which is truthy) — deleting
+      // outright is the only way to assert the true no-workspace-id default here.
+      delete process.env.ANTHROPIC_WORKSPACE_ID;
+      let requestSeen;
+      await getAiSelection({
+        catalog: catalog(),
+        question: 'What does gross margin show?',
+        language: 'en',
+        fetchImpl: async (url, init) => {
+          requestSeen = init;
+          return {
+            ok: true,
+            json: async () =>
+              toolUseResponse({
+                answer_kind: 'evidence',
+                selections: [{ citation_id: 'E000', explanation_key: 'source_value' }],
+              }),
+          };
+        },
+      });
+      assert.equal('anthropic-workspace-id' in requestSeen.headers, false);
+    },
+  );
+});
+
 test('getAiSelection reports an "insufficient" model answer as no selection, not an error', async () => {
   await withEnv(
     { BASIRA_AI_ENABLED: 'true', ANTHROPIC_API_KEY: 'k', ANTHROPIC_MODEL: 'claude-haiku-4-5-20251001' },
