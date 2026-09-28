@@ -2515,6 +2515,19 @@ details {
   background: var(--basira-band);
   border-color: var(--basira-series-benchmark);
 }
+.global-benchmark-codes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  padding: 12px 4px;
+  font-size: 12.5px;
+  color: var(--basira-ink-muted);
+}
+.global-benchmark-codes b {
+  color: var(--basira-ink);
+  font-weight: 600;
+  margin-inline-end: 4px;
+}
 .benchmark-values {
   display: flex;
   padding: 24px;

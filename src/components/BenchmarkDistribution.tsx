@@ -6,6 +6,10 @@ interface PeerPoint {
   name: string;
   value: number;
 }
+interface GlobalReference {
+  value: number;
+  label: string;
+}
 interface Props {
   companyLabel: string;
   companyValue: number | null;
@@ -16,6 +20,13 @@ interface Props {
   unit: string;
   locale: Locale;
   tr: (ar: string, en: string) => string;
+  /**
+   * A free global industry AVERAGE (e.g. Damodaran), distinct in kind from the named peer
+   * cohort above: no distribution, no quartiles, just one number — drawn as a separate
+   * diamond marker so it is never visually confused with an actual peer company or with the
+   * user-curated cohort's own median.
+   */
+  globalReference?: GlobalReference | null;
 }
 const WIDTH = 640;
 const HEIGHT = 120;
@@ -40,9 +51,10 @@ export function BenchmarkDistribution({
   unit,
   locale,
   tr,
+  globalReference,
 }: Props) {
   const values = peers.map((p) => p.value).filter(Number.isFinite);
-  const known = [...values, median, q1, q3, companyValue].filter(
+  const known = [...values, median, q1, q3, companyValue, globalReference?.value ?? null].filter(
     (v): v is number => v !== null && Number.isFinite(v),
   );
   if (!known.length) return null;
@@ -131,6 +143,25 @@ export function BenchmarkDistribution({
               </text>
             </g>
           )}
+          {globalReference && (
+            <g>
+              <line
+                x1={x(globalReference.value)}
+                y1={TRACK_Y - 22}
+                x2={x(globalReference.value)}
+                y2={TRACK_Y + 22}
+                stroke="var(--basira-glow)"
+                strokeWidth={2}
+                strokeDasharray="3 3"
+              />
+              <path
+                d={`M ${x(globalReference.value)} ${TRACK_Y - 22} l 5 5 l -5 5 l -5 -5 z`}
+                fill="var(--basira-glow)"
+              >
+                <title>{`${globalReference.label}: ${fmt(globalReference.value)}`}</title>
+              </path>
+            </g>
+          )}
           <text x={PAD} y={HEIGHT - 10} textAnchor="start" className="benchmark-distribution-axis">
             {fmt(domainMin)}
           </text>
@@ -167,6 +198,12 @@ export function BenchmarkDistribution({
           <i className="swatch-band" />
           {tr('نطاق الربيعين', 'Interquartile range')}
         </span>
+        {globalReference && (
+          <span>
+            <i style={{ background: 'var(--basira-glow)' }} />
+            {globalReference.label}
+          </span>
+        )}
       </div>
     </div>
   );

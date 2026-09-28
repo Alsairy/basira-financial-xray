@@ -41,6 +41,33 @@ interface Benchmark {
   warnings: string[];
   peers: Peer[];
 }
+interface ClassificationCode {
+  code: string;
+  title: string;
+}
+interface GlobalBenchmark {
+  available: boolean;
+  sector_code?: string;
+  label_ar?: string;
+  label_en?: string;
+  classification?: {
+    isic: ClassificationCode;
+    naics: ClassificationCode;
+    gics: ClassificationCode;
+  };
+  classification_caveat?: string;
+  global_average?: {
+    source_name: string;
+    damodaran_industry: string;
+    source_page: string;
+    data_as_of: string;
+    n_firms: number;
+    region: string;
+    metrics: Record<string, number>;
+    industry_match_caveat?: string;
+    average_only_caveat: string;
+  };
+}
 export default function Benchmarks() {
   const { tr, locale, entityId, dashboard, period, notify } = useApp();
   const [add, setAdd] = useState(false),
@@ -54,6 +81,15 @@ export default function Benchmarks() {
     queryFn: () => api<Peer[]>(`/peers?entity_id=${entityId}`),
     enabled: !!entityId,
   });
+  const sectorCode = dashboard?.entity.sector_code;
+  const globalBenchmark = useQuery({
+    queryKey: ['global-benchmark', sectorCode],
+    queryFn: () => api<GlobalBenchmark>(`/global-benchmark?sector_code=${sectorCode}`),
+    enabled: !!sectorCode,
+  });
+  const globalMetricValue = globalBenchmark.data?.available
+    ? globalBenchmark.data.global_average?.metrics[metricKey]
+    : undefined;
   const metrics =
     dashboard?.analysis?.metrics.filter((m) => m.period === period && m.value !== null) || [];
   const metric = metrics.find((m) => m.key === metricKey);
@@ -76,8 +112,8 @@ export default function Benchmarks() {
       />
       <Notice>
         {tr(
-          'لا توجد قاعدة عالمية مرخصة متصلة حاليًا. المقارنات الخارجية تعتمد على بيانات تضيفها بإذن استخدام؛ لا تمثل ترتيبًا عالميًا أو تطابقًا تلقائيًا في نموذج العمل.',
-          'No licensed global dataset is connected. External comparisons use authorized data you provide and do not represent global rankings or automatically comparable business models.',
+          'لا توجد قاعدة عالمية مرخصة (مدفوعة) متصلة حاليًا. مقارنة النظراء بالاسم تعتمد على بيانات تضيفها بإذن استخدام؛ لا تمثل ترتيبًا عالميًا أو تطابقًا تلقائيًا في نموذج العمل. أسفل الصفحة متوسط قطاعي عالمي مجاني (Damodaran) عند توفره لقطاع الشركة — وهو رقم متوسط واحد لا توزيع، منفصل تمامًا عن مقارنة النظراء بالاسم.',
+          'No licensed (paid) global dataset is connected. Named peer comparison uses authorized data you provide and does not represent a global ranking or automatic business-model match. A free global sector average (Damodaran) appears below when available for the company sector — a single average figure, not a distribution, entirely separate from the named peer comparison.',
         )}
       </Notice>
       <Panel title={tr('اختر المؤشر', 'Choose a metric')}>
@@ -115,6 +151,54 @@ export default function Benchmarks() {
           ))}
         </div>
       </Panel>
+      {globalBenchmark.data?.available && globalBenchmark.data.classification && globalBenchmark.data.global_average && (
+        <Panel
+          title={tr('المتوسط العالمي للقطاع (مجاني)', 'Global sector average (free)')}
+          subtitle={tr(globalBenchmark.data.label_ar || '', globalBenchmark.data.label_en || '')}
+        >
+          <div className="global-benchmark-codes">
+            <span>
+              <b>ISIC</b> {globalBenchmark.data.classification.isic.code} —{' '}
+              {globalBenchmark.data.classification.isic.title}
+            </span>
+            <span>
+              <b>NAICS</b> {globalBenchmark.data.classification.naics.code} —{' '}
+              {globalBenchmark.data.classification.naics.title}
+            </span>
+            <span>
+              <b>GICS</b> {globalBenchmark.data.classification.gics.code} —{' '}
+              {globalBenchmark.data.classification.gics.title}
+            </span>
+          </div>
+          {typeof globalMetricValue === 'number' && (
+            <div className="benchmark-values">
+              <div>
+                <span>
+                  {tr('متوسط', 'Average')} — {globalBenchmark.data.global_average.damodaran_industry}
+                </span>
+                <strong dir="ltr">{format(globalMetricValue, metric?.unit)}</strong>
+              </div>
+            </div>
+          )}
+          <p className="muted">
+            {tr(
+              `${globalBenchmark.data.global_average.source_name} · ${globalBenchmark.data.global_average.n_firms} شركة · بيانات ${globalBenchmark.data.global_average.data_as_of} · ${globalBenchmark.data.global_average.region}`,
+              `${globalBenchmark.data.global_average.source_name} · ${globalBenchmark.data.global_average.n_firms} firms · data as of ${globalBenchmark.data.global_average.data_as_of} · ${globalBenchmark.data.global_average.region}`,
+            )}{' '}
+            —{' '}
+            <a href={globalBenchmark.data.global_average.source_page} target="_blank" rel="noreferrer">
+              {globalBenchmark.data.global_average.source_page}
+            </a>
+          </p>
+          <Notice type="warning">{globalBenchmark.data.global_average.average_only_caveat}</Notice>
+          {globalBenchmark.data.global_average.industry_match_caveat && (
+            <Notice type="warning">{globalBenchmark.data.global_average.industry_match_caveat}</Notice>
+          )}
+          {globalBenchmark.data.classification_caveat && (
+            <Notice type="warning">{globalBenchmark.data.classification_caveat}</Notice>
+          )}
+        </Panel>
+      )}
       <div className="benchmark-layout">
         <Panel
           title={tr('العينة المختارة', 'Selected peer cohort')}
@@ -204,6 +288,17 @@ export default function Benchmarks() {
                   unit={metric?.unit || 'number'}
                   locale={locale}
                   tr={tr}
+                  globalReference={
+                    typeof globalMetricValue === 'number'
+                      ? {
+                          value: globalMetricValue,
+                          label: tr(
+                            `متوسط عالمي (${globalBenchmark.data?.global_average?.damodaran_industry})`,
+                            `Global average (${globalBenchmark.data?.global_average?.damodaran_industry})`,
+                          ),
+                        }
+                      : null
+                  }
                 />
               )}
               <div className="benchmark-values">

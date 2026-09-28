@@ -16,6 +16,7 @@ export interface Entity {
   id: string;
   name: string;
   sector: string;
+  sector_code?: string;
   currency: string;
 }
 export interface Fact {

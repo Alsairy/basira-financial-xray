@@ -20,6 +20,18 @@ import {
 } from './reports.mjs';
 import { authorizedCatalog, renderSelection } from './ai-contract.mjs';
 import { getAiSelection } from './ai-transport-anthropic.mjs';
+// Free, zero-cost global sector average reference (Phase 1 of the sector-benchmarking
+// upgrade) — read once at module load since it is static reference data bundled with the
+// app, not per-tenant runtime state like the rest of the store. Separate on purpose from
+// the user-curated named-peer cohort in /api/benchmarks: Damodaran publishes an industry
+// AVERAGE only (no distribution), so it can never carry a median/quartile/rank the way a
+// real peer cohort can.
+const globalSectorBenchmarks = JSON.parse(
+  readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), '..', 'docs', 'research', 'global_sector_benchmarks.json'),
+    'utf8',
+  ),
+).sectors;
 const scrypt = promisify(scryptCb),
   now = () => new Date().toISOString(),
   id = () => randomUUID();
@@ -1492,6 +1504,15 @@ ${failed ? '<div class="err">كلمة المرور غير صحيحة / Incorrect
     wrap((req, res) => {
       allow(req);
       res.json(list(req, 'benchmark', req.query.entity_id));
+    }),
+  );
+  app.get(
+    '/api/global-benchmark',
+    wrap((req, res) => {
+      allow(req);
+      const sectorCode = req.query.sector_code ? enumOf(req.query.sector_code, SECTOR_CODES, 'sector_code') : '';
+      const entry = sectorCode ? globalSectorBenchmarks[sectorCode] : null;
+      res.json(entry ? { available: true, ...entry } : { available: false, sector_code: sectorCode || null });
     }),
   );
   const validateOwner = (req, owner) => {

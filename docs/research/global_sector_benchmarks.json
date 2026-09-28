@@ -1,0 +1,176 @@
+{
+  "_readme": "Phase 1 of the sector-benchmarking upgrade proposed in the partner study 'دليل معايير المقارنة المعيارية حسب القطاع' (Sep 2026). Adds a free, zero-cost GLOBAL SECTOR AVERAGE reference, separate from and complementary to the manually-curated 23-company real-Tadawul-peer dataset in peer_benchmarks_seed.json. Do not merge the two: this file gives one INDUSTRY-WIDE AVERAGE per sector_code (no distribution, no named companies, no percentile — Damodaran publishes averages only, per the study's own Group C caveat), while peer_benchmarks_seed.json gives a real named-company cohort with quartiles. Scoped only to the three sector_code values Basira already uses (it_services, commercial_services, transport_logistics) — 'other' has no classification mapping and is intentionally left uncovered rather than guessed. Every code and figure below was fetched and read directly (UN ISIC Detail pages, NAICS/BLS/GICS sources via search, Damodaran's own published .xls files) on 2026-09-28; no figure is invented or estimated. If Damodaran's site or the classification sources change, this file goes stale silently until someone re-verifies — there is no live refresh.",
+  "generated_date": "2026-09-28",
+  "sectors": {
+    "it_services": {
+      "sector_code": "it_services",
+      "label_ar": "خدمات تقنية المعلومات وتكامل النظم",
+      "label_en": "IT services / systems integration",
+      "classification": {
+        "isic": {
+          "code": "6202",
+          "title": "Computer consultancy and computer facilities management activities",
+          "parent_division": { "code": "62", "title": "Computer programming, consultancy and related activities" },
+          "parent_section": { "code": "J", "title": "Information and communication" },
+          "verified_url": "https://unstats.un.org/unsd/classifications/Econ/Detail/EN/27/6202"
+        },
+        "naics": {
+          "code": "541512",
+          "title": "Computer Systems Design Services",
+          "parent_industry_group": { "code": "5415", "title": "Computer Systems Design and Related Services" },
+          "parent_sector": { "code": "54", "title": "Professional, Scientific, and Technical Services" },
+          "year": 2022,
+          "note": "This exact code was also independently cited by the partner study itself as its own worked example (page 2)."
+        },
+        "gics": {
+          "code": "451020",
+          "title": "IT Services",
+          "parent_industry_group": { "code": "4510", "title": "Software & Services" },
+          "parent_sector": { "code": "45", "title": "Information Technology" }
+        }
+      },
+      "global_average": {
+        "source_name": "Aswath Damodaran (NYU Stern) — Emerging Markets industry data",
+        "damodaran_industry": "Computer Services",
+        "source_page": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datacurrent.html",
+        "source_files": [
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/marginemerg.xls",
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/roeemerg.xls",
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/wcdataemerg.xls"
+        ],
+        "data_as_of": "2026-01-05",
+        "fetched_on": "2026-09-28",
+        "n_firms": 693,
+        "region": "Emerging markets (Damodaran's regional grouping; includes Saudi Arabia/Gulf, not Saudi-specific)",
+        "metrics": {
+          "gross_margin": 15.56,
+          "ebit_margin": 6.78,
+          "net_margin": 5.0,
+          "receivables_days": 225.89,
+          "roe": 15.45
+        },
+        "metric_source_columns": {
+          "gross_margin": "'Gross Margin' column, margin dataset",
+          "ebit_margin": "'Pre-tax Unadjusted Operating Margin' column, margin dataset — matches Basira's own EBIT/revenue (pre-tax) definition, not an after-tax or lease-adjusted variant",
+          "net_margin": "'Net Margin' column, margin dataset",
+          "receivables_days": "Derived: 'Acc Rec/ Sales' column (working-capital dataset) × 365 — an approximation, not a true DSO, consistent with how Basira's own receivables_days is already an approximation (closing balance ÷ revenue × 365)",
+          "roe": "'ROE (unadjusted)' column, ROE dataset"
+        },
+        "average_only_caveat": "This is an industry AVERAGE across 693 firms, not a distribution — no median, quartiles or percentile can be derived from it. Do not present a company's position against this figure as a percentile rank; only as 'above/below the global sector average'."
+      }
+    },
+    "commercial_services": {
+      "sector_code": "commercial_services",
+      "label_ar": "الخدمات التجارية والمهنية (تشغيل عمالة ومرافق)",
+      "label_en": "Commercial & professional services (labor outsourcing / facilities)",
+      "classification": {
+        "isic": {
+          "code": "7820",
+          "title": "Temporary employment agency activities",
+          "parent_division": { "code": "78", "title": "Employment activities" },
+          "parent_section": { "code": "N", "title": "Administrative and support service activities" },
+          "verified_url": "https://unstats.un.org/unsd/classifications/Econ/Detail/EN/27/7820"
+        },
+        "naics": {
+          "code": "561320",
+          "title": "Temporary Help Services",
+          "parent_industry_group": { "code": "5613", "title": "Employment Services" },
+          "parent_sector": { "code": "56", "title": "Administrative and Support and Waste Management and Remediation Services" },
+          "year": 2022
+        },
+        "gics": {
+          "code": "20202010",
+          "title": "Human Resource & Employment Services",
+          "parent_industry_group": { "code": "202020", "title": "Professional Services" },
+          "parent_sector": { "code": "20", "title": "Industrials" }
+        }
+      },
+      "classification_caveat": "Basira's commercial_services peer bucket mixes labor-outsourcing/staffing companies (Maharah, Al Mawarid, Tamkeen, SMASCO — 4 of 6 peers, matches this ISIC/NAICS/GICS code well) with a catering company (CATRION) and a facilities-management company (Shalfa), neither of which is an employment-services business. This classification is the best single fit for the majority of the bucket, not a perfect fit for all of it — the catering/facilities pair would properly sit under different ISIC/NAICS/GICS codes not mapped here.",
+      "global_average": {
+        "source_name": "Aswath Damodaran (NYU Stern) — Emerging Markets industry data",
+        "damodaran_industry": "Business & Consumer Services",
+        "source_page": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datacurrent.html",
+        "source_files": [
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/marginemerg.xls",
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/roeemerg.xls",
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/wcdataemerg.xls"
+        ],
+        "data_as_of": "2026-01-05",
+        "fetched_on": "2026-09-28",
+        "n_firms": 379,
+        "region": "Emerging markets (Damodaran's regional grouping; includes Saudi Arabia/Gulf, not Saudi-specific)",
+        "metrics": {
+          "gross_margin": 20.44,
+          "ebit_margin": 4.72,
+          "net_margin": 2.67,
+          "receivables_days": 116.83,
+          "roe": 4.85
+        },
+        "metric_source_columns": {
+          "gross_margin": "'Gross Margin' column, margin dataset",
+          "ebit_margin": "'Pre-tax Unadjusted Operating Margin' column, margin dataset",
+          "net_margin": "'Net Margin' column, margin dataset",
+          "receivables_days": "Derived: 'Acc Rec/ Sales' column (working-capital dataset) × 365",
+          "roe": "'ROE (unadjusted)' column, ROE dataset"
+        },
+        "industry_match_caveat": "Damodaran does not publish a dedicated 'staffing/labor outsourcing' industry bucket. 'Business & Consumer Services' is his broadest general-services category and the closest available real match — it is not a labor-outsourcing-specific benchmark, so expect a wider gap to the actual peer companies than a purpose-built staffing index would show.",
+        "average_only_caveat": "This is an industry AVERAGE across 379 firms, not a distribution — no median, quartiles or percentile can be derived from it."
+      }
+    },
+    "transport_logistics": {
+      "sector_code": "transport_logistics",
+      "label_ar": "النقل واللوجستيات",
+      "label_en": "Transportation & logistics",
+      "classification": {
+        "isic": {
+          "code": "H",
+          "title": "Transportation and storage",
+          "note": "Section-level, not a single division: this peer bucket spans land (division 49), water (division 50) and air (division 51) transport plus rental — no single ISIC division fits Bahri (marine), Flynas/SGS (air) and the car-rental companies (land) at once, so the honest mapping is the section that contains all of them.",
+          "verified_url": "https://unstats.un.org/unsd/classifications/Econ/Detail/EN/27/49"
+        },
+        "naics": {
+          "code": "48-49",
+          "title": "Transportation and Warehousing",
+          "year": 2022,
+          "note": "Sector-level for the same multi-modal reason as the ISIC mapping."
+        },
+        "gics": {
+          "code": "2030",
+          "title": "Transportation",
+          "parent_sector": { "code": "20", "title": "Industrials" },
+          "note": "Industry-group level. Sub-industries actually represented in this peer bucket span 'Passenger Airlines' (Flynas), 'Air Freight & Logistics' (SGS), 'Marine Transportation' (Bahri), and 'Cargo/Passenger Ground Transportation' (SAPTCO, car-rental companies) — again no single sub-industry code covers the whole bucket."
+        }
+      },
+      "global_average": {
+        "source_name": "Aswath Damodaran (NYU Stern) — Emerging Markets industry data",
+        "damodaran_industry": "Transportation",
+        "source_page": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datacurrent.html",
+        "source_files": [
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/marginemerg.xls",
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/roeemerg.xls",
+          "https://pages.stern.nyu.edu/~adamodar/pc/datasets/wcdataemerg.xls"
+        ],
+        "data_as_of": "2026-01-05",
+        "fetched_on": "2026-09-28",
+        "n_firms": 330,
+        "region": "Emerging markets (Damodaran's regional grouping; includes Saudi Arabia/Gulf, not Saudi-specific)",
+        "metrics": {
+          "gross_margin": 15.48,
+          "ebit_margin": 7.49,
+          "net_margin": 4.79,
+          "receivables_days": 37.36,
+          "roe": 9.69
+        },
+        "metric_source_columns": {
+          "gross_margin": "'Gross Margin' column, margin dataset",
+          "ebit_margin": "'Pre-tax Unadjusted Operating Margin' column, margin dataset",
+          "net_margin": "'Net Margin' column, margin dataset",
+          "receivables_days": "Derived: 'Acc Rec/ Sales' column (working-capital dataset) × 365",
+          "roe": "'ROE (unadjusted)' column, ROE dataset"
+        },
+        "industry_match_caveat": "Damodaran's single 'Transportation' category blends airlines, shipping, rail, trucking and rental together globally — the same multi-modal blending the peer bucket itself has, so this is a reasonably representative match, but it is still a broad average across very different transport economics (e.g. asset-light car rental vs. capital-intensive shipping), not a mode-specific benchmark.",
+        "average_only_caveat": "This is an industry AVERAGE across 330 firms, not a distribution — no median, quartiles or percentile can be derived from it."
+      }
+    }
+  }
+}
