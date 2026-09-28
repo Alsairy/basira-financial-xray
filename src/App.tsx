@@ -197,17 +197,19 @@ export default function App() {
         }
       }
     }
-    qc.clear();
+    // Sets 'session' before touching anything else in the cache, and never clears/invalidates
+    // it below. qc.clear() (the previous approach here) removes a query's cache entry even
+    // for the actively-mounted `session` useQuery observer, and TanStack Query responds to an
+    // observed-but-cacheless query by auto-refetching it — a redundant GET /session that runs
+    // concurrently with the setQueryData call below. That refetch can resolve *after* ours
+    // (especially over real network latency, e.g. Render's free tier) and silently overwrite
+    // the session we just set with a failed/stale result, bouncing back to the login screen
+    // even though the server session is genuinely valid (a manual reload then works, since
+    // the race has already resolved by then). Scoping every cache reset below to exclude
+    // 'session' — same principle `refresh()` already applies — removes the race entirely.
     qc.setQueryData(['session'], s);
     setEntityId('');
-    // Excludes 'session' — it was just set above from the authoritative auth response. An
-    // unscoped invalidate also refetches it immediately via GET /session, and on Render's
-    // free tier that extra round-trip can race the just-issued session cookie during a cold
-    // start: the refetch fails or returns stale/empty data, silently wiping the session we
-    // just set and bouncing back to the login screen even though the server session is
-    // valid (a manual reload then works, since by then the cookie has settled). `refresh()`
-    // below already excludes 'session' for the same reason — this just matches that.
-    await qc.invalidateQueries({ predicate: (q) => q.queryKey[0] !== 'session' });
+    qc.removeQueries({ predicate: (q) => q.queryKey[0] !== 'session' });
     // Only prompt for the reading audience when there's no remembered choice yet — a repeat
     // presenter re-logging in for the same audience shouldn't have to dismiss this every time.
     // Still reachable any time via the workspace-card or audience-trigger buttons.
